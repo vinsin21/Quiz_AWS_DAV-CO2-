@@ -1,0 +1,64 @@
+
+[
+  {
+    "id": 1,
+    "question": "A developer is writing a serverless application using AWS Lambda. The function needs to access a private RDS instance in a VPC. What configuration is required?",
+    "options": [
+      "Grant the Lambda function public internet access via a NAT Gateway.",
+      "Assign the Lambda function to a security group and subnets within the VPC.",
+      "Configure the RDS instance to have a public IP address.",
+      "Use AWS Direct Connect to link the Lambda service to the VPC."
+    ],
+    "correct_answers": [1],
+    "multiple_correct": false
+  },
+  {
+    "id": 2,
+    "question": "Which of the following are good use cases for Amazon ElastiCache? (Select TWO)",
+    "options": [
+      "Storing session state for a web application to ensure statelessness.",
+      "Archiving long-term data for compliance and auditing.",
+      "Reducing database load by caching frequently accessed read-heavy data.",
+      "Performing complex JOIN operations on large datasets.",
+      "Executing high-performance compute-intensive calculations."
+    ],
+    "correct_answers": [0, 2],
+    "multiple_correct": true
+  },
+  {
+    "id": 3,
+    "question": "An application uses Amazon DynamoDB. The developer wants to optimize costs for a table that has highly predictable traffic with occasional spikes. Which billing mode is BEST?",
+    "options": [
+      "On-demand capacity mode",
+      "Provisioned capacity mode with Auto Scaling",
+      "Reserved capacity only",
+      "Standard-Infrequent Access storage class"
+    ],
+    "correct_answers": [1],
+    "multiple_correct": false
+  },
+  {
+    "id": 4,
+    "question": "You are using AWS CodeDeploy to deploy a serverless application. You want to shift traffic in two increments: 10% for the first 10 minutes, then the remaining 90%. Which deployment configuration should you use?",
+    "options": [
+      "LambdaCanary10Percent10Minutes",
+      "LambdaLinear10PercentEvery10Minutes",
+      "LambdaAllAtOnce",
+      "AppSpec.yml with manual hooks"
+    ],
+    "correct_answers": [0],
+    "multiple_correct": false
+  },
+  {
+    "id": 5,
+    "question": "A developer needs to securely pass sensitive database credentials to a containerized application running on AWS Fargate. What is the most secure method?",
+    "options": [
+      "Hardcode the credentials in the application's source code.",
+      "Pass credentials as environment variables in the task definition.",
+      "Store credentials in AWS Secrets Manager and reference them in the task definition using the 'valueFrom' parameter.",
+      "Inject a plain text file into the container image during the build process."
+    ],
+    "correct_answers": [2],
+    "multiple_correct": false
+  }
+]
