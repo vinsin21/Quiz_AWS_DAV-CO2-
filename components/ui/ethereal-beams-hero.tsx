@@ -1,3 +1,4 @@
+
 import React, { forwardRef, useImperativeHandle, useEffect, useRef, useMemo, type FC, type ReactNode } from "react"
 import * as THREE from "three"
 import { Canvas, useFrame, type ThreeElements } from "@react-three/fiber"
@@ -470,12 +471,16 @@ export default function EtherealBeamsHero() {
               <a href="#" className="rounded-full px-4 py-2 text-sm font-medium text-white/90 transition-all hover:bg-white/10 hover:text-white">Docs</a>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <Button variant="ghost" size="sm" className="hidden sm:flex" onClick={() => (window as any).open('https://github', '_blank')}>
-                <Github className="mr-2 h-4 w-4" />
-                GitHub
+            <div className="flex items-center space-x-2 sm:space-x-4">
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                onClick={() => window.open('https://github.com/vinsin21/Quiz_AWS_DAV-CO2-', '_blank')}
+              >
+                <Github className="h-4 w-4 sm:mr-2" />
+                <span className="hidden sm:inline">GitHub</span>
               </Button>
-              <Button size="sm" onClick={() => navigate('/tests')}>
+              <Button size="sm" className="hidden sm:flex" onClick={() => navigate('/tests')}>
                 Start Practice
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
