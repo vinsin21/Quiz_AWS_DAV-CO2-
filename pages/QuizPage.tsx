@@ -1,8 +1,8 @@
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, CheckCircle2, Circle, HelpCircle, XCircle, Trophy, Home } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle2, Circle, HelpCircle, XCircle, Trophy, Home, Play } from 'lucide-react';
 import { mockTests } from '../data/mockTests';
 import { Question } from '../types';
 import { questionsData } from '../data/questions';
@@ -33,8 +33,35 @@ const QuizPage: React.FC = () => {
   const [isAnswered, setIsAnswered] = useState(false);
   const [answers, setAnswers] = useState<Record<number, { selected: number[], correct: boolean }>>({});
   const [showSummary, setShowSummary] = useState(false);
+  const [isFinished, setIsFinished] = useState(false);
 
   const currentQuestion = questions[currentIndex];
+
+  const handleQuit = useCallback(() => {
+    setIsFinished(false);
+    setShowSummary(true);
+  }, []);
+
+  // Intercept Browser/Hardware Back Button
+  useEffect(() => {
+    // Only intercept if we are currently in the quiz and not already showing summary
+    if (!showSummary) {
+      // Push a dummy state to history so the first "back" doesn't leave the page
+      window.history.pushState({ quizActive: true }, '');
+
+      const handlePopState = (event: PopStateEvent) => {
+        // If the user tries to go back, show the summary instead of leaving
+        handleQuit();
+        // Re-push state to keep the user "locked" into the quiz until they explicitly click Home/Exit
+        window.history.pushState({ quizActive: true }, '');
+      };
+
+      window.addEventListener('popstate', handlePopState);
+      return () => {
+        window.removeEventListener('popstate', handlePopState);
+      };
+    }
+  }, [showSummary, handleQuit]);
 
   const handleOptionToggle = (index: number) => {
     if (isAnswered) return;
@@ -70,6 +97,7 @@ const QuizPage: React.FC = () => {
       setCurrentIndex(nextIdx);
       resetQuestionState(nextIdx);
     } else {
+      setIsFinished(true);
       setShowSummary(true);
     }
   };
@@ -94,13 +122,9 @@ const QuizPage: React.FC = () => {
     }
   };
 
-  const handleQuit = () => {
-    setShowSummary(true);
-  };
-
   if (showSummary) {
     const attemptedCount = Object.keys(answers).length;
-    const correctCount = Object.values(answers).filter(a => a.correct).length;
+    const correctCount = Object.values(answers).filter(a => (a as { correct: boolean }).correct).length;
     const score = Math.round((correctCount / questions.length) * 100);
 
     return (
@@ -111,11 +135,19 @@ const QuizPage: React.FC = () => {
           className="max-w-md w-full rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl text-center space-y-8"
         >
           <div className="mx-auto w-20 h-20 rounded-full bg-orange-500/20 flex items-center justify-center">
-            <Trophy className="text-orange-500 w-10 h-10" />
+            {isFinished ? (
+              <Trophy className="text-orange-500 w-10 h-10" />
+            ) : (
+              <HelpCircle className="text-orange-500 w-10 h-10" />
+            )}
           </div>
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold">Test Summary</h2>
-            <p className="text-gray-400">Great effort! Keep practicing to master AWS.</p>
+            <h2 className="text-3xl font-bold">{isFinished ? "Test Summary" : "Test Paused"}</h2>
+            <p className="text-gray-400">
+              {isFinished 
+                ? "Great effort! Keep practicing to master AWS." 
+                : "You haven't finished the test yet. Would you like to continue?"}
+            </p>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
@@ -137,19 +169,20 @@ const QuizPage: React.FC = () => {
                   className="h-full bg-orange-500"
                 />
              </div>
-             <p className="text-right text-xs mt-2 text-gray-500">Score: {score}%</p>
+             <p className="text-right text-xs mt-2 text-gray-500">Current Progress: {score}%</p>
           </div>
 
           <div className="flex flex-col gap-3">
             <button
-              onClick={() => navigate('/tests')}
-              className="w-full py-4 rounded-xl bg-white text-black font-bold hover:bg-gray-200 transition-colors"
+              onClick={isFinished ? () => navigate('/tests') : () => setShowSummary(false)}
+              className="w-full py-4 rounded-xl bg-white text-black font-bold hover:bg-gray-200 transition-colors inline-flex items-center justify-center"
             >
-              Try Another Test
+              {!isFinished && <Play className="mr-2 h-4 w-4 fill-current" />}
+              {isFinished ? "Try Another Test" : "Resume Test"}
             </button>
             <button
               onClick={() => navigate('/')}
-              className="w-full py-4 rounded-xl border border-white/10 bg-white/5 font-bold hover:bg-white/10 transition-colors inline-flex items-center justify-center"
+              className="w-full py-4 rounded-xl border border-white/10 bg-white/5 font-bold hover:bg-white/10 transition-colors inline-flex items-center justify-center text-gray-400"
             >
               <Home className="mr-2 h-4 w-4" />
               Return Home
@@ -168,7 +201,7 @@ const QuizPage: React.FC = () => {
             <button 
               onClick={handleQuit}
               className="p-2 rounded-lg hover:bg-white/10 transition-colors text-gray-400"
-              title="Quit Test"
+              title="Pause Test"
             >
               <ArrowLeft size={20} />
             </button>

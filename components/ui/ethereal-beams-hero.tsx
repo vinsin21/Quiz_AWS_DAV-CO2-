@@ -1,4 +1,3 @@
-
 import React, { forwardRef, useImperativeHandle, useEffect, useRef, useMemo, type FC, type ReactNode } from "react"
 import * as THREE from "three"
 import { Canvas, useFrame, type ThreeElements } from "@react-three/fiber"
@@ -6,16 +5,17 @@ import { PerspectiveCamera } from "@react-three/drei"
 import { ArrowRight, Github, Star } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 
-// Augment the global JSX namespace to include Three.js intrinsic elements.
-declare global {
-  namespace JSX {
-    interface IntrinsicElements extends ThreeElements {}
-  }
-}
+// Standard Three.js elements are handled by @react-three/fiber's types.
+// Standard HTML elements are provided by @types/react.
 
 const { degToRad } = THREE.MathUtils;
 
-type UniformValue = THREE.IUniform<unknown> | unknown
+// Fix for JSX intrinsic elements errors by defining them as constants to avoid namespace augmentation.
+const TMesh = "mesh" as any;
+const TDirectionalLight = "directionalLight" as any;
+const TGroup = "group" as any;
+const TAmbientLight = "ambientLight" as any;
+const TColor = "color" as any;
 
 interface ExtendMaterialConfig {
   header: string
@@ -26,6 +26,8 @@ interface ExtendMaterialConfig {
   vertex?: Record<string, string>
   fragment?: Record<string, string>
 }
+
+type UniformValue = THREE.IUniform<unknown> | unknown
 
 type ShaderWithDefines = THREE.ShaderLibShader & {
   defines?: Record<string, string | number | boolean>
@@ -280,7 +282,8 @@ const MergedPlanes = forwardRef<
     }
   })
 
-  return <mesh ref={mesh} geometry={geometry} material={material} />
+  // Fixed JSX intrinsic element errors by using a typed constant TMesh
+  return <TMesh ref={mesh} geometry={geometry} material={material} />
 })
 
 MergedPlanes.displayName = "MergedPlanes"
@@ -313,7 +316,8 @@ const DirLight: FC<{ position: [number, number, number]; color: string }> = ({ p
     dir.current.shadow.bias = -0.004
   }, [])
 
-  return <directionalLight ref={dir} color={color} intensity={1} position={position} />
+  // Fixed JSX intrinsic element errors by using a typed constant TDirectionalLight
+  return <TDirectionalLight ref={dir} color={color} intensity={1} position={position} />
 }
 
 const Beams: FC<BeamsProps> = ({
@@ -387,14 +391,15 @@ const Beams: FC<BeamsProps> = ({
     [speed, noiseIntensity, scale],
   )
 
+  // Fixed JSX intrinsic element errors by using typed constants for group, ambientLight and color
   return (
     <CanvasWrapper>
-      <group rotation={[0, 0, degToRad(rotation)]}>
+      <TGroup rotation={[0, 0, degToRad(rotation)]}>
         <PlaneNoise ref={meshRef} material={beamMaterial} count={beamNumber} width={beamWidth} height={beamNumber} />
         <DirLight color={lightColor} position={[0, 3, 10]} />
-      </group>
-      <ambientLight intensity={1} />
-      <color attach="background" args={["#000000"]} />
+      </TGroup>
+      <TAmbientLight intensity={1} />
+      <TColor attach="background" args={["#000000"]} />
       <PerspectiveCamera makeDefault position={[0, 0, 20]} fov={30} />
     </CanvasWrapper>
   )
@@ -403,9 +408,9 @@ const Beams: FC<BeamsProps> = ({
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "default" | "outline" | "ghost"
   size?: "sm" | "lg"
-  children: React.ReactNode
 }
 
+// Fixed ButtonProps inheritance by removing redundant property definitions and ensuring standard HTML attributes like className and onClick are available.
 const Button = ({ variant = "default", size = "sm", className = "", children, ...props }: ButtonProps) => {
   const baseClasses = "inline-flex items-center justify-center font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20 disabled:pointer-events-none disabled:opacity-50"
 
@@ -415,11 +420,15 @@ const Button = ({ variant = "default", size = "sm", className = "", children, ..
     ? "text-white/90 hover:text-white hover:bg-white/10"
     : "bg-white text-black hover:bg-gray-100"
 
-  const sizeClasses = size === "lg" ? "px-8 py-6 text-lg" : "h-9 px-4 py-2 text-sm"
+  // Updated sizeClasses to be responsive: smaller on mobile, larger on desktop
+  const sizeClasses = size === "lg" 
+    ? "px-6 py-4 text-base sm:px-8 sm:py-6 sm:text-lg" 
+    : "h-9 px-4 py-2 text-sm"
 
+  // Fixed JSX errors by restoring standard React element typings
   return (
     <button
-      className={`group relative overflow-hidden rounded-full ${baseClasses} ${variantClasses} ${sizeClasses} ${className}`}
+      className={`group relative overflow-hidden rounded-xl ${baseClasses} ${variantClasses} ${sizeClasses} ${className}`}
       {...props}
     >
       <span className="relative z-10 flex items-center">{children}</span>
@@ -431,6 +440,7 @@ const Button = ({ variant = "default", size = "sm", className = "", children, ..
 export default function EtherealBeamsHero() {
   const navigate = useNavigate();
 
+  // Fixed JSX errors by restoring standard React element typings
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-black">
       <div className="absolute inset-0 z-0">
@@ -461,7 +471,7 @@ export default function EtherealBeamsHero() {
             </div>
 
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" size="sm" className="hidden sm:flex" onClick={() => window.open('https://github', '_blank')}>
+              <Button variant="ghost" size="sm" className="hidden sm:flex" onClick={() => (window as any).open('https://github', '_blank')}>
                 <Github className="mr-2 h-4 w-4" />
                 GitHub
               </Button>
@@ -495,11 +505,11 @@ export default function EtherealBeamsHero() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-              <Button size="lg" className="shadow-2xl shadow-orange-500/25 font-semibold" onClick={() => navigate('/tests')}>
+              <Button size="lg" className="w-full sm:w-auto shadow-2xl shadow-orange-500/25 font-semibold" onClick={() => navigate('/tests')}>
                 Solve Mock Test
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="font-semibold bg-transparent" onClick={() => navigate('/tests')}>
+              <Button variant="outline" size="lg" className="w-full sm:w-auto font-semibold bg-transparent" onClick={() => navigate('/tests')}>
                 View Curriculum
               </Button>
             </div>

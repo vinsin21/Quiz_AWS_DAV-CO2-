@@ -22,48 +22,48 @@ const TestDetails: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white py-12 px-6">
-      <div className="mx-auto max-w-3xl">
+    <div className="min-h-screen bg-black text-white py-6 md:py-12 px-6 flex flex-col justify-center overflow-hidden">
+      <div className="mx-auto w-full max-w-3xl">
         <Link 
           to="/tests" 
-          className="inline-flex items-center text-sm text-gray-400 hover:text-white mb-12 transition-colors"
+          className="inline-flex items-center text-sm text-gray-400 hover:text-white mb-6 md:mb-12 transition-colors"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
           Back to list
         </Link>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
+          initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-12 backdrop-blur-xl space-y-8"
+          className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-12 backdrop-blur-xl space-y-6 md:space-y-8"
         >
-          <div className="space-y-4">
-            <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+          <div className="space-y-3 md:space-y-4">
+            <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
               {test.title}
             </h1>
-            <p className="text-lg text-gray-400">
+            <p className="text-sm md:text-lg text-gray-400 leading-relaxed line-clamp-3 md:line-clamp-none">
               {test.description}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="flex items-center space-x-4 p-4 rounded-2xl bg-white/5 border border-white/5">
-              <Clock className="text-orange-400" />
+          <div className="flex flex-row md:grid md:grid-cols-2 gap-3 md:gap-4">
+            <div className="flex-1 flex items-center space-x-3 md:space-x-4 p-3 md:p-4 rounded-xl md:rounded-2xl bg-white/5 border border-white/5">
+              <Clock className="text-orange-400 w-5 h-5 md:w-6 md:h-6 shrink-0" />
               <div>
-                <p className="text-xs text-gray-500 uppercase tracking-wider font-bold">Time Limit</p>
-                <p className="font-semibold">{test.durationMinutes} Minutes</p>
+                <p className="text-[10px] md:text-xs text-gray-500 uppercase tracking-wider font-bold">Time Limit</p>
+                <p className="text-sm md:text-base font-semibold">{test.durationMinutes}m</p>
               </div>
             </div>
-            <div className="flex items-center space-x-4 p-4 rounded-2xl bg-white/5 border border-white/5">
-              <HelpCircle className="text-blue-400" />
+            <div className="flex-1 flex items-center space-x-3 md:space-x-4 p-3 md:p-4 rounded-xl md:rounded-2xl bg-white/5 border border-white/5">
+              <HelpCircle className="text-blue-400 w-5 h-5 md:w-6 md:h-6 shrink-0" />
               <div>
-                <p className="text-xs text-gray-500 uppercase tracking-wider font-bold">Total Questions</p>
-                <p className="font-semibold">{test.questionIds.length} MCQs</p>
+                <p className="text-[10px] md:text-xs text-gray-500 uppercase tracking-wider font-bold">Questions</p>
+                <p className="text-sm md:text-base font-semibold">{test.questionIds.length}</p>
               </div>
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex gap-4">
+          <div className="hidden md:flex p-6 rounded-2xl bg-blue-500/10 border border-blue-500/20 gap-4">
             <ShieldCheck className="text-blue-400 shrink-0" />
             <div className="text-sm text-blue-100/80 leading-relaxed">
               <p className="font-semibold text-blue-400 mb-1">Exam Rules</p>
@@ -75,16 +75,18 @@ const TestDetails: React.FC = () => {
             </div>
           </div>
 
-          <button
-            onClick={() => navigate(`/quiz/${test.id}`)}
-            className="w-full py-6 rounded-2xl bg-white text-black font-bold text-xl hover:bg-gray-200 transition-colors shadow-xl shadow-white/10"
-          >
-            Start Exam Now
-          </button>
+          <div className="space-y-4">
+            <button
+              onClick={() => navigate(`/quiz/${test.id}`)}
+              className="w-full py-4 md:py-6 rounded-2xl bg-white text-black font-bold text-lg md:text-xl hover:bg-gray-200 transition-colors shadow-xl shadow-white/10"
+            >
+              Start Exam Now
+            </button>
 
-          <div className="flex items-center justify-center space-x-2 text-xs text-gray-500">
-            <AlertCircle size={14} />
-            <span>Progress is not saved if you leave the browser tab.</span>
+            <div className="flex items-center justify-center space-x-2 text-[10px] md:text-xs text-gray-500">
+              <AlertCircle size={14} className="shrink-0" />
+              <span>Progress is not saved if you leave the browser tab.</span>
+            </div>
           </div>
         </motion.div>
       </div>
