@@ -1,8 +1,16 @@
 
-import { MockTest } from '../types';
+import { MockTest } from '../types.ts';
+import { questionsData } from './questions.ts';
 
 const generateRange = (start: number, end: number) => 
   Array.from({ length: end - start + 1 }, (_, i) => start + i);
+
+const getIdsByTopic = (topicName: string): number[] => {
+  const search = topicName.toLowerCase();
+  return questionsData
+    .filter(q => q.topics?.some(t => t.toLowerCase() === search))
+    .map(q => q.id);
+};
 
 export const mockTests: MockTest[] = [
   {
@@ -53,5 +61,38 @@ export const mockTests: MockTest[] = [
     description: '87 Mock Questions for AWS Associate Developer Certification Exam.(Questions 301-387)',
     questionIds: generateRange(301, 387),
     durationMinutes: 175,
+  },
+  // Specialized Topic Exams
+  {
+    id: 'topic-lambda',
+    title: 'Lambda Practice Exam',
+    description: 'Focused practice containing all available questions related to AWS Lambda functions and serverless compute.',
+    questionIds: getIdsByTopic('lambda'),
+    durationMinutes: Math.ceil(getIdsByTopic('lambda').length * 2),
+    topic: 'lambda'
+  },
+  {
+    id: 'topic-dynamodb',
+    title: 'DynamoDB Practice Exam',
+    description: 'Deep dive into NoSQL modeling, throughput, and performance questions specifically for Amazon DynamoDB.',
+    questionIds: getIdsByTopic('dynamodb'),
+    durationMinutes: Math.ceil(getIdsByTopic('dynamodb').length * 2),
+    topic: 'dynamodb'
+  },
+  {
+    id: 'topic-iam',
+    title: 'IAM Practice Exam',
+    description: 'Master AWS Identity and Access Management with a comprehensive set of security, roles, and policy questions.',
+    questionIds: getIdsByTopic('iam'),
+    durationMinutes: Math.ceil(getIdsByTopic('iam').length * 2),
+    topic: 'iam'
+  },
+  {
+    id: 'topic-s3',
+    title: 'S3 Practice Exam',
+    description: 'Complete coverage of Amazon Simple Storage Service (S3), including bucket policies, encryption, and lifecycle rules.',
+    questionIds: getIdsByTopic('s3'),
+    durationMinutes: Math.ceil(getIdsByTopic('s3').length * 2),
+    topic: 's3'
   }
 ];

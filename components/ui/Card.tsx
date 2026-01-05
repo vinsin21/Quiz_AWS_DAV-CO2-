@@ -2,6 +2,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+// Fix for framer-motion property errors by using a type-casting workaround
+const MotionDiv = motion.div as any;
+
 interface CardProps {
   title: string;
   description: string;
@@ -12,7 +15,7 @@ interface CardProps {
 
 export const Card: React.FC<CardProps> = ({ title, description, onClick, icon, footer }) => {
   return (
-    <motion.div
+    <MotionDiv
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       onClick={onClick}
@@ -30,6 +33,6 @@ export const Card: React.FC<CardProps> = ({ title, description, onClick, icon, f
         </p>
         {footer && <div className="pt-2 border-t border-white/5">{footer}</div>}
       </div>
-    </motion.div>
+    </MotionDiv>
   );
 };

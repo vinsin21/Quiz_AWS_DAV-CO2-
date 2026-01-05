@@ -4,7 +4,9 @@ import * as THREE from "three"
 import { Canvas, useFrame, type ThreeElements } from "@react-three/fiber"
 import { PerspectiveCamera } from "@react-three/drei"
 import { ArrowRight, Github, Star } from "lucide-react"
-import { useNavigate } from "react-router-dom"
+// Fix for react-router-dom useNavigate error by using a type-casting import workaround
+import * as RouterDom from "react-router-dom"
+const { useNavigate } = RouterDom as any
 
 // Standard Three.js elements are handled by @react-three/fiber's types.
 // Standard HTML elements are provided by @types/react.

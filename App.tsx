@@ -1,10 +1,14 @@
 
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './pages/LandingPage';
-import MockTestList from './pages/MockTestList';
-import TestDetails from './pages/TestDetails';
-import QuizPage from './pages/QuizPage';
+// Fix for react-router-dom errors by using a type-casting import workaround
+import * as RouterDom from 'react-router-dom';
+const { HashRouter, Routes, Route } = RouterDom as any;
+import LandingPage from './pages/LandingPage.tsx';
+import MockTestList from './pages/MockTestList.tsx';
+import TestDetails from './pages/TestDetails.tsx';
+import QuizPage from './pages/QuizPage.tsx';
+
+const Router = HashRouter;
 
 const App: React.FC = () => {
   return (

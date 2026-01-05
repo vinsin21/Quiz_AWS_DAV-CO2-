@@ -11,8 +11,16 @@ export const questionsData: Question[] = [
       "Reduce the time required to merge AWS CodeCommit branches.",
       "Improve performance of compute-intensive applications."
     ],
-    "correct_answers": [2, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      2,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "elasticache",
+      "s3",
+      "codedeploy"
+    ]
   },
   {
     "id": 2,
@@ -24,8 +32,17 @@ export const questionsData: Question[] = [
       "Simple Workflow Service.",
       "Simple Storage Service."
     ],
-    "correct_answers": [0, 2, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      2,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "step-functions",
+      "dynamodb",
+      "elasticache"
+    ]
   },
   {
     "id": 3,
@@ -36,8 +53,16 @@ export const questionsData: Question[] = [
       "Include the Base64 encoding status status code, status description, and headers in the Lambda function.",
       "Enable the multi-value headers on the ALB."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "alb",
+      "sam"
+    ]
   },
   {
     "id": 4,
@@ -48,8 +73,15 @@ export const questionsData: Question[] = [
       "Write to the cache and the backend at the same time.",
       "Write to the backend first and invalidate the cache."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "elasticache",
+      "ec2",
+      "sam"
+    ]
   },
   {
     "id": 5,
@@ -61,8 +93,15 @@ export const questionsData: Question[] = [
       "Transfer the data over an SSL connection.",
       "Set up Server-Side Encryption with S3-Managed Keys."
     ],
-    "correct_answers": [1, 3],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "s3",
+      "kms"
+    ]
   },
   {
     "id": 6,
@@ -73,8 +112,14 @@ export const questionsData: Question[] = [
       "Client-side encryption with a client-side symmetric master key.",
       "Client-side encryption with AWS KMS-managed keys."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "kms"
+    ]
   },
   {
     "id": 7,
@@ -85,8 +130,15 @@ export const questionsData: Question[] = [
       "Deploy an application in each audited account with its own role. Have Account A authenticate with the application.",
       "Create an IAM user with an access key in each audited account. Write code in Account A that uses those access keys."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "iam"
+    ]
   },
   {
     "id": 8,
@@ -97,8 +149,16 @@ export const questionsData: Question[] = [
       "Create a repository using AWS CodeCommit to automatically trigger a deployment to the EC2 instances.",
       "Use AWS CodeBuild to automatically deploy the latest build to the latest EC2 instances."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "ec2",
+      "codebuild",
+      "codedeploy"
+    ]
   },
   {
     "id": 9,
@@ -109,8 +169,14 @@ export const questionsData: Question[] = [
       "Add a custom encryption algorithm to the application that will encrypt and decrypt all data.",
       "Create a new Amazon Machine Image (AMI) with an encrypted root volume and store the data to ephemeral disks."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "ec2"
+    ]
   },
   {
     "id": 10,
@@ -121,8 +187,17 @@ export const questionsData: Question[] = [
       "Use Amazon CloudFront to serve the content of images stored in Amazon S3.",
       "Submit a ticket to AWS support to request a rate limit increase for the S3 bucket."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "elasticache",
+      "s3",
+      "iam",
+      "ec2",
+      "cloudfront"
+    ]
   },
   {
     "id": 11,
@@ -133,8 +208,15 @@ export const questionsData: Question[] = [
       "Use the `GenerateDataKey` API, then use that data key to encrypt the file in the Lambda function code.",
       "Use a custom KMS customer master key created for S3 in the Lambda function code."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "kms"
+    ]
   },
   {
     "id": 12,
@@ -145,8 +227,16 @@ export const questionsData: Question[] = [
       "Add the `Content-MD5` header to the request for webfonts in the cdfonts bucket from the website.",
       "Configure the cdfonts bucket to allow cross-origin requests by creating a CORS configuration."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "sns",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 13,
@@ -158,8 +248,16 @@ export const questionsData: Question[] = [
       "`sam deploy`.",
       "`sam publish`."
     ],
-    "correct_answers": [2, 3],
-    "multiple_correct": true
+    "correct_answers": [
+      2,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "lambda",
+      "sns",
+      "sam"
+    ]
   },
   {
     "id": 14,
@@ -170,8 +268,13 @@ export const questionsData: Question[] = [
       "Rolling with additional batch.",
       "Immutable."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "beanstalk"
+    ]
   },
   {
     "id": 15,
@@ -182,8 +285,13 @@ export const questionsData: Question[] = [
       "Get the application to run `IFCONFIG` to get the public IP address.",
       "Get the application to run `IPCONFIG` to get the public IP address."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "ec2"
+    ]
   },
   {
     "id": 16,
@@ -194,8 +302,13 @@ export const questionsData: Question[] = [
       "Create an API Gateway in three separate AWS accounts.",
       "Enable the cache for development and test environments only when needed."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "api-gateway"
+    ]
   },
   {
     "id": 17,
@@ -206,8 +319,14 @@ export const questionsData: Question[] = [
       "Add a connection string to use an RDS read replica for read queries.",
       "Add a connection string to use a read replica on an EC2 instance."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "rds",
+      "ec2"
+    ]
   },
   {
     "id": 18,
@@ -218,8 +337,14 @@ export const questionsData: Question[] = [
       "Fan-out driven.",
       "Schedule driven."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "iam"
+    ]
   },
   {
     "id": 19,
@@ -231,8 +356,17 @@ export const questionsData: Question[] = [
       "Increase the frequency of requests to DynamoDB by decreasing the retry delay.",
       "Change the capacity mode of the DynamoDB table from provisioned to on-demand."
     ],
-    "correct_answers": [2, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      2,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "dynamodb",
+      "iam",
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 20,
@@ -243,8 +377,14 @@ export const questionsData: Question[] = [
       "Server-side encryption with AWS KMS managed keys (SSE-KMS).",
       "Client-side encryption."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "kms"
+    ]
   },
   {
     "id": 21,
@@ -255,8 +395,16 @@ export const questionsData: Question[] = [
       "4.",
       "1."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "kinesis",
+      "ec2"
+    ]
   },
   {
     "id": 22,
@@ -267,8 +415,17 @@ export const questionsData: Question[] = [
       "Amazon DynamoDB.",
       "Amazon Cognito."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "s3",
+      "cognito",
+      "ec2"
+    ]
   },
   {
     "id": 23,
@@ -280,8 +437,14 @@ export const questionsData: Question[] = [
       "Package the application code into a `.zip` file, create a new application version from the packaged application by using AWS CLI, then update the environment by using AWS CLI.",
       "Package the application code into a `.zip` file, create a new application version from the AWS Management Console, then rebuild the environment by using AWS CLI."
     ],
-    "correct_answers": [0, 3],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "beanstalk"
+    ]
   },
   {
     "id": 24,
@@ -292,8 +455,14 @@ export const questionsData: Question[] = [
       "Put an Elastic Load Balancer in front of the Lambda function.",
       "Cache the file in Amazon S3."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3"
+    ]
   },
   {
     "id": 25,
@@ -304,8 +473,15 @@ export const questionsData: Question[] = [
       "Implement exponential backoffs in the application.",
       "Load balance the reads to the table using an Application Load Balancer."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "iam",
+      "alb"
+    ]
   },
   {
     "id": 26,
@@ -316,8 +492,14 @@ export const questionsData: Question[] = [
       "Change the integration type.",
       "Create a mapping template."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway"
+    ]
   },
   {
     "id": 27,
@@ -328,8 +510,15 @@ export const questionsData: Question[] = [
       "Create an IAM user for each developer on the team: provide each developer with a unique access key.",
       "Set up a federation through an Amazon Cognito user pool."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "cognito",
+      "ec2"
+    ]
   },
   {
     "id": 28,
@@ -340,8 +529,14 @@ export const questionsData: Question[] = [
       "Strongly consistent reads use less throughput than eventually consistent reads.",
       "Strongly consistent reads use variable throughput depending on read activity."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "sam"
+    ]
   },
   {
     "id": 29,
@@ -352,8 +547,13 @@ export const questionsData: Question[] = [
       "Terminate the current Elastic Beanstalk environment and create a new one.",
       "Modify the ebextensions folder to add a source option to services."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "beanstalk"
+    ]
   },
   {
     "id": 30,
@@ -364,8 +564,15 @@ export const questionsData: Question[] = [
       "Option C.",
       "Option D."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "cognito",
+      "ec2"
+    ]
   },
   {
     "id": 31,
@@ -376,8 +583,13 @@ export const questionsData: Question[] = [
       "Do not make any changes to the application Deploy the new version of the code. If too many errors are encountered, point the application back to the previous version using the version number in the Amazon Resource Name (ARN).",
       "Create three aliases: new, existing, and router. Point the existing alias to the current version. Have the router alias direct 100% of users to the existing alias. Update the application to use the router alias. Deploy the new version of the code. Point the new alias to this version. Update the router alias to direct 10% of users to the new alias. If too many errors are encountered, send 100% of traffic to the existing alias."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda"
+    ]
   },
   {
     "id": 32,
@@ -388,8 +600,14 @@ export const questionsData: Question[] = [
       "Use multiple Elastic Beanstalk environments for the HTTP component but one environment for the background task component.",
       "Use multiple Elastic Beanstalk environments for the background task component but one environment for the HTTP component."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "beanstalk"
+    ]
   },
   {
     "id": 33,
@@ -400,8 +618,13 @@ export const questionsData: Question[] = [
       "Investigate the `Metadata` section.",
       "Investigate the `Resources` section."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudformation"
+    ]
   },
   {
     "id": 34,
@@ -412,8 +635,14 @@ export const questionsData: Question[] = [
       "Create aliases and versions in AWS Lambda.",
       "Tag the AWS Lambda functions with different names."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway"
+    ]
   },
   {
     "id": 35,
@@ -424,8 +653,14 @@ export const questionsData: Question[] = [
       "Create an HTTPS redirect on the EC2 instances.",
       "Create a bucket policy that denies traffic where `SecureTransport` is `false`."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "ec2"
+    ]
   },
   {
     "id": 36,
@@ -437,8 +672,21 @@ export const questionsData: Question[] = [
       "Amazon API Gateway; AWS Lambda.",
       "Amazon S3; Amazon CloudFront."
     ],
-    "correct_answers": [1, 3],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "elasticache",
+      "s3",
+      "sqs",
+      "sns",
+      "ec2",
+      "cloudfront"
+    ]
   },
   {
     "id": 37,
@@ -449,8 +697,15 @@ export const questionsData: Question[] = [
       "Amazon EBS.",
       "Amazon S3."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "ec2"
+    ]
   },
   {
     "id": 38,
@@ -461,8 +716,16 @@ export const questionsData: Question[] = [
       "Use a dedicated Amazon RDS instance for caching profile data. Use a write-through caching strategy.",
       "Create an ElastiCache cluster to cache the user profile data. Use a write-through caching strategy."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "rds",
+      "elasticache",
+      "ec2",
+      "sam"
+    ]
   },
   {
     "id": 39,
@@ -473,8 +736,15 @@ export const questionsData: Question[] = [
       "Deploy the website code in an AWS Elastic Beanstalk environment. Use Auto Scaling to scale the numbers of instance.",
       "Use Amazon S3 to host the website. Use Amazon CloudFornt to deliver the content at scale."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "ec2",
+      "beanstalk"
+    ]
   },
   {
     "id": 40,
@@ -485,8 +755,14 @@ export const questionsData: Question[] = [
       "Obtain the request identifier from the Lambda event object. Architect the application to write logs to the console.",
       "Obtain the request identifier from the Lambda context object. Architect the application to write logs to a file."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "cloudwatch"
+    ]
   },
   {
     "id": 41,
@@ -498,8 +774,16 @@ export const questionsData: Question[] = [
       "Include the `AssumeRole` API operation in the application code logic to obtain temporary credentials to access the PII table.",
       "Include the GetSessionToken API operation in the application code logic to obtain temporary credentials to access the PII table."
     ],
-    "correct_answers": [0, 3],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "dynamodb",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 42,
@@ -510,8 +794,17 @@ export const questionsData: Question[] = [
       "Limit Lambda to no more than five concurrent invocations Monitor from the Lambda console.",
       "Enable AWS X-Ray tracing for the function. View the traces from the X-Ray service."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "cloudwatch",
+      "x-ray",
+      "alb"
+    ]
   },
   {
     "id": 43,
@@ -522,8 +815,15 @@ export const questionsData: Question[] = [
       "Implement Amazon ElastiCache in front of Amazon RDS to buffer the write traffic.",
       "Use Amazon DynamoDB instead of Amazon RDS to buffer the read traffic."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "elasticache"
+    ]
   },
   {
     "id": 44,
@@ -534,8 +834,15 @@ export const questionsData: Question[] = [
       "Set up a FIFO queue using Amazon SQS. Group the changes in the queue. Update the table based on the grouped changes.",
       "Create a transaction table in an Amazon Aurora DB cluster to manage the transactions. Write a backend process to sync the Aurora DB table and the DynamoDB table."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "sqs"
+    ]
   },
   {
     "id": 45,
@@ -546,8 +853,19 @@ export const questionsData: Question[] = [
       "Use the CloudWatch `PutMetricData` API call to submit a custom metric to CloudWatch. Provide the required credentials to enable the API call.",
       "Use the CloudWatch `PutMetricData` API call to submit a custom metric to CloudWatch. Launch the EC2 instance with the required IAM role to enable the API call."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "sns",
+      "kinesis",
+      "iam",
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 46,
@@ -558,8 +876,16 @@ export const questionsData: Question[] = [
       "Use Amazon EBS and the Amazon SQS CLI.",
       "Use Amazon EFS and the Amazon SQS CLI."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "sqs",
+      "kinesis",
+      "ec2"
+    ]
   },
   {
     "id": 47,
@@ -570,8 +896,18 @@ export const questionsData: Question[] = [
       "Periodically log thread count data to Amazon S3. Use Amazon Kinesis to process the data into a graph.",
       "Periodically write the current thread count to a table using Amazon DynarnoDB and use Amazon CloudFront to create a graph."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "kinesis",
+      "cloudwatch",
+      "x-ray",
+      "ec2",
+      "cloudfront"
+    ]
   },
   {
     "id": 48,
@@ -583,8 +919,17 @@ export const questionsData: Question[] = [
       "Implement custom database connection pooling with the Lambda function.",
       "Implement local caching of Amazon RDS data so Lambda can re-use the cache."
     ],
-    "correct_answers": [0, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "dynamodb",
+      "rds"
+    ]
   },
   {
     "id": 49,
@@ -595,8 +940,14 @@ export const questionsData: Question[] = [
       "Use an Amazon CloudWatch API-error metric and use Amazon SES for notification.",
       "Publish a custom metric on Amazon CloudWatch and use Amazon SNS for notification."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sns",
+      "cloudwatch"
+    ]
   },
   {
     "id": 50,
@@ -607,8 +958,14 @@ export const questionsData: Question[] = [
       "Disable the stage transition to allow manual approval.",
       "Disable a stage just prior the deployment stage."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "step-functions",
+      "codepipeline"
+    ]
   },
   {
     "id": 51,
@@ -619,20 +976,35 @@ export const questionsData: Question[] = [
       "Implement Amazon ElastiCache Memcached.",
       "Migrate the database to Amazon Redshift."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "rds",
+      "elasticache",
+      "ec2"
+    ]
   },
   {
     "id": 52,
-    "question": "A company has written a Java AWS Lambda function to be triggered whenever a user uploads an image to an Amazon S3 bucket. The function translates the original image to several different formats and then copies the resulting images to another Amazon S3 bucket. The Developers find that no images are being copied to the second Amazon S3 bucket. They have tested the code on an Amazon EC2 instance with 1GB of RAM, and it takes an average of 500 seconds to complete. What is the MOST likely cause of the problem?",
+    "question": "A company has written a Java AWS Lambda function to be triggered whenever a user uploads an image to an Amazon S3 bucket. The function converts the original image to several different formats and then copies the resulting images to another Amazon S3 bucket. The Developers find that no images are being copied to the second Amazon S3 bucket. They have tested the code on an Amazon EC2 instance with 1GB of RAM, and it takes an average of 500 seconds to complete. What is the MOST likely cause of the problem?",
     "options": [
       "The Lambda function has insufficient memory and needs to be increased to 1 GB to match the Amazon EC2 instance.",
       "Files need to be copied to the same Amazon S3 bucket for processing, so the second bucket needs to be deleted.",
       "Lambda functions have a maximum execution limit of 15 minutes, therefore the function is not completing.",
       "There is a problem with the Java runtime for Lambda, and the function needs to be converted to node.js."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "ec2",
+      "sam"
+    ]
   },
   {
     "id": 53,
@@ -643,8 +1015,15 @@ export const questionsData: Question[] = [
       "Encrypt the data once it is at rest with a Lambda function.",
       "Enable server-side encryption in Kinesis Streams."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "kinesis"
+    ]
   },
   {
     "id": 54,
@@ -655,8 +1034,17 @@ export const questionsData: Question[] = [
       "AWS IAM.",
       "Amazon EC2."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "iam",
+      "cognito",
+      "ec2",
+      "sam"
+    ]
   },
   {
     "id": 55,
@@ -667,8 +1055,15 @@ export const questionsData: Question[] = [
       "Amazon CloudFront to leverage AWS Edge Locations.",
       "A Custom Amazon CloudWatch metric for concurrent users."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sns",
+      "cloudwatch",
+      "cloudfront"
+    ]
   },
   {
     "id": 56,
@@ -679,8 +1074,17 @@ export const questionsData: Question[] = [
       "Use syntax conforming to the Serverless Application Model in the AWS CloudFormation template to define the Lambda function resource.",
       "Create a bash script which uses AWS CLI to package and deploy the application."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "dynamodb",
+      "sam",
+      "cloudformation"
+    ]
   },
   {
     "id": 57,
@@ -691,8 +1095,15 @@ export const questionsData: Question[] = [
       "Stage data in SQS queues to inject metadata before accessing DynamoDB.",
       "Read records from DynamoDB and discard irrelevant data client-side."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "sqs"
+    ]
   },
   {
     "id": 58,
@@ -703,8 +1114,15 @@ export const questionsData: Question[] = [
       "Amazon Cognito with unauthenticated access enabled.",
       "IAM with SAML integration"
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "cognito",
+      "sam"
+    ]
   },
   {
     "id": 59,
@@ -715,8 +1133,15 @@ export const questionsData: Question[] = [
       "Use AWS Lambda zip to package the source file together with the CloudFormation template and deploy the resulting zip archive.",
       "Use AWS Serverless `create-package` to embed the source file directly into the existing CloudFormation template."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "cloudformation"
+    ]
   },
   {
     "id": 60,
@@ -727,8 +1152,13 @@ export const questionsData: Question[] = [
       "Break the function into multiple smaller Lambda functions.",
       "ZIP the `ZIP` file twice to compress it further."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda"
+    ]
   },
   {
     "id": 61,
@@ -739,8 +1169,16 @@ export const questionsData: Question[] = [
       "In the local filesystem.",
       "In an SQLite session table using `CDSQLITE_ENABLE_SESSION`."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "dynamodb",
+      "sqs"
+    ]
   },
   {
     "id": 62,
@@ -751,8 +1189,14 @@ export const questionsData: Question[] = [
       "Immediately retry the failed read requests.",
       "Use the DynamoDB `UpdateItem` API to increase the provisioned throughput capacity of the table."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "iam"
+    ]
   },
   {
     "id": 63,
@@ -763,8 +1207,13 @@ export const questionsData: Question[] = [
       "All at Once.",
       "Rolling with additional batch."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "beanstalk"
+    ]
   },
   {
     "id": 64,
@@ -775,8 +1224,13 @@ export const questionsData: Question[] = [
       "Better error handling.",
       "Creating a new instance per invocation."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda"
+    ]
   },
   {
     "id": 65,
@@ -787,8 +1241,16 @@ export const questionsData: Question[] = [
       "Amazon Elastic MapReduce.",
       "AWS Step Functions."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "step-functions",
+      "sqs",
+      "sns"
+    ]
   },
   {
     "id": 66,
@@ -799,8 +1261,15 @@ export const questionsData: Question[] = [
       "Create four distinct IAM roles, each containing the required permissions for the associated ECS service, then, create an IAM group and configure the ECS cluster to reference that group.",
       "Create four distinct IAM roles, each containing the required permissions for the associated ECS service, then configure each ECS task definition to referenсe the associated IAM role."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "ec2",
+      "ecs"
+    ]
   },
   {
     "id": 67,
@@ -811,8 +1280,17 @@ export const questionsData: Question[] = [
       "Use AWS Lambda to asynchronously call a Lambda function for each vendor, and join the results.",
       "Use Amazon CloudWatch Events to orchestrate the Lambda functions."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "step-functions",
+      "sqs",
+      "iam",
+      "cloudwatch"
+    ]
   },
   {
     "id": 68,
@@ -823,8 +1301,18 @@ export const questionsData: Question[] = [
       "For each item, add a new attribute of type `Date` that has a timestamp that is set to 48 hours after the blog post creation time. Create a Global Secondary Index (GSI) that uses the new attribute as a sort key. Create an AWS Lambda function that references the GSI and removes expired items by using the `BatchWriteItem` API operation. Schedule the function with an Amazon CloudWatch event every minute.",
       "For each item, add a new attribute of type `Number` that has a timestamp that is set to 48 hours after the blog post creation time. Configure the DynamoDB table with a TTL that references the new attribute."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "iam",
+      "cloudwatch",
+      "ec2",
+      "ecs"
+    ]
   },
   {
     "id": 69,
@@ -835,8 +1323,14 @@ export const questionsData: Question[] = [
       "Analyze the applications and remove the API call.",
       "Retry the call with exponential backoff."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "cloudwatch"
+    ]
   },
   {
     "id": 70,
@@ -847,8 +1341,16 @@ export const questionsData: Question[] = [
       "Amazon Kinesis Firehose.",
       "Amazon Kinesis Streams."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "sqs",
+      "sns",
+      "kinesis"
+    ]
   },
   {
     "id": 71,
@@ -859,8 +1361,15 @@ export const questionsData: Question[] = [
       "In an S3 bucket.",
       "In the same folder as the application configuration files."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "codedeploy",
+      "sam"
+    ]
   },
   {
     "id": 72,
@@ -871,8 +1380,16 @@ export const questionsData: Question[] = [
       "Amazon SQS.",
       "Amazon SNS."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "sqs",
+      "sns",
+      "kinesis"
+    ]
   },
   {
     "id": 73,
@@ -883,8 +1400,14 @@ export const questionsData: Question[] = [
       "Copy the external libraries to Amazon S3, and reference the external libraries to the S3 location.",
       "Install the external libraries in Lambda Layer to be available to all Lambda functions."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3"
+    ]
   },
   {
     "id": 74,
@@ -895,8 +1418,13 @@ export const questionsData: Question[] = [
       "Increase read capacity units during the scan operation.",
       "Change consistency to eventually consistent during the scan operation."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 75,
@@ -908,8 +1436,16 @@ export const questionsData: Question[] = [
       "Configure Amazon S3 lifecycle rules.",
       "Randomize Amazon S3 key name prefixes."
     ],
-    "correct_answers": [0, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "s3",
+      "iam",
+      "cloudfront"
+    ]
   },
   {
     "id": 76,
@@ -920,8 +1456,14 @@ export const questionsData: Question[] = [
       "Create a RESTful API with the API Gateway; pass the incoming XML to the SOAP interface through an Application Load Balancer.",
       "Create a RESTful API with the API Gateway; transform the incoming XML into a valid message for the SOAP interface using mapping templates."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "api-gateway",
+      "alb"
+    ]
   },
   {
     "id": 77,
@@ -932,8 +1474,16 @@ export const questionsData: Question[] = [
       "The client encryption of the objects is using a poor algorithm.",
       "KMS requires that an alias be used to create an independent display name that can be mapped to a CM."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "s3",
+      "kms"
+    ]
   },
   {
     "id": 78,
@@ -944,8 +1494,13 @@ export const questionsData: Question[] = [
       "Rolling with an additional batch.",
       "Immutable."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "beanstalk"
+    ]
   },
   {
     "id": 79,
@@ -956,8 +1511,15 @@ export const questionsData: Question[] = [
       "Lambda will receive each record in the exact order it was placed into the shard following a FIFO (first-in, first-out) method. There is no guarantee of order across shards.",
       "The Developer can select FIFO, (first-in, first-out), LIFO (last-in, last-out), random, or request specific record using the getRecords API."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "rds",
+      "kinesis"
+    ]
   },
   {
     "id": 80,
@@ -968,8 +1530,15 @@ export const questionsData: Question[] = [
       "Create an Amazon CloudWatch event rule to verify that all objects stored in the Amazon S3 bucket are encrypted.",
       "Configure an Amazon S3 bucket policy to prevent the upload of objects that contain the `x-amz-server­side-encryption` header."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "cloudwatch"
+    ]
   },
   {
     "id": 81,
@@ -980,8 +1549,13 @@ export const questionsData: Question[] = [
       "Configure each message with unique MessageGroupIds.",
       "Enable ContentBasedDeduplication on the SQS queue."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sqs"
+    ]
   },
   {
     "id": 82,
@@ -992,8 +1566,19 @@ export const questionsData: Question[] = [
       "AWS Directory Service.",
       "Amazon IAM."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "rds",
+      "s3",
+      "kms",
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 83,
@@ -1004,8 +1589,13 @@ export const questionsData: Question[] = [
       "Use environment variables for the Lambda functions.",
       "Use separate function for development and production."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda"
+    ]
   },
   {
     "id": 84,
@@ -1016,8 +1606,14 @@ export const questionsData: Question[] = [
       "Create a cross-account access role, and use `sts:AssumeRole` API to get short-lived credentials.",
       "Establish trust, and add an SSH key for the second account to the IAM user."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 85,
@@ -1028,8 +1624,15 @@ export const questionsData: Question[] = [
       "Install the X-Ray daemon and configure it to forward data to Amazon CloudWatch Events.",
       "Deploy the X-Ray SDK with the application and instrument the application code."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudwatch",
+      "x-ray",
+      "ec2"
+    ]
   },
   {
     "id": 86,
@@ -1040,8 +1643,16 @@ export const questionsData: Question[] = [
       "Modify the CloudWatch metric policies to allow the `PutMetricData` permission to instances from the Auto Scaling group.",
       "Create an IAM role with `PutMetricData` permission and modify the Auto Scaling launching configuration to launch instances using that role."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sns",
+      "iam",
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 87,
@@ -1052,8 +1663,14 @@ export const questionsData: Question[] = [
       "`comment`.",
       "`productID`."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds"
+    ]
   },
   {
     "id": 88,
@@ -1064,8 +1681,14 @@ export const questionsData: Question[] = [
       "Use IAM policy variables.",
       "Use IAM policy resource."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "iam"
+    ]
   },
   {
     "id": 89,
@@ -1076,8 +1699,15 @@ export const questionsData: Question[] = [
       "Client-side encryption.",
       "AWS IAM roles and policies."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "kms",
+      "iam"
+    ]
   },
   {
     "id": 90,
@@ -1089,8 +1719,18 @@ export const questionsData: Question[] = [
       "Perform a get action using the `--dry-run` argument.",
       "Validate the IAM role policy with the IAM policy simulator."
     ],
-    "correct_answers": [3, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      3,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "kinesis",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 91,
@@ -1101,8 +1741,15 @@ export const questionsData: Question[] = [
       "Store the source code on GitHub. Create a CodePipeline to automate unit testing. Use Amazon CloudWatch to trigger notifications of failure events.",
       "Store the source code in AWS CodeCommit. Create a CodePipeline to automate unit testing. Use Amazon CloudWatch to trigger notification of failure events."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sns",
+      "cloudwatch",
+      "codepipeline"
+    ]
   },
   {
     "id": 92,
@@ -1113,8 +1760,13 @@ export const questionsData: Question[] = [
       "Use the `ChangeMessageVisibility` API to decrease the timeout value, then use the `DeleteMessage` API to delete the message.",
       "Use the `DeleteMessageVisibility` API to cancel the `VisibilityTimeout`, then use the `DeleteMessage` API to delete the message."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sqs"
+    ]
   },
   {
     "id": 93,
@@ -1125,8 +1777,16 @@ export const questionsData: Question[] = [
       "AWS Directory Service.",
       "AWS IAM with MFA enabled."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "sns",
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 94,
@@ -1137,8 +1797,13 @@ export const questionsData: Question[] = [
       "Eventually consistent reads of 15 read capacity units reading items that are 1 KB in size.",
       "Strongly consistent reads of 15 read capacity units reading items that are 1 KB in size."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 95,
@@ -1149,8 +1814,15 @@ export const questionsData: Question[] = [
       "Logging into the same bucket caused exponential log growth.",
       "An S3 lifecycle policy has moved the entire CSS file to S3 Infrequent Access."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "cloudwatch",
+      "sam"
+    ]
   },
   {
     "id": 96,
@@ -1161,8 +1833,15 @@ export const questionsData: Question[] = [
       "Configure AWS access `key/secret` access key environment variables with new credentials.",
       "Configure the credentials file with a new access `key/secret` access key."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "iam",
+      "ecs"
+    ]
   },
   {
     "id": 97,
@@ -1173,8 +1852,16 @@ export const questionsData: Question[] = [
       "Check the build logs of the failed phase in the last build attempt in the AWS CodeBuild project build history.",
       "Manually re-run the build process on a local machine so that the output can be visualized."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudwatch",
+      "x-ray",
+      "ec2",
+      "codebuild"
+    ]
   },
   {
     "id": 98,
@@ -1185,8 +1872,13 @@ export const questionsData: Question[] = [
       "Before Install -> Application Stop -> Validate Service -> Application Start.",
       "Application Stop -> Before Install -> Validate Service -> Application Start."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "codedeploy"
+    ]
   },
   {
     "id": 99,
@@ -1197,8 +1889,14 @@ export const questionsData: Question[] = [
       "Use an open source decoding library to decode the message.",
       "Use the AWS IAM `decode-authorization-message` API to decode this message."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "kms",
+      "iam"
+    ]
   },
   {
     "id": 100,
@@ -1209,8 +1907,19 @@ export const questionsData: Question[] = [
       "Use the Amazon DynamoDB client-side encryption library to save the secrets in DynamoDB and to programmatically access the secrets from EC2 instances.",
       "Use AWS SSM Parameter Store to store the secrets and to programmatically access them by using the IAM role from EC2 instances."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "s3",
+      "kms",
+      "iam",
+      "ec2",
+      "codedeploy"
+    ]
   },
   {
     "id": 101,
@@ -1221,8 +1930,17 @@ export const questionsData: Question[] = [
       "Check AWS X-Ray for Amazon S3 `DeleteBucket` alarms.",
       "Check AWS CloudTrail for a `DeleteBucket` event."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "iam",
+      "cloudwatch",
+      "x-ray",
+      "codedeploy"
+    ]
   },
   {
     "id": 102,
@@ -1233,8 +1951,13 @@ export const questionsData: Question[] = [
       "Specify the Developer's IAM user name and password as parameters for each CLI command.",
       "Use the Developer's IAM role when making the CLI command."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam"
+    ]
   },
   {
     "id": 103,
@@ -1245,8 +1968,15 @@ export const questionsData: Question[] = [
       "Lambda will process multiple images in a single execution.",
       "Lambda will add more compute to each execution to reduce processing time."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "iam"
+    ]
   },
   {
     "id": 104,
@@ -1257,8 +1987,15 @@ export const questionsData: Question[] = [
       "Add retries with exponential back-off for DynamoDB queries.",
       "Use DynamoDB Accelerator to cache trading data."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "s3",
+      "iam"
+    ]
   },
   {
     "id": 105,
@@ -1269,8 +2006,14 @@ export const questionsData: Question[] = [
       "The execution role for the Lambda function is missing permissions to write log data to the CloudWatch Logs.",
       "The Lambda function is missing a target CloudWatch Log group."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "cloudwatch"
+    ]
   },
   {
     "id": 106,
@@ -1282,8 +2025,16 @@ export const questionsData: Question[] = [
       "The instance role does not have `xray:BatchGetTraces` and `xray:GetTraceGraph` permissions.The instance role does not have `xray:PutTraceSegments` and `xray:PutTelemetryRecords` permissions.",
       "The instance role does not have `xray:PutTraceSegments` and `xray:PutTelemetryRecords` permissions."
     ],
-    "correct_answers": [1, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "rds",
+      "x-ray",
+      "ec2"
+    ]
   },
   {
     "id": 107,
@@ -1294,8 +2045,15 @@ export const questionsData: Question[] = [
       "Implement developer-authenticated identities by using Amazon Cognito, and get credentials for these identities.",
       "Assign IAM users and roles to the users. Use the unique IAM resource ID as the unique identifier."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 108,
@@ -1306,8 +2064,13 @@ export const questionsData: Question[] = [
       "Use AWS CloudFormation package then CloudFormation deploy.",
       "Use AWS CloudFormation create-stack then CloudFormation update-stack."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudformation"
+    ]
   },
   {
     "id": 109,
@@ -1318,8 +2081,16 @@ export const questionsData: Question[] = [
       "The AWS CLI is corrupt and needs to be reinstalled.",
       "The AWS credential provider looks for instance profile credentials last."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "iam",
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 110,
@@ -1330,8 +2101,14 @@ export const questionsData: Question[] = [
       "All S3 PUTS are eventually consistent, so the application may read the old object.",
       "The application needs to explicitly specify latest version when retrieving the object."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "sam"
+    ]
   },
   {
     "id": 111,
@@ -1342,20 +2119,33 @@ export const questionsData: Question[] = [
       "Use the `KMS GenerateDataKey` API to get a data key. Encrypt the data with the data key. Store the encrypted data key and data.",
       "Upload the data to an S3 bucket using server side-encryption with an AWS KMS key."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "kms"
+    ]
   },
   {
     "id": 112,
-    "question": "a developer is testing an application that invokes an AWS Lambda function asynchronously. During the testing phase, the Lambda function fails to process after two retries. How can the developer troubleshoot the failure?",
+    "question": "A developer is testing an application that invokes an AWS Lambda function asynchronously. During the testing phase, the Lambda function fails to process after two retries. How can the developer troubleshoot the failure?",
     "options": [
       "Configure AWS CloudTrail logging to investigate the invocation failures.",
       "Configure Dead Letter Queues by sending events to Amazon SQS for investigatio.",
       "Configure Amazon Simple Workflow Service to process any direct unprocessed events.",
       "Configure AWS Config to process any direct unprocessed events."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "step-functions",
+      "sqs"
+    ]
   },
   {
     "id": 113,
@@ -1366,8 +2156,17 @@ export const questionsData: Question[] = [
       "Enable Amazon CloudWatch metrics for the API Gateway stage. Set up CloudWatch alarms based off the Count metric and the ApiName, Method, Resource, and Stage dimensions to alerts when request rates pass the threshold. Set the alarm action to `Deny`. If a registered user chooses a larger package, create a user-specific alarm and adjust the values.",
       "Set up a default usage plan, specify values for the rate and burst capacity, and associate it with a stage. If a registered user chooses a larger package, create a custom plan with the appropriate values and associate the plan with the user."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "dynamodb",
+      "iam",
+      "cloudwatch"
+    ]
   },
   {
     "id": 114,
@@ -1378,8 +2177,18 @@ export const questionsData: Question[] = [
       "Use Amazon SNS to trigger the Lambda functions.",
       "Use an AWS Step Functions state machine to orchestrate the Lambda functions."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "step-functions",
+      "sqs",
+      "sns",
+      "sam"
+    ]
   },
   {
     "id": 115,
@@ -1391,8 +2200,17 @@ export const questionsData: Question[] = [
       "Amazon DynamoDB with reads and writes made using `Transact*` operations.",
       "Amazon Redshift with operations made within a transaction block."
     ],
-    "correct_answers": [2, 3],
-    "multiple_correct": true
+    "correct_answers": [
+      2,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "elasticache",
+      "ec2"
+    ]
   },
   {
     "id": 116,
@@ -1403,8 +2221,15 @@ export const questionsData: Question[] = [
       "Use an AWS SDK to instantiate a CodeCommit client. Invoke the `put_file` method to add the file to the repository.",
       "Upload the new to an Amazon S3 bucket. Create an AWS Step Function to accept S3 events. In the Step Function, add the new file to the repository."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "sam"
+    ]
   },
   {
     "id": 117,
@@ -1415,8 +2240,14 @@ export const questionsData: Question[] = [
       "Instance profile credentials.",
       "Command line options."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 118,
@@ -1428,8 +2259,16 @@ export const questionsData: Question[] = [
       "Create a new IAM user for each user and grant read access.",
       "Use the AWS IAM service and let the application assume the different roles using the AWS Security Token Service (AWS STS) `AssumeRole` action depending on the type of user and provide read access to Amazon S3 using the assumed role."
     ],
-    "correct_answers": [2, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      2,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "s3",
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 119,
@@ -1440,8 +2279,17 @@ export const questionsData: Question[] = [
       "Use an Amazon Cognito identity pool, federate with the SAML provider, and use an IAM condition key with a value for the `cognito-identity.amazonaws.com:sub` variable to grant access to the employees.",
       "Create a unique IAM role for each employee and have each employee assume the role to access the application so they can access their personal data only."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "rds",
+      "s3",
+      "iam",
+      "cognito",
+      "sam"
+    ]
   },
   {
     "id": 120,
@@ -1452,8 +2300,15 @@ export const questionsData: Question[] = [
       "Bundle the serverless application using a SAM package.",
       "Create the application environment using the `eb create my-env` command."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "x-ray",
+      "sam"
+    ]
   },
   {
     "id": 121,
@@ -1464,8 +2319,14 @@ export const questionsData: Question[] = [
       "Use client-side encryption with customer master keys.",
       "Use server-side encryption with customer-provided keys."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "kms"
+    ]
   },
   {
     "id": 122,
@@ -1476,8 +2337,18 @@ export const questionsData: Question[] = [
       "When the user uploads a picture, invoke an API hosted in Amazon API Gateway. The API will invoke an AWS Lambda function to scan and parse the picture.",
       "Create a state machine in AWS Step Functions to check the upload folder in the S3 bucket. If a new picture is detected, invoke an AWS Lambda function to scan and parse it."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "step-functions",
+      "s3",
+      "sqs",
+      "sns"
+    ]
   },
   {
     "id": 123,
@@ -1488,8 +2359,14 @@ export const questionsData: Question[] = [
       "Create one task definition. Specify both containers in the definition. Mount a shared volume between those two containers.",
       "Create a single pod specification. Include both containers in the specification. Mount a persistent volume to both containers."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudwatch",
+      "ecs"
+    ]
   },
   {
     "id": 124,
@@ -1500,8 +2377,16 @@ export const questionsData: Question[] = [
       "Create a cron job on the EC2 instance that executes the `–describe-instance-information` command on the host instance every 15 minutes and sends the results to an Amazon SNS topic.",
       "Create an AWS Lambda function that queries the AWS CloudTrail logs for the CPUUtilization metric every 15 minutes and sends a notification to an Amazon SNS topic when the CPU utilization exceeds 80%."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "sns",
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 125,
@@ -1512,8 +2397,16 @@ export const questionsData: Question[] = [
       "Store the credentials in an encrypted text file in an Amazon S3 bucket. Configure the EC2 instance's user data to download the credentials from Amazon S3 as the instance boots.",
       "Store the user name and password credentials directly in the source code. No further action is needed because the source code is stored in a private repository."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "rds",
+      "s3",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 126,
@@ -1524,8 +2417,13 @@ export const questionsData: Question[] = [
       "Deploy the new version in a new Elastic Beanstalk environment and swap environment URLs.",
       "Perform an Elastic Beanstalk Rolling deployment."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "beanstalk"
+    ]
   },
   {
     "id": 127,
@@ -1536,8 +2434,14 @@ export const questionsData: Question[] = [
       "Use server-side encryption with AWS KMS managed keys (SSE-KMS) and download the documents using HTTPS.",
       "Modify the S3 bucket policy to only allow specific users to download the documents. Revert the change after 15 minutes."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "kms"
+    ]
   },
   {
     "id": 128,
@@ -1548,8 +2452,14 @@ export const questionsData: Question[] = [
       "Use `Error Equals` in a `Retry` statement to include the error with the original input.",
       "Use `OutputPath` in a `Retry` statement and set the value to `$`."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "step-functions",
+      "cloudwatch"
+    ]
   },
   {
     "id": 129,
@@ -1560,8 +2470,14 @@ export const questionsData: Question[] = [
       "Increase the overall network bandwidth to handle higher API request rates.",
       "Upgrade to the latest AWS CLI version so that boto3 can handle higher request rates."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 130,
@@ -1572,8 +2488,14 @@ export const questionsData: Question[] = [
       "Create a custom AWS CloudFormation resource that gets the bucket name from the `ContentBucket` resource of the first stack.",
       "Use `Fn::Include` to include the existing template in other templates and use the `ContentBucket` resource directly."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "cloudformation"
+    ]
   },
   {
     "id": 131,
@@ -1584,8 +2506,14 @@ export const questionsData: Question[] = [
       "BeforeInstall.",
       "ValidateService."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "ec2",
+      "codedeploy"
+    ]
   },
   {
     "id": 132,
@@ -1596,8 +2524,13 @@ export const questionsData: Question[] = [
       "Amazon DynamoDB global tables.",
       "Amazon DynamoDB transactions."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 133,
@@ -1609,8 +2542,17 @@ export const questionsData: Question[] = [
       "Create a `ZIP` package locally and call `aws serverlessrepo create-application` to create the application.",
       "Create a `ZIP` package and upload it to Amazon S3. Call `aws cloudformation create-stack` to create the application."
     ],
-    "correct_answers": [0, 1],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      1
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "lambda",
+      "s3",
+      "sam",
+      "cloudformation"
+    ]
   },
   {
     "id": 134,
@@ -1622,8 +2564,16 @@ export const questionsData: Question[] = [
       "Use AWS IAM to create IAM users.",
       "Enable multi-factor authentication for the users created in AWS IAM."
     ],
-    "correct_answers": [0, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "sns",
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 135,
@@ -1631,11 +2581,20 @@ export const questionsData: Question[] = [
     "options": [
       "Set `ECS_ENABLE_TASK_IAM_ROLE` to `false` on EC2 instance boot in ECS agent configuration file. Run the first microservice with an IAM role for ECS tasks with read-only access for the Aurora database. Run the second microservice with an IAM role for ECS tasks with read-only access to DynamoDB.",
       "Set `ECS_ENABLE_TASK_IAM_ROLE` to `false` on EC2 instance boot in the ECS agent configuration file. Grant the instance profile role read-only access to the Aurora database and DynamoDB.",
-      "Set `ECS_ENABLE_TASK_IAM_ROLE` to `true` on EC2 instance boot in the ECS agent configuration file. Run the first microservice with an IAM role for ECS tasks with read-only access for the Aurora database. Run the second microservice with an IAM role for ECS tasks with read-only access to DynamoDB.",
+      "Set `ECS_ENABLE_TASK_IAM_ROLE` to `true` on EC2 instance boot in the ECS agent configuration file. Run the first microservice with an IAM role for ECS tasks with read-only access for the Aurora database. Run the secondmicroservice with an IAM role for ECS tasks with read-only access to DynamoDB.",
       "Set `ECS_ENABLE_TASK_IAM_ROLE` to `true` on EC2 instance boot in the ECS agent configuration file. Grant the instance profile role read-only access to the Aurora database and DynamoDB."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "iam",
+      "ec2",
+      "ecs"
+    ]
   },
   {
     "id": 136,
@@ -1646,8 +2605,16 @@ export const questionsData: Question[] = [
       "Use the AWS X-Ray API to write trace data into X-Ray from strategic places within the code. Use the X-Ray console to analyze the resulting data.",
       "Use the Amazon CloudWatch API to write timestamps to a custom CloudWatch metric. Use the AWS X-Ray console to analyze the resulting data."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "cloudwatch",
+      "x-ray"
+    ]
   },
   {
     "id": 137,
@@ -1658,8 +2625,17 @@ export const questionsData: Question[] = [
       "Configure push delivery via Amazon SNS instead of polling the Amazon SQS queue.",
       "Use an Amazon SQS first-in, first-out (FIFO) queue instead of a standard queue."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sqs",
+      "sns",
+      "iam",
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 138,
@@ -1670,8 +2646,18 @@ export const questionsData: Question[] = [
       "Enable Amazon CloudWatch Logs for the Lambda function. Enable execution logs for API Gateway to view and analyze user request logs.",
       "Enable VPC Flow Logs to capture and analyze network traffic within the VPC."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "dynamodb",
+      "iam",
+      "cloudwatch",
+      "x-ray"
+    ]
   },
   {
     "id": 139,
@@ -1682,20 +2668,33 @@ export const questionsData: Question[] = [
       "The EC2 instance will be able to perform all actions on any S3 bucket.",
       "The EC2 instance will not be able to perform any S3 action on any S3 bucket."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 140,
-    "question": "A developer is using AWS Elastic Beanstalk for application deployment. The team has configured the application version lifecycle policy to limit the number of application versions to 25. However, even with the lifecycle policy, the source bundle is deleted from the Amazon S3 source bucket. What should a developer do in the Elastic Beanstalk application version lifecycle settings to retain the source code in the S3 bucket?",
+    "question": "A development team uses AWS Elastic Beanstalk for application deployment. The team has configured the application version lifecycle policy to limit the number of application versions to 25. However, even with the lifecycle policy, the source bundle is deleted from the Amazon S3 source bucket. What should a developer do in the Elastic Beanstalk application version lifecycle settings to retain the source code in the S3 bucket?",
     "options": [
       "Change the Set the application versions limit by total count setting to zero.",
       "Disable the Lifecycle policy setting.",
       "Change the Set the application version limit by age setting to zero.",
       "Set Retention to Retain source bundle in S3."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "beanstalk"
+    ]
   },
   {
     "id": 141,
@@ -1706,8 +2705,14 @@ export const questionsData: Question[] = [
       "The DynamoDB table was provisioned with insufficient read capacity.",
       "The DynamoDB table was provisioned with insufficient write capacity."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "elasticache"
+    ]
   },
   {
     "id": 142,
@@ -1718,8 +2723,13 @@ export const questionsData: Question[] = [
       "Use AWS Certificate Manager to provision public and private SSL/TLS certificates.",
       "Generate encryption keys using AWS CloudHSM, then export the key for use with AWS CodeCommit."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "kms"
+    ]
   },
   {
     "id": 143,
@@ -1730,8 +2740,17 @@ export const questionsData: Question[] = [
       "Use an IAM execution role to give the Lambda function permissions and enable tracing.",
       "Update and add AWS X-Ray daemon code to relevant parts of the Lambda function to set up the trace."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "iam",
+      "cloudwatch",
+      "x-ray"
+    ]
   },
   {
     "id": 144,
@@ -1742,8 +2761,16 @@ export const questionsData: Question[] = [
       "Create an IAM permission policy attached to the role that allows access to Amazon EC2. Add a trust policy to the role that allows DynamoDB to assume the role. Attach a permissions policy to the development group in AWS IAM that allows developers to use the iam:PassRole permission for the role.",
       "Create an IAM permissions policy attached to the role that allows access to DynamoDB. Add a trust policy to the role that allows Amazon EC2 to assume the role. Attach a permissions policy to the development group in AWS IAM that allows developers to use the iam:GetRole permission for the role."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "iam",
+      "ec2",
+      "sam"
+    ]
   },
   {
     "id": 145,
@@ -1754,8 +2781,13 @@ export const questionsData: Question[] = [
       "In the Lambda code, invoke a Linux command to install the missing modules under the `/usr/lib directory`.",
       "In the Lambda console, create a `LB_LIBRARY_PATH` environment and specify the value for the system library plan."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda"
+    ]
   },
   {
     "id": 146,
@@ -1766,8 +2798,17 @@ export const questionsData: Question[] = [
       "Hardcore the credentials, use Amazon S3 to host the web application, and enable server-side encryption.",
       "Use Amazon Cognito user pool JSON Web Tokens (JWITs) to access the DynamoDB APIs."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "s3",
+      "iam",
+      "cognito",
+      "ec2"
+    ]
   },
   {
     "id": 147,
@@ -1778,8 +2819,15 @@ export const questionsData: Question[] = [
       "Use AWS Elastic Beanstalk and AWS CodeCommit to deploy and manage the infrastructure.",
       "Use AWS CloudFormation and AWS CodeCommit to deploy and manage the infrastructure."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudwatch",
+      "beanstalk",
+      "cloudformation"
+    ]
   },
   {
     "id": 148,
@@ -1790,8 +2838,13 @@ export const questionsData: Question[] = [
       "Define an array that includes the environment variables under the entryPoint parameter within the task definition.",
       "Define an array that includes the environment variables under the entryPoint parameter within the service definition."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "ecs"
+    ]
   },
   {
     "id": 149,
@@ -1802,8 +2855,17 @@ export const questionsData: Question[] = [
       "Execute an AWS Lambda function in response to the S3 object creation events that creates an Amazon DynamoDB record for every object with the `Customer ID` as the partition key and `TS-Server` as the sort key. Retrieve all the records using the `Customer ID` and `TS-Server` attributes.",
       "Execute an AWS Lambda function in response to the S3 object creation events that creates an Amazon Redshift record for every object with the `Customer ID` as the partition key and the `Server ID` as the sort key. Retrieve all the records using the `Customer ID` and `Server ID` attributes."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "rds",
+      "s3",
+      "ec2"
+    ]
   },
   {
     "id": 150,
@@ -1814,8 +2876,13 @@ export const questionsData: Question[] = [
       "Create DynamoDB global tables to speed up query responses. Use a scan to fetch data from the table.",
       "Create an AWS Auto Scaling policy for the DynamoDB table."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 151,
@@ -1826,8 +2893,16 @@ export const questionsData: Question[] = [
       "Deploy the application as an AWS Lambda function and invoke it with an Amazon CloudWatch scheduled event.",
       "Deploy the application onto an Amazon EC2 instance and have it poll the S3 bucket for new objects."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 152,
@@ -1838,8 +2913,14 @@ export const questionsData: Question[] = [
       "Cross-origin resource sharing (CORS).",
       "Usage plans."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "api-gateway",
+      "s3"
+    ]
   },
   {
     "id": 153,
@@ -1850,8 +2931,16 @@ export const questionsData: Question[] = [
       "Use Amazon API Gateway to translate API calls from MongoDB to Amazon DynamoDB.",
       "Replicate the existing MongoDB workload to Amazon DynamoDB."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "api-gateway",
+      "dynamodb",
+      "ec2",
+      "sam"
+    ]
   },
   {
     "id": 154,
@@ -1862,8 +2951,16 @@ export const questionsData: Question[] = [
       "Report errors through logging statements in Lambda function code.",
       "Set up an Amazon SNS topic that sends logging statements upon failure."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "sqs",
+      "sns",
+      "cloudwatch"
+    ]
   },
   {
     "id": 155,
@@ -1874,8 +2971,16 @@ export const questionsData: Question[] = [
       "Set Consistency to strong when calling `UpdateTable`.",
       "Use the `GetShardIterator` command."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "kinesis",
+      "ec2"
+    ]
   },
   {
     "id": 156,
@@ -1886,8 +2991,17 @@ export const questionsData: Question[] = [
       "Amazon Kinesis Data Streams with AWS Lambda.",
       "Amazon EC2 bash script with AWS Lambda."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "rds",
+      "kinesis",
+      "ec2"
+    ]
   },
   {
     "id": 157,
@@ -1898,8 +3012,16 @@ export const questionsData: Question[] = [
       "Deploy Memcached on Amazon EC2 and cache the data for the application.",
       "Deploy Amazon DynamoDB Accelerator (DAX) on Amazon RDS to improve cache performance."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "elasticache",
+      "ec2"
+    ]
   },
   {
     "id": 158,
@@ -1910,8 +3032,13 @@ export const questionsData: Question[] = [
       "Use on-demand scaling.",
       "Read `300`; write `400`."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 159,
@@ -1922,8 +3049,15 @@ export const questionsData: Question[] = [
       "Enable session stickiness in the existing Network Load Balancer and manage the session data in the container.",
       "Use an Amazon S3 bucket as data store and save the session data in the bucket."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "elasticache",
+      "s3",
+      "ecs"
+    ]
   },
   {
     "id": 160,
@@ -1934,8 +3068,14 @@ export const questionsData: Question[] = [
       "Migrate to an Amazon Elasticsearch Service cluster.",
       "Vertically scale the ElastiCache instance."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "rds",
+      "elasticache"
+    ]
   },
   {
     "id": 161,
@@ -1946,8 +3086,15 @@ export const questionsData: Question[] = [
       "Amazon GuardDuty.",
       "Amazon Macie."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "cloudwatch",
+      "x-ray"
+    ]
   },
   {
     "id": 162,
@@ -1958,8 +3105,17 @@ export const questionsData: Question[] = [
       "Install the AWS CodeDeploy agent on an Amazon EC2 instance to run unit tests.",
       "Create a testing branch in AWS CodeCommit to run unit tests."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "ec2",
+      "codebuild",
+      "codepipeline",
+      "codedeploy"
+    ]
   },
   {
     "id": 163,
@@ -1970,8 +3126,16 @@ export const questionsData: Question[] = [
       "Amazon RDS (with a MySQL engine).",
       "Amazon ElastiCache."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "elasticache",
+      "s3"
+    ]
   },
   {
     "id": 164,
@@ -1982,8 +3146,14 @@ export const questionsData: Question[] = [
       "Create a new user pool, enable access to authenticated identifies, and grant access to AWS resources.",
       "Create a new user pool, disable authentication access, and grant access to AWS resources."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "cognito"
+    ]
   },
   {
     "id": 165,
@@ -1994,8 +3164,14 @@ export const questionsData: Question[] = [
       "AWS CodeCommit.",
       "AWS Cloud9."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "codebuild"
+    ]
   },
   {
     "id": 166,
@@ -2006,8 +3182,13 @@ export const questionsData: Question[] = [
       "Call the `ReceiveMessage` API to set `MaxNumberOfMessages` to a value greater than the default of `1`.",
       "Call the `SetQueueAttributes` API for the queue and set `MaxNumberOfMessages` to a value greater than the default of `1`."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sqs"
+    ]
   },
   {
     "id": 167,
@@ -2018,8 +3199,15 @@ export const questionsData: Question[] = [
       "The permissions to invoke the Lambda function are missing.",
       "Cross-zone is not enabled on the ALB."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "iam",
+      "alb"
+    ]
   },
   {
     "id": 168,
@@ -2030,8 +3218,15 @@ export const questionsData: Question[] = [
       "Enable API rate limiting in Amazon Cognito for each user.",
       "Enable default throttling limits for each stage after deploying the APIs."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "api-gateway",
+      "dynamodb",
+      "cognito"
+    ]
   },
   {
     "id": 169,
@@ -2042,8 +3237,14 @@ export const questionsData: Question[] = [
       "Use the `DependsOn` attribute to specify that the application instance depends on the VPC in the application template.",
       "Use the `Fn::GetAtt` function to include the attribute of the VPC in the application template."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "cloudformation"
+    ]
   },
   {
     "id": 170,
@@ -2054,8 +3255,16 @@ export const questionsData: Question[] = [
       "Amazon Cognito user pools.",
       "Amazon Lambda@Edge."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "cognito",
+      "sam"
+    ]
   },
   {
     "id": 171,
@@ -2066,8 +3275,15 @@ export const questionsData: Question[] = [
       "The Developer must use a unified CloudWatch agent to publish custom metrics.",
       "The code is not running on an Amazon EC2 instance."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sns",
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 172,
@@ -2078,8 +3294,16 @@ export const questionsData: Question[] = [
       "Publish each generated value as a custom metric to Amazon CloudWatch using available AWS SDKs.",
       "Store each value as a variable and add the variable to the list of EC2 metrics that should be reported to the Amazon CloudWatch console."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "sns",
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 173,
@@ -2090,8 +3314,15 @@ export const questionsData: Question[] = [
       "Add an approval step to CodeCommit. Commits will not be saved until approved.",
       "Add an approval action to the pipeline. Configure the approval action to publish to an Amazon SNS topic when approval is required. The pipeline execution will stop and wait for an approval."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "sns",
+      "codepipeline"
+    ]
   },
   {
     "id": 174,
@@ -2103,8 +3334,15 @@ export const questionsData: Question[] = [
       "An exposed GET method in the Lambda function.",
       "An exposed GET method in Amazon Route 53."
     ],
-    "correct_answers": [1, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "lambda",
+      "api-gateway"
+    ]
   },
   {
     "id": 175,
@@ -2115,8 +3353,16 @@ export const questionsData: Question[] = [
       "Store the connection string in AWS KMS.",
       "Store the connection string as a Lambda layer."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "rds",
+      "kms",
+      "iam"
+    ]
   },
   {
     "id": 176,
@@ -2127,8 +3373,15 @@ export const questionsData: Question[] = [
       "Enable AWS CloudTrail logging for the S3 bucket-level action and create a lifecycle policy to expire the data in 90 days.",
       "Enable S3 server access logging and create a lifecycle policy to move the data to Amazon S3 Glacier in 90 days."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 177,
@@ -2139,8 +3392,14 @@ export const questionsData: Question[] = [
       "SSE with AWS Secrets Manager.",
       "SSE with customer-provided encryption keys."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "kms"
+    ]
   },
   {
     "id": 178,
@@ -2151,8 +3410,15 @@ export const questionsData: Question[] = [
       "Use instance storage and share it between instances launched from the same Amazon Machine Image (AMI).",
       "Use Amazon EBS and file synchronization software to achieve eventual consistency among the Auto Scaling group."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "ec2",
+      "sam"
+    ]
   },
   {
     "id": 179,
@@ -2163,8 +3429,17 @@ export const questionsData: Question[] = [
       "Add the `Access-Control-Request-Method` header to the request.",
       "Add the `Access-Control-Request-Headers` header to the request."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "s3",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 180,
@@ -2175,8 +3450,14 @@ export const questionsData: Question[] = [
       "Implement client-side encryption using an AWS KMS managed customer master key (CMK).",
       "Implement client-side encryption using Amazon S3 managed keys."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "kms"
+    ]
   },
   {
     "id": 181,
@@ -2188,8 +3469,16 @@ export const questionsData: Question[] = [
       "Specify a shard iterator using the `ShardIterator` parameter.",
       "Implement exponential backoff on the `GetRecords` call and the `PutRecords` call."
     ],
-    "correct_answers": [2, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      2,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "kinesis"
+    ]
   },
   {
     "id": 182,
@@ -2200,8 +3489,15 @@ export const questionsData: Question[] = [
       "Use the KMS console and associate the CMK with the log group.",
       "Use the AWS CLI `associate-kms-key` command and specify the key Amazon Resource Name (ARN)"
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "kms",
+      "sns",
+      "cloudwatch"
+    ]
   },
   {
     "id": 183,
@@ -2212,8 +3508,15 @@ export const questionsData: Question[] = [
       "Run all code with only AWS account root user access keys to ensure maximum access to services.",
       "Use an IAM role with Administrator access applied to the EC2 instance."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 184,
@@ -2224,8 +3527,15 @@ export const questionsData: Question[] = [
       "Turn on sticky sessions in the Application Load Balancer.",
       "Use multicast to replicate session information."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "elasticache",
+      "ec2",
+      "alb"
+    ]
   },
   {
     "id": 185,
@@ -2236,8 +3546,17 @@ export const questionsData: Question[] = [
       "Create a Lambda function that will poll the S3 bucket and then insert the records into DynamoDB.",
       "Create a cron job that will run at a scheduled time and insert the records into DynamoDB."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "rds",
+      "s3",
+      "cloudwatch"
+    ]
   },
   {
     "id": 186,
@@ -2248,8 +3567,18 @@ export const questionsData: Question[] = [
       "A new deployment of the last known version of the application is deployed with a new deployment ID.",
       "AWS CodePipeline promotes the most recent deployment with a SUCCEEDED status to production."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "rds",
+      "s3",
+      "ec2",
+      "codepipeline",
+      "codedeploy"
+    ]
   },
   {
     "id": 187,
@@ -2260,8 +3589,16 @@ export const questionsData: Question[] = [
       "Edit the bucket policy of the assets bucket to open access to all principals.",
       "Change the code bucket to use AWS Lambda functions instead of static website hosting."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 188,
@@ -2272,8 +3609,15 @@ export const questionsData: Question[] = [
       "Create an Amazon CloudWatch alarm that monitors status changes in Code Pipeline and triggers the Lambda function.",
       "Create an Amazon CloudWatch Events rule that uses CodePipeline as an event source."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "cloudwatch",
+      "codepipeline"
+    ]
   },
   {
     "id": 189,
@@ -2284,8 +3628,16 @@ export const questionsData: Question[] = [
       "1. Build the SAM template locally. 2. Deploy the SAM template from Amazon S3. 3. Package the SAM template for use.",
       "1. Build the SAM template locally. 2. Package the SAM template from AWS CodeCommit. 3. Deploy the SAM template to CodeCommit."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "ec2",
+      "sam"
+    ]
   },
   {
     "id": 190,
@@ -2296,8 +3648,15 @@ export const questionsData: Question[] = [
       "Create an EC2 service role with read-only permissions for the S3 bucket. Attach the role to the EC2 instance.",
       "Create an S3 service role with read-only permissions for the S3 bucket. Attach the role to the EC2 instance."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 191,
@@ -2309,8 +3668,16 @@ export const questionsData: Question[] = [
       "Store the source code in an Amazon S3 bucket. Configure AWS CodePipeline to start every 15 minutes.",
       "Store the source code in an Amazon EC2 instance's ephemeral storage. Configure the instance to start AWS CodePipeline whenever there are changes to the source code."
     ],
-    "correct_answers": [0, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "s3",
+      "ec2",
+      "codepipeline"
+    ]
   },
   {
     "id": 192,
@@ -2321,8 +3688,17 @@ export const questionsData: Question[] = [
       "Create a support ticket to increase the Lambda timeout to 60 minutes to allow for increased processing time.",
       "Change the application to directly insert the body of the message into an Amazon RDS database."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "rds",
+      "sqs",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 193,
@@ -2333,8 +3709,13 @@ export const questionsData: Question[] = [
       "Allocate the maximum available CPU units to the function.",
       "Increase the available memory to the function."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda"
+    ]
   },
   {
     "id": 194,
@@ -2345,8 +3726,20 @@ export const questionsData: Question[] = [
       "Roll back the Lambda function to the previous version.",
       "Deploy the latest Lambda function in a different Region."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "dynamodb",
+      "rds",
+      "s3",
+      "ec2",
+      "codedeploy",
+      "cloudformation"
+    ]
   },
   {
     "id": 195,
@@ -2358,8 +3751,18 @@ export const questionsData: Question[] = [
       "Amazon EBS.",
       "Amazon SQS."
     ],
-    "correct_answers": [0, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "dynamodb",
+      "elasticache",
+      "sqs",
+      "cognito",
+      "ec2"
+    ]
   },
   {
     "id": 196,
@@ -2370,8 +3773,16 @@ export const questionsData: Question[] = [
       "Upload log files from the on-premises server to Amazon S3 and have CloudWatch read the files.",
       "Upload log files from the on-premises server to an Amazon EC2 instance and have the instance forward the logs to CloudWatch."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "iam",
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 197,
@@ -2382,8 +3793,16 @@ export const questionsData: Question[] = [
       "Create an Amazon Cognito user pool, configure the Cognito Authorizer in API Gateway, and use the identity or access token.",
       "Create an IAM user for each API user, attach an invoke permissions policy to the API, and use an IAM authorizer in API Gateway."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 198,
@@ -2395,8 +3814,14 @@ export const questionsData: Question[] = [
       "Increase the timeout setting for the Lambda function.",
       "Change the Lambda invocation mode from synchronous to asynchronous."
     ],
-    "correct_answers": [1, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "lambda"
+    ]
   },
   {
     "id": 199,
@@ -2407,8 +3832,15 @@ export const questionsData: Question[] = [
       "VPC Flow Logs.",
       "AWS CloudTrail logs."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudwatch",
+      "ec2",
+      "sam"
+    ]
   },
   {
     "id": 200,
@@ -2419,8 +3851,15 @@ export const questionsData: Question[] = [
       "Update the policy of the IAM user to allow the `kms:GenerateDataKey` action.",
       "Update the ACL of the S3 bucket to allow the IAM user to upload objects."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "kms",
+      "iam"
+    ]
   },
   {
     "id": 201,
@@ -2431,8 +3870,14 @@ export const questionsData: Question[] = [
       "Create a login page in Amazon API Gateway with the logo and save the link in Amazon Cognito.",
       "Upload the logo to the Amazon Cognito app settings and point to the logo on a custom login page."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "api-gateway",
+      "cognito"
+    ]
   },
   {
     "id": 202,
@@ -2443,8 +3888,16 @@ export const questionsData: Question[] = [
       "`dynamodb:GetRecords dynamodb:PutItem dynamodb:UpdateTable`.",
       "`dynamodb:UpdateItem dynamodb:GetItem dynamodb:PutItem`."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "rds",
+      "iam"
+    ]
   },
   {
     "id": 203,
@@ -2455,8 +3908,14 @@ export const questionsData: Question[] = [
       "Server-side encryption with customer-provided keys (SSE-C).",
       "Server-side encryption with self-managed keys."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "kms"
+    ]
   },
   {
     "id": 204,
@@ -2468,8 +3927,17 @@ export const questionsData: Question[] = [
       "Create an Amazon CloudFront distribution to cache the static content.",
       "Store the application's static content in Amazon S3."
     ],
-    "correct_answers": [3, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      3,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "lambda",
+      "s3",
+      "ec2",
+      "cloudfront"
+    ]
   },
   {
     "id": 205,
@@ -2480,8 +3948,15 @@ export const questionsData: Question[] = [
       "Encode a picture using base64. Save the base64 string in an Amazon DB table. Allow the browser to retrieve the string and convert it to a picture.",
       "Save the picture's S3 key in an Amazon DynamoDB table. Use a function to generate a presigned URL every time an employee logs in. Return the URL to the browser."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "s3",
+      "cloudwatch"
+    ]
   },
   {
     "id": 206,
@@ -2492,8 +3967,13 @@ export const questionsData: Question[] = [
       "Deploy the function using Lambda layers.",
       "Deploy the function with its memory allocation set to the maximum amount."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda"
+    ]
   },
   {
     "id": 207,
@@ -2504,8 +3984,16 @@ export const questionsData: Question[] = [
       "Create a new EC2 instance with an IAM role that allows access to the new RDS database.",
       "Create an AWS Lambda function that will route traffic, from the EC2 instance to the RDS database."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "rds",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 208,
@@ -2516,8 +4004,16 @@ export const questionsData: Question[] = [
       "Service scheduler.",
       "Step scaling policy."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sqs",
+      "iam",
+      "cloudwatch",
+      "ecs"
+    ]
   },
   {
     "id": 209,
@@ -2528,8 +4024,14 @@ export const questionsData: Question[] = [
       "Amazon Cognito user pools.",
       "AWS Directory Service."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 210,
@@ -2540,8 +4042,17 @@ export const questionsData: Question[] = [
       "Modify the integration requests to require the credentials, then grant API Gateway access to the authentication table.",
       "Implement an Amazon Cognito authorizer that references the DynamoDB authentication table."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "dynamodb",
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 211,
@@ -2552,8 +4063,14 @@ export const questionsData: Question[] = [
       "GetSessionToken.",
       "DecodeAutherizationMessage."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 212,
@@ -2565,8 +4082,16 @@ export const questionsData: Question[] = [
       "Import a customer master key (CMK) with a larger key size.",
       "Use more than one customer master key (CMK) to encrypt S3 data."
     ],
-    "correct_answers": [0, 1],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      1
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "s3",
+      "kms",
+      "ec2"
+    ]
   },
   {
     "id": 213,
@@ -2577,8 +4102,18 @@ export const questionsData: Question[] = [
       "Publish the processed data to an Amazon SNS topic.",
       "Push the processed data to Amazon SQS."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "sqs",
+      "sns",
+      "kinesis",
+      "cloudwatch"
+    ]
   },
   {
     "id": 214,
@@ -2589,8 +4124,14 @@ export const questionsData: Question[] = [
       "Use AWS KMS with automatic key rotation.",
       "Export a key from AWS KMS to encrypt the data."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "kms"
+    ]
   },
   {
     "id": 215,
@@ -2601,8 +4142,14 @@ export const questionsData: Question[] = [
       "Create an API Gateway resource policy to isolate versions and provide context to the Lambda function(s).",
       "Deploy the API versions as unique stages with unique endpoints and use stage variables to provide further context."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway"
+    ]
   },
   {
     "id": 216,
@@ -2613,8 +4160,13 @@ export const questionsData: Question[] = [
       "Make an `GenerateDataKey` API call that returns a plaintext key and an encrypted copy of a data key. Use a plaintext key to encrypt the data.",
       "Make an `GenerateDataKeyWithoutPlaintext` API call that returns an encrypted copy of a data key. Use an encrypted key to encrypt the data."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "kms"
+    ]
   },
   {
     "id": 217,
@@ -2625,8 +4177,14 @@ export const questionsData: Question[] = [
       "A set of Git credentials generated from IAM.",
       "An Amazon EC2 IAM role with CodeCommit permissions."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 218,
@@ -2637,8 +4195,13 @@ export const questionsData: Question[] = [
       "`GetMultipleItems`.",
       "`GetItemRange`."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 219,
@@ -2649,8 +4212,11 @@ export const questionsData: Question[] = [
       "Disabling the `Source/Destination Check` attribute on the NAT instance.",
       "Attaching an Elastic IP address to the instance in the private subnet."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": []
   },
   {
     "id": 220,
@@ -2661,8 +4227,13 @@ export const questionsData: Question[] = [
       "`US-STANDARD` imposes a 1 second delay before new objects are readable.",
       "ou exceeded the bucket object limit, and once this limit is raised the object will be visible."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3"
+    ]
   },
   {
     "id": 221,
@@ -2674,8 +4245,14 @@ export const questionsData: Question[] = [
       "500 per account.",
       "100 per IAM user."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "iam"
+    ]
   },
   {
     "id": 222,
@@ -2688,12 +4265,20 @@ export const questionsData: Question[] = [
       "Create an IAM Role that allows write access to the DynamoDB table.",
       "Launch an EC2 Instance with the IAM User included in the launch configuration."
     ],
-    "correct_answers": [3, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      3,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "dynamodb",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 223,
-    "question": "Which of the following are valid statements with policy evaluation logic in AWS Identity and Access Management? (Choose TWO)",
+    "question": "Which of the following are correct statements with policy evaluation logic in AWS Identity and Access Management? (Choose TWO)",
     "options": [
       "By default, all requests are denied.",
       "An explicit allow overrides an explicit deny.",
@@ -2701,8 +4286,14 @@ export const questionsData: Question[] = [
       "An explicit deny does not override an explicit allow.",
       "By default, all request are allowed."
     ],
-    "correct_answers": [0, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "iam"
+    ]
   },
   {
     "id": 224,
@@ -2713,8 +4304,15 @@ export const questionsData: Question[] = [
       "Configure a publically routable IP Address In the host OS of the fourth instance.",
       "Assign an Elastic IP address to the fourth instance."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "ec2",
+      "sam"
+    ]
   },
   {
     "id": 225,
@@ -2726,8 +4324,13 @@ export const questionsData: Question[] = [
       "forever.",
       "30 seconds."
     ],
-    "correct_answers": [4],
-    "multiple_correct": false
+    "correct_answers": [
+      4
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sqs"
+    ]
   },
   {
     "id": 226,
@@ -2738,8 +4341,13 @@ export const questionsData: Question[] = [
       "An XML object containing Messageld, DuplicateFlag, Message and other values.",
       "An JSON object containing Messageld, unsubscribeURL, Subject, Message and other values."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sns"
+    ]
   },
   {
     "id": 227,
@@ -2750,8 +4358,13 @@ export const questionsData: Question[] = [
       "`x-amz-security-token`.",
       "`x-amz-server-side-encryption`."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3"
+    ]
   },
   {
     "id": 228,
@@ -2763,8 +4376,15 @@ export const questionsData: Question[] = [
       "Oracle JBoss.",
       "Jetty."
     ],
-    "correct_answers": [0, 1],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      1
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "ec2",
+      "beanstalk"
+    ]
   },
   {
     "id": 229,
@@ -2775,8 +4395,13 @@ export const questionsData: Question[] = [
       "`\"Fn::Join\":[ \"\".[\"http://\", {\"Ref : \"ElasticLoadBalancerUrl\"}]]`.",
       "`\"Fn::Join\":[ \"\".[\"http://\", {\"Ref : \"ElasticLoadBalancer\",\"DNSName\"}]]`."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudformation"
+    ]
   },
   {
     "id": 230,
@@ -2788,8 +4413,17 @@ export const questionsData: Question[] = [
       "Set an S3 ACL on the bucket or the object.",
       "Create a CloudFront distribution for the bucket."
     ],
-    "correct_answers": [1, 3],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "s3",
+      "iam",
+      "cognito",
+      "cloudfront"
+    ]
   },
   {
     "id": 231,
@@ -2800,8 +4434,13 @@ export const questionsData: Question[] = [
       "The stack creation continues, and the final results indicate which steps failed.",
       "CloudFormation templates are parsed in advance so stack creation is guaranteed to succeed."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudformation"
+    ]
   },
   {
     "id": 232,
@@ -2814,8 +4453,15 @@ export const questionsData: Question[] = [
       "Message.",
       "Language."
     ],
-    "correct_answers": [0, 1, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      1,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "sns"
+    ]
   },
   {
     "id": 233,
@@ -2826,8 +4472,14 @@ export const questionsData: Question[] = [
       "Query the local instance userdata.",
       "Query the local instance metadata."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 234,
@@ -2838,8 +4490,14 @@ export const questionsData: Question[] = [
       "Only be used to launch EC2 instances in the same AWS region as the AMI is stored.",
       "Only be used to launch EC2 instances in the same AWS availability zone as the AMI is stored."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "ec2",
+      "sam"
+    ]
   },
   {
     "id": 235,
@@ -2851,8 +4509,13 @@ export const questionsData: Question[] = [
       "`GetAMIs`.",
       "You cannot retrieve a list of AMIs as there are over 10,000 AMIs."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "ec2"
+    ]
   },
   {
     "id": 236,
@@ -2865,8 +4528,17 @@ export const questionsData: Question[] = [
       "Controlling physical access to compute resources.",
       "Patch management on the EC2 instance's operating system."
     ],
-    "correct_answers": [0, 2, 3, 5],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 237,
@@ -2877,8 +4549,13 @@ export const questionsData: Question[] = [
       "Define a range index on the table.",
       "Prewarm the table by updating all items."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 238,
@@ -2890,8 +4567,15 @@ export const questionsData: Question[] = [
       "Encrypt the volume using the S3 server-side encryption service.",
       "Create an IAM policy that restricts read and write access to the volume."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 239,
@@ -2903,8 +4587,11 @@ export const questionsData: Question[] = [
       "`eu-west-1`.",
       "`us-central-1`."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": []
   },
   {
     "id": 240,
@@ -2917,8 +4604,18 @@ export const questionsData: Question[] = [
       "SWF uses deciders and workers to complete tasks.",
       "SWF requires at least 1 EC2 instance per domain."
     ],
-    "correct_answers": [0, 2, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      2,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "step-functions",
+      "s3",
+      "sns",
+      "ec2"
+    ]
   },
   {
     "id": 241,
@@ -2930,8 +4627,17 @@ export const questionsData: Question[] = [
       "Configure ELB and Auto Scaling to distribute across `us-west-2a` and `us-west-2c`.",
       "Configure ELB session stickiness to use the app-specific session cookie."
     ],
-    "correct_answers": [1, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "dynamodb",
+      "iam",
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 242,
@@ -2943,8 +4649,15 @@ export const questionsData: Question[] = [
       "DynamoDB.",
       "Named Pipes."
     ],
-    "correct_answers": [0, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "dynamodb",
+      "sns"
+    ]
   },
   {
     "id": 243,
@@ -2955,8 +4668,14 @@ export const questionsData: Question[] = [
       "Add an image data type to the `Product` table to store the images in binary format.",
       "Store the images in Amazon S3 and add an S3 URL pointer to the `Product` table item for each image."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "s3"
+    ]
   },
   {
     "id": 244,
@@ -2968,8 +4687,14 @@ export const questionsData: Question[] = [
       "The number of local secondary indexes per account.",
       "The number of provisioned throughput units per account."
     ],
-    "correct_answers": [2, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      2,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 245,
@@ -2980,8 +4705,13 @@ export const questionsData: Question[] = [
       "Retrieve the message with increased `DelaySeconds`, process the message, delete the message from the queue.",
       "Retrieve the message with increased `DelaySeconds`, delete the message from the queue, process the message."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sqs"
+    ]
   },
   {
     "id": 246,
@@ -2992,8 +4722,15 @@ export const questionsData: Question[] = [
       "Add a bucket policy that requires Multi-Factor Authentication for requests to access the S3 bucket objects.",
       "Enable server side encryption on the S3 bucket for data protection against the non-paying website visitors."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 247,
@@ -3004,8 +4741,14 @@ export const questionsData: Question[] = [
       "Device ID, where one is by far more popular than all the others.",
       "Game Type, where there are three possible game types."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "sam"
+    ]
   },
   {
     "id": 248,
@@ -3016,8 +4759,13 @@ export const questionsData: Question[] = [
       "Configure a hash index on the name attribute and no range index.",
       "Configure a hash index on the office identifier attribute and no range index."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 249,
@@ -3028,8 +4776,13 @@ export const questionsData: Question[] = [
       "Auto scaling requires using Amazon EBS-backed instances.",
       "Instance-store backed instances can be stopped and restarted."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "ec2"
+    ]
   },
   {
     "id": 250,
@@ -3042,8 +4795,15 @@ export const questionsData: Question[] = [
       "CloudFormation.",
       "Simple Workflow Service."
     ],
-    "correct_answers": [2, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      2,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "step-functions",
+      "cloudformation"
+    ]
   },
   {
     "id": 251,
@@ -3055,8 +4815,11 @@ export const questionsData: Question[] = [
       "Contact support to increase your object size limit.",
       "Upload to a different region."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": []
   },
   {
     "id": 252,
@@ -3069,20 +4832,36 @@ export const questionsData: Question[] = [
       "Elastic IP addresses.",
       "SQS Queues."
     ],
-    "correct_answers": [0, 2, 3],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      2,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "rds",
+      "sqs",
+      "beanstalk"
+    ]
   },
   {
     "id": 253,
-    "question": "Games-R-Us is launching a new game app for mobile devices. Users will log into the game using their existing Facebook account and the game will record player data and scoring information directly to a DynamoDB table. What is the most secure approach for signing requests to the DynamoDB table API?",
+    "question": "Games-R-Us is launching a new game app for mobile devices. Users will log into the game using their existing Facebook account and the game will record player data and scoring information directly to a DynamoDB table. What is the most secure approach for signing requests to the DynamoDB API?",
     "options": [
       "Create an IAM user with access credentials that are distributed with the mobile app to sign the requests.",
       "Distribute the AWS root account access credentials with the mobile app to sign the requests.",
       "Request temporary security credentials using web identity federation to sign the requests.",
       "Establish cross account access between the mobile app and the DynamoDB table to sign the requests"
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 254,
@@ -3094,8 +4873,12 @@ export const questionsData: Question[] = [
       "Java.",
       "SQL."
     ],
-    "correct_answers": [1, 3],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": []
   },
   {
     "id": 255,
@@ -3107,8 +4890,14 @@ export const questionsData: Question[] = [
       "600 write capacity units.",
       "3600 write capacity units."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "sam"
+    ]
   },
   {
     "id": 256,
@@ -3119,8 +4908,13 @@ export const questionsData: Question[] = [
       "306 HTTP response code.",
       "4xx HTTP response code."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 257,
@@ -3131,8 +4925,14 @@ export const questionsData: Question[] = [
       "Set the imaging queue `MessageRetentionPeriod` attribute to 20 seconds.",
       "Set the `DelaySeconds` parameter of a message to 20 seconds."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sqs",
+      "iam"
+    ]
   },
   {
     "id": 258,
@@ -3143,8 +4943,14 @@ export const questionsData: Question[] = [
       "`myawsbucket.amazonaws.com`.",
       "`myawsbucket.tokyo.amazonaws.com`."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "ec2"
+    ]
   },
   {
     "id": 259,
@@ -3155,8 +4961,13 @@ export const questionsData: Question[] = [
       "Delete the table and create a new table per hour.",
       "Create a new table per hour."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 260,
@@ -3168,8 +4979,14 @@ export const questionsData: Question[] = [
       "Use ElastiCache to save session state.",
       "Use Glacier to save session slate."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "elasticache",
+      "ec2"
+    ]
   },
   {
     "id": 261,
@@ -3180,8 +4997,15 @@ export const questionsData: Question[] = [
       "Use CloudFront distributions for static content.",
       "Block the IPs of the offending websites in Security Groups."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "ec2",
+      "cloudfront"
+    ]
   },
   {
     "id": 262,
@@ -3193,8 +5017,14 @@ export const questionsData: Question[] = [
       "DynamoDB restricts item access during reads.",
       "DynamoDB restricts item access during writes."
     ],
-    "correct_answers": [1, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 263,
@@ -3205,8 +5035,13 @@ export const questionsData: Question[] = [
       "Implement a token vending service to handle the registration.",
       "Call the `CreatePlatformEndPoint` API function to register multiple device tokens."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sns"
+    ]
   },
   {
     "id": 264,
@@ -3218,8 +5053,14 @@ export const questionsData: Question[] = [
       "You're exceeding your capacity on a particular `Sort Key`.",
       "You haven't configured DynamoDB Auto Scaling triggers."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "cloudwatch"
+    ]
   },
   {
     "id": 265,
@@ -3231,8 +5072,14 @@ export const questionsData: Question[] = [
       "`HH-DD-MM-YYYY-log_instanceID`.",
       "`YYYY-MM-DD-HH-logInstanceID`."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "ec2"
+    ]
   },
   {
     "id": 266,
@@ -3243,8 +5090,13 @@ export const questionsData: Question[] = [
       "Messages will be delivered one or more times and messages will be delivered in First in, First out order.",
       "Messages will be delivered one or more times and message delivery order is indeterminate."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sqs"
+    ]
   },
   {
     "id": 267,
@@ -3256,8 +5108,15 @@ export const questionsData: Question[] = [
       "Develop an identity broker which authenticates against LDAP, and then calls IAM Security Token Service to get IAM federated user credentials. The application calls the identity broker to get IAM federated user credentials with access to the appropriate S3 bucket.",
       "Develop an identity broker which authenticates against IAM Security Token Service to assume an IAM Role to get temporary AWS security credentials. The application calls the identity broker to get AWS temporary security credentials with access to the appropriate S3 bucket."
     ],
-    "correct_answers": [1, 3],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "s3",
+      "iam"
+    ]
   },
   {
     "id": 268,
@@ -3269,8 +5128,15 @@ export const questionsData: Question[] = [
       "Move the `index.html` page to a welcome subfolder.",
       "Set the Error Document property to welcome.html."
     ],
-    "correct_answers": [0, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "s3",
+      "ec2"
+    ]
   },
   {
     "id": 269,
@@ -3281,8 +5147,13 @@ export const questionsData: Question[] = [
       "Blowfish.",
       "RC5."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3"
+    ]
   },
   {
     "id": 270,
@@ -3293,8 +5164,14 @@ export const questionsData: Question[] = [
       "Configure the necessary X-Ray environment variables.",
       "Install required plugins for the appropriate AWS SDK."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "x-ray"
+    ]
   },
   {
     "id": 271,
@@ -3305,8 +5182,15 @@ export const questionsData: Question[] = [
       "1. Clone the existing environment, changing the associated load balancer type. 2. Deploy the same application version as used in the original environment. 3. Run the `swap-environment-cnames` action.",
       "1. Edit the environment definitions in the existing deployment. 2. Change the associated load balancer type according to the requirements. 3. Rebuild the environment with the new load balancer type."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "beanstalk",
+      "alb",
+      "sam"
+    ]
   },
   {
     "id": 272,
@@ -3317,8 +5201,14 @@ export const questionsData: Question[] = [
       "AWS Code Build.",
       "AWS CodeCommit."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "codepipeline"
+    ]
   },
   {
     "id": 273,
@@ -3329,8 +5219,17 @@ export const questionsData: Question[] = [
       "AWS Elastic Beanstalk.",
       "AWS CodeDeploy."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "ec2",
+      "beanstalk",
+      "codebuild",
+      "codepipeline",
+      "codedeploy"
+    ]
   },
   {
     "id": 274,
@@ -3341,8 +5240,15 @@ export const questionsData: Question[] = [
       "Implement error handling within the application code.",
       "Contact AWS Support to increase the concurrent execution limits."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "iam"
+    ]
   },
   {
     "id": 275,
@@ -3353,8 +5259,17 @@ export const questionsData: Question[] = [
       "Create an Amazon ElastiCache Memcached cluster, then implement session handling at the application level to leverage the cluster for session data storage.",
       "Create an Amazon DynamoDB table, then implement session handling at the application level to leverage the table for session data storage."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "elasticache",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 276,
@@ -3365,8 +5280,14 @@ export const questionsData: Question[] = [
       "Amazon DynamoDB Streams is not enabled on the table.",
       "A large write operation is being performed against another table."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "cloudwatch"
+    ]
   },
   {
     "id": 277,
@@ -3377,8 +5298,14 @@ export const questionsData: Question[] = [
       "Atomic writes.",
       "Batch writes."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "ec2"
+    ]
   },
   {
     "id": 278,
@@ -3389,8 +5316,15 @@ export const questionsData: Question[] = [
       "Map an Amazon SNS topic to the DynamoDB streams.",
       "Increase the maximum execution time (timeout) setting of the Lambda function."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "sns"
+    ]
   },
   {
     "id": 279,
@@ -3401,8 +5335,15 @@ export const questionsData: Question[] = [
       "Create a standard-resolution custom Amazon CloudWatch metric for user activity data, then publish data every 30 seconds.",
       "Create a standard-resolution custom Amazon CloudWatch metric for user activity data, then publish data every 5 seconds."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sns",
+      "cloudwatch",
+      "ecs"
+    ]
   },
   {
     "id": 280,
@@ -3413,8 +5354,18 @@ export const questionsData: Question[] = [
       "Use AWS Data Pipeline to automate the movement and transformation of data.",
       "Use Amazon Kinesis Data Streams with Kinesis Client Library to ingest and deliver messages."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "s3",
+      "sqs",
+      "kinesis",
+      "ec2"
+    ]
   },
   {
     "id": 281,
@@ -3425,8 +5376,13 @@ export const questionsData: Question[] = [
       "`\"codecommit:Update*\"`.",
       "`\"codecommit:*\"`."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam"
+    ]
   },
   {
     "id": 282,
@@ -3438,8 +5394,15 @@ export const questionsData: Question[] = [
       "AWS KMS.",
       "Amazon GuardDuty."
     ],
-    "correct_answers": [1, 3],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "lambda",
+      "kms"
+    ]
   },
   {
     "id": 283,
@@ -3450,8 +5413,14 @@ export const questionsData: Question[] = [
       "`appspec.yml`.",
       "`ebextensions.config`."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "codebuild",
+      "codedeploy"
+    ]
   },
   {
     "id": 284,
@@ -3462,8 +5431,13 @@ export const questionsData: Question[] = [
       "Invoke the `GenerateDataKey` API to retrieve the encrypted version of the data encryption key to encrypt the data.",
       "Invoke the `GenerateDataKey` API to retrieve the plaintext version of the data encryption key to encrypt the data."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "kms"
+    ]
   },
   {
     "id": 285,
@@ -3475,8 +5449,17 @@ export const questionsData: Question[] = [
       "Latency.",
       "Count."
     ],
-    "correct_answers": [1, 3],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "iam",
+      "cloudwatch"
+    ]
   },
   {
     "id": 286,
@@ -3487,8 +5470,16 @@ export const questionsData: Question[] = [
       "Use Amazon CloudFront with AWS Lambda@Edge.",
       "Use Amazon API Gateway and AWS Lambda to control access to an S3 bucket."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "s3",
+      "cloudfront"
+    ]
   },
   {
     "id": 287,
@@ -3499,8 +5490,16 @@ export const questionsData: Question[] = [
       "Pass API calls through Amazon API Gateway.",
       "Send the items to DynamoDB through Amazon Kinesis Data Firehose."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "api-gateway",
+      "dynamodb",
+      "sqs",
+      "kinesis"
+    ]
   },
   {
     "id": 288,
@@ -3511,8 +5510,15 @@ export const questionsData: Question[] = [
       "Store the session state in Amazon S3.",
       "Enable session stickiness using elastic load balancers."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "elasticache",
+      "s3",
+      "cloudfront"
+    ]
   },
   {
     "id": 289,
@@ -3523,8 +5529,17 @@ export const questionsData: Question[] = [
       "An AWS serverless application model.",
       "A CloudFormation serverless plugin."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "dynamodb",
+      "sam",
+      "cloudformation"
+    ]
   },
   {
     "id": 290,
@@ -3536,8 +5551,15 @@ export const questionsData: Question[] = [
       "Store session state data in an Amazon DynamoDB table.",
       "Use an ELB with an Auto Scaling group."
     ],
-    "correct_answers": [3, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      3,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "dynamodb",
+      "cloudfront"
+    ]
   },
   {
     "id": 291,
@@ -3548,8 +5570,16 @@ export const questionsData: Question[] = [
       "Use AWS X-Ray, then examine the segments and errors.",
       "Run Amazon Inspector agents and then analyze performance."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "cloudwatch",
+      "x-ray",
+      "ec2"
+    ]
   },
   {
     "id": 292,
@@ -3560,8 +5590,15 @@ export const questionsData: Question[] = [
       "The log group for CloudWatch Logs should be first streamed to Amazon Elasticsearch Service before metric filtering returns the results.",
       "Metric data points for logs groups can be filtered only after they are exported to an Amazon S3 bucket."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "sns",
+      "cloudwatch"
+    ]
   },
   {
     "id": 293,
@@ -3572,8 +5609,14 @@ export const questionsData: Question[] = [
       "`Transform`.",
       "`Properties`."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sam",
+      "cloudformation"
+    ]
   },
   {
     "id": 294,
@@ -3584,8 +5627,16 @@ export const questionsData: Question[] = [
       "Amazon ElastiCache.",
       "Amazon RDS read replica."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "rds",
+      "elasticache",
+      "sqs",
+      "iam"
+    ]
   },
   {
     "id": 295,
@@ -3596,8 +5647,17 @@ export const questionsData: Question[] = [
       "Configure the second Lambda function's concurrency execution limit.",
       "Reduce the throttling limits in the API Gateway /MyAPI endpoint"
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "dynamodb",
+      "kinesis",
+      "iam"
+    ]
   },
   {
     "id": 296,
@@ -3608,8 +5668,14 @@ export const questionsData: Question[] = [
       "The web server's primary disk.",
       "An Amazon EC2 instance dedicated to session data."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "elasticache",
+      "ec2"
+    ]
   },
   {
     "id": 297,
@@ -3620,8 +5686,13 @@ export const questionsData: Question[] = [
       "Change the configuration section from `options_settings` to resources.",
       "Change the namespace of the option settings to a custom namespace."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "beanstalk"
+    ]
   },
   {
     "id": 298,
@@ -3632,8 +5703,13 @@ export const questionsData: Question[] = [
       "Specify a larger compute capacity when calling the Lambda function.",
       "Increase the allocated memory for the Lambda function."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda"
+    ]
   },
   {
     "id": 299,
@@ -3645,8 +5721,20 @@ export const questionsData: Question[] = [
       "Call the database asynchronously so the code can continue executing.",
       "Batch login requests from hundreds of users together as a single read request to the database."
     ],
-    "correct_answers": [1, 3],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "lambda",
+      "step-functions",
+      "rds",
+      "elasticache",
+      "iam",
+      "ec2",
+      "alb"
+    ]
   },
   {
     "id": 300,
@@ -3657,8 +5745,13 @@ export const questionsData: Question[] = [
       "Use Cognito Sync.",
       "Use Cognito events."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cognito"
+    ]
   },
   {
     "id": 301,
@@ -3669,8 +5762,13 @@ export const questionsData: Question[] = [
       "The `importApiKeys` method must be called to import all newly created API keys into the current stage of the API.",
       "The `createUsagePlanKey` method must be called to associate the newly created API key with the correct usage plan."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "api-gateway"
+    ]
   },
   {
     "id": 302,
@@ -3681,8 +5779,16 @@ export const questionsData: Question[] = [
       "Use AWS IAM Access/Secret keys in the application code to allow `Get*` on the S3 bucket.",
       "Use AWS STS `AssumeRole` in the application code and assume a role with `Get*` permissions on the S3 bucket."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "iam",
+      "cognito",
+      "sam"
+    ]
   },
   {
     "id": 303,
@@ -3693,8 +5799,14 @@ export const questionsData: Question[] = [
       "Launch a new EC2 instance, configure Amazon CloudWatch Events, and then install the application.",
       "Install the Amazon CloudWatch Logs agent on the EC2 instance that the application is running on."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 304,
@@ -3705,8 +5817,14 @@ export const questionsData: Question[] = [
       "Write a recursive function that scans and calls out `DeleteItem`.",
       "Create and then delete the table after the task has completed."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds"
+    ]
   },
   {
     "id": 305,
@@ -3717,8 +5835,17 @@ export const questionsData: Question[] = [
       "There was an S3 outage, which caused duplicate entries of the sale log file.",
       "The application stopped intermittently and then resumed."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "cloudwatch",
+      "codedeploy",
+      "sam"
+    ]
   },
   {
     "id": 306,
@@ -3729,8 +5856,16 @@ export const questionsData: Question[] = [
       "Amazon SQS.",
       "Amazon API Gateway."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "sqs",
+      "x-ray"
+    ]
   },
   {
     "id": 307,
@@ -3741,8 +5876,19 @@ export const questionsData: Question[] = [
       "Amazon ECS and Redis.",
       "AWS Lambda and Amazon API Gateway."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "elasticache",
+      "s3",
+      "ec2",
+      "ecs",
+      "cloudfront"
+    ]
   },
   {
     "id": 308,
@@ -3753,8 +5899,14 @@ export const questionsData: Question[] = [
       "Create a custom event with a unique metric name for each application.",
       "Create a custom alarm with a unique metric name for each application."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 309,
@@ -3765,8 +5917,16 @@ export const questionsData: Question[] = [
       "Amazon Cognito user pools and AWS KMS.",
       "Amazon Cognito user pools and identity pools."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "rds",
+      "kms",
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 310,
@@ -3777,8 +5937,14 @@ export const questionsData: Question[] = [
       "Use AWS Data Pipeline to create multiple data pipeline provisions to deploy the application.",
       "Use AWS CodeDeploy to create multiple deployment groups."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "codebuild",
+      "codedeploy"
+    ]
   },
   {
     "id": 311,
@@ -3789,8 +5955,14 @@ export const questionsData: Question[] = [
       "Add a random number suffix to the partition key values.",
       "Add a global secondary index to the DynamoDB table."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "iam"
+    ]
   },
   {
     "id": 312,
@@ -3801,8 +5973,16 @@ export const questionsData: Question[] = [
       "Amazon ElastiCache.",
       "Amazon Kinesis."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "rds",
+      "elasticache",
+      "s3",
+      "kinesis"
+    ]
   },
   {
     "id": 313,
@@ -3813,8 +5993,14 @@ export const questionsData: Question[] = [
       "A Dockerfile in an application package.",
       "A CLI for Elastic Beanstalk."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "ecs",
+      "beanstalk"
+    ]
   },
   {
     "id": 314,
@@ -3825,8 +6011,15 @@ export const questionsData: Question[] = [
       "Use AWS `root` user to make requests to the application.",
       "Store and retrieve credentials from AWS CodeCommit."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "kms",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 315,
@@ -3837,8 +6030,18 @@ export const questionsData: Question[] = [
       "Push callback data to Amazon Kinesis Data Streams and invoke an AWS Lambda function that stores data in Amazon DynamoDB and sends the required alerts.",
       "Push callback data to Amazon CloudWatch as a custom metric and use the CloudWatch alerting mechanisms to alert System Administrators."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "rds",
+      "kinesis",
+      "cloudwatch",
+      "x-ray"
+    ]
   },
   {
     "id": 316,
@@ -3849,8 +6052,14 @@ export const questionsData: Question[] = [
       "Snapshots.",
       "Immutable."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "ec2",
+      "beanstalk"
+    ]
   },
   {
     "id": 317,
@@ -3861,8 +6070,17 @@ export const questionsData: Question[] = [
       "Use local storage and memory on Amazon EC2 instances to cache data.",
       "Use Amazon ElastiCache in front of the primary database to cache data."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "rds",
+      "elasticache",
+      "s3",
+      "ec2",
+      "cloudfront"
+    ]
   },
   {
     "id": 318,
@@ -3873,8 +6091,13 @@ export const questionsData: Question[] = [
       "Read: 6 read capacity. `unitsWrite`: 10 write capacity units.",
       "Read: 3 read capacity. `unitsWrite`: 10 write capacity units."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 319,
@@ -3885,8 +6108,15 @@ export const questionsData: Question[] = [
       "The Lambda function did not handle the error, and the Lambda service attempted to reprocess the data.",
       "The Lambda function is not keeping up with the amount of data coming from the stream."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "rds",
+      "kinesis"
+    ]
   },
   {
     "id": 320,
@@ -3897,8 +6127,15 @@ export const questionsData: Question[] = [
       "Configure the application to store secrets in Amazon S3 object metadata.",
       "Hard code the database secrets in the application code itself."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 321,
@@ -3909,8 +6146,14 @@ export const questionsData: Question[] = [
       "Remove the earlier `.ZIP` file first, then add the new `.ZIP` file.",
       "Call the `create-alias` API."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3"
+    ]
   },
   {
     "id": 322,
@@ -3922,8 +6165,15 @@ export const questionsData: Question[] = [
       "Modify the default configuration of the Lambda function to associate it with a VPC public subnet.",
       "Add an environmental variable to the Lambda function to allow outbound internet access."
     ],
-    "correct_answers": [0, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "lambda",
+      "rds"
+    ]
   },
   {
     "id": 323,
@@ -3934,12 +6184,19 @@ export const questionsData: Question[] = [
       "Ensure that the function source code is base64-encoded before uploading the deployment package to S3.",
       "Modify the execution role of the Lambda function to allow S3 access permission to the deployment package `.ZIP` file."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "cloudformation"
+    ]
   },
   {
     "id": 324,
-    "question": "A Developer is enabling AWS X-Ray for a secure application that runs in an Amazon ECS environment. What combination of steps will enable X-Ray? (Select THREE)",
+    "question": "A Developer wants to enable AWS X-Ray for a secure application that runs in an Amazon ECS environment. What combination of steps will enable X-Ray? (Select THREE)",
     "options": [
       "Create a Docker image that runs the X-Ray daemon.",
       "Add instrumentation to the application code for X-Ray.",
@@ -3948,8 +6205,18 @@ export const questionsData: Question[] = [
       "Register the application with X-Ray.",
       "Configure and use an IAM role for tasks."
     ],
-    "correct_answers": [0, 1, 5],
-    "multiple_correct": true
+    "correct_answers": [
+      0,
+      1,
+      5
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "iam",
+      "x-ray",
+      "ec2",
+      "ecs"
+    ]
   },
   {
     "id": 325,
@@ -3960,8 +6227,14 @@ export const questionsData: Question[] = [
       "Use `aws:SecureTransport` as a condition in the S3 bucket policy.",
       "Turn on S3 default encryption for the S3 bucket."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "rds",
+      "s3"
+    ]
   },
   {
     "id": 326,
@@ -3972,8 +6245,15 @@ export const questionsData: Question[] = [
       "`Mappings`.",
       "`Resources`."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "ec2",
+      "beanstalk",
+      "cloudformation"
+    ]
   },
   {
     "id": 327,
@@ -3984,8 +6264,13 @@ export const questionsData: Question[] = [
       "Query operation using `eventually-consistent` reads.",
       "Scan operation using `strongly-consistent` reads."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 328,
@@ -3996,8 +6281,14 @@ export const questionsData: Question[] = [
       "Invalidate all the application objects from the edge caches.",
       "Disable the CloudFront distribution and enable it again to update all the edge locations."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sns",
+      "cloudfront"
+    ]
   },
   {
     "id": 329,
@@ -4009,8 +6300,16 @@ export const questionsData: Question[] = [
       "Upload a `.ZIP` file to AWS CloudFormation containing the function code, then add a reference to it in an `AWS::Lambda::Function` resource in the template.",
       "Upload the function code to a private Git repository, then add a reference to it in an `AWS::Lambda::Function` resource in the template."
     ],
-    "correct_answers": [1, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "lambda",
+      "s3",
+      "cloudformation"
+    ]
   },
   {
     "id": 330,
@@ -4021,8 +6320,14 @@ export const questionsData: Question[] = [
       "Import the necessary Lambda blueprint when creating the function.",
       "Modify the function runtime to include the necessary library."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3"
+    ]
   },
   {
     "id": 331,
@@ -4034,8 +6339,14 @@ export const questionsData: Question[] = [
       "Install SSL certificates on the EC2 instances.",
       "Configure an Elastic Load Balancer with SSL termination."
     ],
-    "correct_answers": [1, 4],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "ec2"
+    ]
   },
   {
     "id": 332,
@@ -4046,8 +6357,15 @@ export const questionsData: Question[] = [
       "Create a `ZIP` file with the source code. Stage the dependent libraries on an Amazon S3 bucket indicated by the Lambda environment variable `LD_LIBRARY_PATH`.",
       "Create a `ZIP` file with the source code and a buildspec.yaml file that installs the dependent libraries on AWS Lambda."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "codebuild"
+    ]
   },
   {
     "id": 333,
@@ -4058,8 +6376,17 @@ export const questionsData: Question[] = [
       "Use Amazon DynamoDB to perform scalable session handling.",
       "Use Elastic Load Balancer connection draining to stop sending requests to failing instances."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "sqs",
+      "iam",
+      "ec2",
+      "alb"
+    ]
   },
   {
     "id": 334,
@@ -4070,8 +6397,16 @@ export const questionsData: Question[] = [
       "Use Amazon Kinesis Data Firehose to deliver all changes from the Accounts database to the Payments database.",
       "Use Amazon DynamoDB Streams to deliver all changes from the Accounts database to the Payments database."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "elasticache",
+      "kinesis",
+      "iam"
+    ]
   },
   {
     "id": 335,
@@ -4082,8 +6417,13 @@ export const questionsData: Question[] = [
       "AWS CodeCommit.",
       "AWS CodeStar."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "codebuild"
+    ]
   },
   {
     "id": 336,
@@ -4094,8 +6434,16 @@ export const questionsData: Question[] = [
       "Create an Amazon CloudWatch Events rule that triggers on a regular schedule to invoke the Lambda function.",
       "Create an Amazon SNS topic that has a subscription to the Lambda function with a 600-second timer."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "sns",
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 337,
@@ -4106,8 +6454,13 @@ export const questionsData: Question[] = [
       "Use a DynamoDB scan operation to retrieve scores and `user_id` based on `sport_name`, and order the results based on the score attribute.",
       "Create a local secondary index with a primary key of `sport_name` and a sort key of score and get the results based on the score attribute."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
   },
   {
     "id": 338,
@@ -4118,8 +6471,16 @@ export const questionsData: Question[] = [
       "Create credentials using AWS KMS and apply these credentials to users when using the application.",
       "Use Amazon Cognito to associate unauthenticated users with an IAM role that has limited access to resources."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "kms",
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 339,
@@ -4131,8 +6492,17 @@ export const questionsData: Question[] = [
       "Grant access to the key in the S3 bucket's ACL.",
       "Create a Systems Manager parameter that exposes the KMS key to the EC2 instances."
     ],
-    "correct_answers": [1, 2],
-    "multiple_correct": true
+    "correct_answers": [
+      1,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "s3",
+      "kms",
+      "iam",
+      "ec2"
+    ]
   },
   {
     "id": 340,
@@ -4143,8 +6513,13 @@ export const questionsData: Question[] = [
       "The consumer can poll the queue for a configurable amount of time before retrieving a message.",
       "Message cannot be deleted for a configurable amount of time after they are consumed from the queue."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sqs"
+    ]
   },
   {
     "id": 341,
@@ -4155,8 +6530,15 @@ export const questionsData: Question[] = [
       "Create an AWS CodeCommit repository, allow the Developers to commit code to it, and then directly deploy the code to Elastic Beanstalk.",
       "Create a code repository on an Amazon EC2 instance so that all Developers can update the code, and deploy the application from the instance to Elastic Beanstalk."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "ec2",
+      "beanstalk"
+    ]
   },
   {
     "id": 342,
@@ -4167,8 +6549,16 @@ export const questionsData: Question[] = [
       "Amazon SQS.",
       "Amazon CloudFront."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "sqs",
+      "iam",
+      "cloudfront"
+    ]
   },
   {
     "id": 343,
@@ -4179,20 +6569,35 @@ export const questionsData: Question[] = [
       "Use AWS Lambda to encrypt and decrypt objects as they are placed into the S3 bucket.",
       "Use client-side encryption/decryption with Amazon S3 and AWS KMS."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "rds",
+      "s3",
+      "kms",
+      "cognito"
+    ]
   },
   {
     "id": 344,
-    "question": "A company has an AWS internet-facing application that uses Web Identity Federation to obtain a temporary credential from AWS Security Token Service (AWS STS). The app then uses the token to access AWS services. Review the following response: Based on the response displayed what permissions are associated with the call from the application?",
+    "question": "A company has an internet-facing application that uses Web Identity Federation to obtain a temporary credential from AWS Security Token Service (AWS STS). The app then uses the token to access AWS services. Review the following response: Based on the response displayed what permissions are associated with the call from the application?",
     "options": [
       "Permissions associated with the role `AROACLKWSDQRAOEXAMPLE:app1`.",
       "Permissions associated with the default role used when the AWS service was built.",
       "Permission associated with the IAM principal that owns the `AccessKeyID` `ASgeIAIOSFODNN7EXAMPLE`.",
       "Permissions associated with the account that owns the AWS service."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "cognito"
+    ]
   },
   {
     "id": 345,
@@ -4203,8 +6608,11 @@ export const questionsData: Question[] = [
       "Use parameter values.",
       "Use quoting strings."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": []
   },
   {
     "id": 346,
@@ -4215,8 +6623,13 @@ export const questionsData: Question[] = [
       "Container agent.",
       "Task definition."
     ],
-    "correct_answers": [3],
-    "multiple_correct": false
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "ecs"
+    ]
   },
   {
     "id": 347,
@@ -4227,8 +6640,17 @@ export const questionsData: Question[] = [
       "AWS Lambda.",
       "Amazon RDS."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "rds",
+      "s3",
+      "ec2"
+    ]
   },
   {
     "id": 348,
@@ -4239,8 +6661,14 @@ export const questionsData: Question[] = [
       "Amazon CloudSearch.",
       "AWS CloudTrail"
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudwatch",
+      "ec2"
+    ]
   },
   {
     "id": 349,
@@ -4251,8 +6679,15 @@ export const questionsData: Question[] = [
       "Increase the shard count of the stream using `UpdateShardCount`.",
       "Ingest multiple records into the stream in a single call using `PutRecords`."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "rds",
+      "kinesis",
+      "iam"
+    ]
   },
   {
     "id": 350,
@@ -4263,8 +6698,13 @@ export const questionsData: Question[] = [
       "Remove mappings to decrease the number of variables.",
       "Use `AWS::Include` to reference publicly-hosted template files."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cloudformation"
+    ]
   },
   {
     "id": 351,
@@ -4275,8 +6715,14 @@ export const questionsData: Question[] = [
       "Move the application to Amazon EC2.",
       "Add a one second delay to each API call."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "ec2"
+    ]
   },
   {
     "id": 352,
@@ -4287,8 +6733,15 @@ export const questionsData: Question[] = [
       "Each day, create a new table to hold session data; delete the previous day's table.",
       "Add an attribute with the expiration time; name the attribute `ItemExpiration`."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb",
+      "rds",
+      "ec2"
+    ]
   },
   {
     "id": 353,
@@ -4299,8 +6752,13 @@ export const questionsData: Question[] = [
       "Make asynchronous Event Lambda invocations and process the files in parallel.",
       "First join all the files, then process it all at once with an asynchronous Event Lambda invocation."
     ],
-    "correct_answers": [2],
-    "multiple_correct": false
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda"
+    ]
   },
   {
     "id": 354,
@@ -4311,8 +6769,13 @@ export const questionsData: Question[] = [
       "Contact AWS Support to increase the object size limit.",
       "Upload the object to another AWS region."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3"
+    ]
   },
   {
     "id": 355,
@@ -4323,8 +6786,13 @@ export const questionsData: Question[] = [
       "Run the following: `aws ecr get-login` and then run: `docker pull REPOSITORY URI : TAG`.",
       "Run the output of the following: `aws ecr get-download-url-for-layer` and then run: `docker pull REPOSITORY URI : TAG`."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "codebuild"
+    ]
   },
   {
     "id": 356,
@@ -4335,8 +6803,14 @@ export const questionsData: Question[] = [
       "Amazon Cognito Sync.",
       "AWS Mobile Hub cloud logic."
     ],
-    "correct_answers": [0],
-    "multiple_correct": false
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "cognito",
+      "ec2"
+    ]
   },
   {
     "id": 357,
@@ -4347,7 +6821,596 @@ export const questionsData: Question[] = [
       "Create an Amazon S3 bucket policy that specifies the Lambda service as its principal and assign it to the Amazon S3 bucket.",
       "Create an IAM role, attach the AmazonS3FullAccess managed policy to it, and assign the role to the Lambda function as its execution role."
     ],
-    "correct_answers": [1],
-    "multiple_correct": false
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "s3",
+      "iam"
+    ]
+  },
+  {
+    "id": 358,
+    "question": "An organization is using Amazon CloudFront to ensure that its users experience low-latency access to its web application. The organization has identified a need to encrypt all traffic between users and CloudFront, and all traffic between CloudFront and the web application. How can these requirements be met? (Choose TWO)",
+    "options": [
+      "Use AWS KMS to encrypt traffic between CloudFront and the web application.",
+      "Set the Origin Protocol Policy to `HTTPS Only`.",
+      "Set the Origin's HTTP Port to `443`.",
+      "Set the Viewer Protocol Policy to `HTTPS Only` or `Redirect HTTP to HTTPS`.",
+      "Enable the CloudFront option `Restrict Viewer Access`."
+    ],
+    "correct_answers": [
+      1,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "kms",
+      "cloudfront"
+    ]
+  },
+  {
+    "id": 359,
+    "question": "An application is using Amazon DynamoDB as its data store, and should be able to read 100 items per second as strongly consistent reads. Each item is 5 KB in size. To what value should the table's provisioned read throughput be set?",
+    "options": [
+      "50 read capacity units.",
+      "100 read capacity units.",
+      "200 read capacity units.",
+      "500 read capacity units."
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "dynamodb"
+    ]
+  },
+  {
+    "id": 360,
+    "question": "An application uses Lambda functions to extract metadata from files uploaded to an S3 bucket; the metadata is stored in Amazon DynamoDB. The application starts behaving unexpectedly, and the Developer wants to examine the logs of the Lambda function code for errors. Based on this system configuration, where would the Developer find the logs?",
+    "options": [
+      "Amazon S3.",
+      "AWS CloudTrail.",
+      "Amazon CloudWatch.",
+      "Amazon DynamoDB"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "s3",
+      "cloudwatch",
+      "ec2"
+    ]
+  },
+  {
+    "id": 361,
+    "question": "A Developer is creating a Lambda function that will generate and export a file. The function requires 100 MB of temporary storage for temporary files while executing. These files will not be needed after the function is complete. How can the Developer MOST efficiently handle the temporary files?",
+    "options": [
+      "Store the files in EBS and delete the files at the end of the Lambda function.",
+      "Copy the files to EFS and delete the files at the end of the Lambda function.",
+      "Store the files in the `/tmp` directory and delete the files at the end of the Lambda function.",
+      "Copy the files to an S3 bucket with a lifecycle policy to delete the files."
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "ec2"
+    ]
+  },
+  {
+    "id": 362,
+    "question": "A Developer has developed a web application and wants to deploy it quickly on a Tomcat server on AWS. The Developer wants to avoid having to manage the underlying infrastructure. What is the easiest way to deploy the application, based on these requirements?",
+    "options": [
+      "AWS CloudFormation.",
+      "AWS Elastic Beanstalk.",
+      "Amazon S3.",
+      "AWS CodePipeline"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "beanstalk",
+      "codepipeline",
+      "cloudformation"
+    ]
+  },
+  {
+    "id": 363,
+    "question": "An application runs on multiple EC2 instances behind an ELB. Where is the session data best written so that it can be served reliably across multiple requests?",
+    "options": [
+      "Write data to Amazon ElastiCache.",
+      "Write data to Amazon Elastic Block Store.",
+      "Write data to Amazon EC2 Instance Store.",
+      "Write data to the `root` filesystem."
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "elasticache",
+      "iam",
+      "ec2"
+    ]
+  },
+  {
+    "id": 364,
+    "question": "A company is migrating from a monolithic architecture to a microservices-based architecture. The Developers need to refactor the application so that the many microservices can asynchronously communicate with each other without impacting performance. Use of which managed AWS services will enable asynchronous message passing? (Choose TWO)",
+    "options": [
+      "Amazon SQS.",
+      "Amazon Cognito.",
+      "Amazon Kinesis.",
+      "Amazon SNS.",
+      "Amazon ElastiCache."
+    ],
+    "correct_answers": [
+      0,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "elasticache",
+      "sqs",
+      "sns",
+      "kinesis",
+      "cognito"
+    ]
+  },
+  {
+    "id": 365,
+    "question": "According to best practice, how should access keys be managed in AWS? (Choose TWO)",
+    "options": [
+      "Use the same access key in all applications for consistency.",
+      "Delete all access keys for the account `root` user.",
+      "Leave unused access keys in the account for tracking purposes.",
+      "Embed and encrypt access keys in code for continuous deployment.",
+      "Use Amazon IAM roles instead of access keys where possible."
+    ],
+    "correct_answers": [
+      1,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "iam",
+      "sam"
+    ]
+  },
+  {
+    "id": 366,
+    "question": "An application running on an Amazon Linux EC2 instance needs to manage the AWS infrastructure. How can the EC2 instance be configured to make AWS API calls securely?",
+    "options": [
+      "Sign the AWS CLI command using the signature version 4 process.",
+      "Run the `aws configure` AWS CLI command and specify the access key id and secret access key.",
+      "Specify a role for the EC2 instance with the necessary privileges.",
+      "Pass the access key id and secret access key as parameters for each AWS CLI command."
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "ec2"
+    ]
+  },
+  {
+    "id": 367,
+    "question": "An application needs to use the IP address of the client in its processing. The application has been moved into AWS and has been placed behind an Application Load Balancer (ALB). However, all the client IP addresses now appear to be the same. The application must maintain the ability to scale horizontally. Based on this scenario, what is the MOST cost-effective solution to this problem?",
+    "options": [
+      "Remove the application from the ALB. Delete the ALB and change Amazon Route 53 to direct traffic to the instance running the application.",
+      "Remove the application from the ALB. Create a Classic Load Balancer in its place. Direct traffic to the application using the HTTP protocol.",
+      "Alter the application code to inspect the `X-Forwarded-For` header. Ensure that the code can work properly if a list of IP addresses is passed in the header.",
+      "Alter the application code to inspect a custom header. Alter the client code to pass the IP address in the custom header."
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "alb",
+      "sam"
+    ]
+  },
+  {
+    "id": 368,
+    "question": "A development team is using AWS Elastic Beanstalk to deploy a two-tier application that consists of a load-balanced web tier and an Amazon RDS database tier in production. The team would like to separate the RDS instance from the Elastic Beanstalk. How can this be accomplished?",
+    "options": [
+      "Use the Elastic Beanstalk CLI to disassociate the database.",
+      "Use the AWS CLI to disassociate the database.",
+      "Change the deployment policy to disassociate the database.",
+      "Recreate a new Elastic Beanstalk environment without Amazon RDS."
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "rds",
+      "iam",
+      "beanstalk"
+    ]
+  },
+  {
+    "id": 369,
+    "question": "A company is using AWS CodePipeline to deliver one of its applications. The delivery pipeline is triggered by changes to the master branch of an AWS CodeCommit repository and uses AWS CodeBuild to implement the test and build stages of the process and AWS CodeDeploy to deploy the application. The pipeline has been operating successfully for several months and there have been no modifications. Following a recent change to the application's source code, AWS CodeDeploy has not deployed the updates application as expected. What are the possible causes? (Choose TWO)",
+    "options": [
+      "The change was not made in the master branch of the AWS CodeCommit repository.",
+      "One of the earlier stages in the pipeline failed and the pipeline has terminated.",
+      "One of the Amazon EC2 instances in the company's AWS CodePipeline cluster is inactive.",
+      "The AWS CodePipeline is incorrectly configured and is not executing AWS CodeDeploy.",
+      "AWS CodePipeline does not have permissions to access AWS CodeCommit."
+    ],
+    "correct_answers": [
+      0,
+      1
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "ec2",
+      "codebuild",
+      "codepipeline",
+      "codedeploy"
+    ]
+  },
+  {
+    "id": 370,
+    "question": "A social media company is using Amazon Cognito in order to synchronize profiles across different mobile devices, to enable end users to have a seamless experience. Which of the following configurations can be used to silently notify users whenever an update is available on all other devices?",
+    "options": [
+      "Modify the user pool to include all the devices which keep them in sync.",
+      "Use the SyncCallback interface to receive notifications on the application.",
+      "Use an Amazon Cognito stream to analyze the data and push the notifications.",
+      "Use the push synchronization feature with the appropriate IAM role."
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "iam",
+      "cognito"
+    ]
+  },
+  {
+    "id": 371,
+    "question": "An on-premises application is implemented using a Linux, Apache, MySQL and PHP (LAMP) stack. The Developer wants to run this application in AWS. Which of the following sets of AWS services can be used to run this stack?",
+    "options": [
+      "Amazon API Gateway, Amazon S3.",
+      "AWS Lambda, Amazon DynamoDB.",
+      "Amazon EC2, Amazon Aurora.",
+      "Amazon Cognito, Amazon RDS.",
+      "Amazon ECS, Amazon EBS."
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "dynamodb",
+      "rds",
+      "s3",
+      "cognito",
+      "ec2",
+      "ecs"
+    ]
+  },
+  {
+    "id": 372,
+    "question": "An application displays a status dashboard. The status is updated by 1 KB messages from an SQS queue. Although the status changes infrequently, the Developer must minimize the time between the message arrival in the queue and the dashboard update. What technique provides the shortest delay in updating the dashboard?",
+    "options": [
+      "Retrieve the messages from the queue using long polling every 20 seconds.",
+      "Reduce the size of the messages by compressing them before sending.",
+      "Retrieve the messages from the queue using short polling every 10 seconds.",
+      "Reduce the size of each message payload by sending it in two parts."
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "sqs"
+    ]
+  },
+  {
+    "id": 373,
+    "question": "An on-premises legacy application is caching data files locally and writing shared images to local disks. What is necessary to allow for horizontal scaling when migrating the application to AWS?",
+    "options": [
+      "Modify the application to have both shared images and caching data written to Amazon EBS.",
+      "Modify the application to read and write cache data on Amazon S3, and also store shared images on S3.",
+      "Modify the application to use Amazon S3 for serving shared images; cache data can then be written to local disks.",
+      "Modify the application to read and write cache data on Amazon S3, while continuing to write shared images to local disks."
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "ec2"
+    ]
+  },
+  {
+    "id": 374,
+    "question": "A Developer must trigger an AWS Lambda function based on the item lifecycle activity in an Amazon DynamoDB table. How can the Developer create the solution?",
+    "options": [
+      "Enable a DynamoDB stream that publishes an Amazon SNS message. Trigger the Lambda function synchronously from the SNS message.",
+      "Enable a DynamoDB stream that publishes an SNS message. Trigger the Lambda function asynchronously from the SNS message.",
+      "Enable a DynamoDB stream, and trigger the Lambda function synchronously from the stream.",
+      "Enable a DynamoDB stream, and trigger the Lambda function asynchronously from the stream."
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "sns"
+    ]
+  },
+  {
+    "id": 375,
+    "question": "After installing the AWS CLI, a Developer tries to run the command `aws configure` but receives the following error: `Error: aws: command not found`. What is the most likely cause of this error?",
+    "options": [
+      "The `aws` executable is not in the `PATH` environment variable.",
+      "Access to the `aws` executable has been denied to the installer.",
+      "Incorrect AWS credentials were provided.",
+      "The `aws` script does not have an executable file mode."
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 376,
+    "question": "The Developer for a retail company must integrate a fraud detection solution into the order processing solution. The fraud detection solution takes between ten and thirty minutes to verify an order. At peak, the web site can receive one hundred orders per minute. What is the most scalable method to add the fraud detection solution to the order processing pipeline?",
+    "options": [
+      "Add all new orders to an Amazon SQS queue. Configure a fleet of 10 EC2 instances spanning multiple AZs with the fraud detection solution installed on them to pull orders from this queue. Update the order with a pass or fails status.",
+      "Add all new orders to an SQS queue. Configure an Auto Scaling group that uses the queue depth metric as its unit of scale to launch a dynamically-sized fleet of EC2 instances spanning multiple AZs with the fraud detection solution installed on them to pull orders from this queue. Update the order with a pass or fails status.",
+      "Add all new orders to an Amazon Kinesis Stream. Subscribe a Lambda function to automatically read batches of records from the Kinesis Stream. The Lambda function includes the fraud detection software and will update the order with a pass or fail status.",
+      "Write all new orders to Amazon DynamoDB. Configure DynamoDB Streams to include all new orders. Subscribe a Lambda function to automatically read batches of records from the Kinesis Stream. The Lambda function includes the fraud detection software and will update the order with a pass or fail status."
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "rds",
+      "sqs",
+      "kinesis",
+      "ec2"
+    ]
+  },
+  {
+    "id": 377,
+    "question": "When a Developer tries to run an AWS CodeBuild project, it raises an error because the length of all environment variables exceeds the limit for the combined maximum of characters. What is the recommended solution?",
+    "options": [
+      "Add the export `LC_ALL=\"en_US.utf8\"` command to the `pre_build` section to ensure `POSIX` localization.",
+      "Use Amazon Cognito to store key-value pairs for large numbers of environment variables.",
+      "Update the settings for the build project to use an Amazon S3 bucket for large numbers of environment variables.",
+      "Use AWS Systems Manager Parameter Store to store large numbers of environment variables."
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "cognito",
+      "codebuild"
+    ]
+  },
+  {
+    "id": 378,
+    "question": "A set of APIs are exposed to customers using the Amazon API Gateway. These APIs have caching enabled on the API Gateway. Customers have asked for an option to invalidate this cache for each of the APIs. What action can be taken to allow API customers to invalidate the API Cache?",
+    "options": [
+      "Ask customers to use AWS credentials to call the `InvalidateCache` API.",
+      "Ask customers to invoke an AWS API endpoint which invalidates the cache.",
+      "Ask customers to pass an HTTP header called `Cache-Control:max-age=0`.",
+      "Ask customers to add a query string parameter called `INVALIDATE_CACHE` when making an API call."
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "api-gateway"
+    ]
+  },
+  {
+    "id": 379,
+    "question": "A Developer has been asked to build a real-time dashboard web application to visualize the key prefixes and storage size of objects in Amazon S3 buckets. Amazon DynamoDB will be used to store the Amazon S3 metadata. What is the optimal and MOST cost-effective design to ensure that the real-time dashboard is kept up to date with the state of the objects in the Amazon S3 buckets?",
+    "options": [
+      "Use an Amazon CloudWatch event backed by an AWS Lambda function. Issue an Amazon S3 API call to get a list of all Amazon S3 objects and persist the metadata within DynamoDB. Have the web application poll the DynamoDB table to reflect this change.",
+      "Use Amazon S3 Event Notification backed by a Lambda function to persist the metadata into DynamoDB. Have the web application poll the DynamoDB table to reflect this change.",
+      "Run a cron job within an Amazon EC2 instance to list all objects within Amazon S3 and persist the metadata into DynamoDB. Have the web application poll the DynamoDB table to reflect this change.",
+      "Create a new Amazon EMR cluster to get all the metadata about Amazon S3 objects; persist the metadata into DynamoDB. Have the web application poll the DynamoDB table to reflect this change."
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "s3",
+      "cloudwatch",
+      "ec2"
+    ]
+  },
+  {
+    "id": 380,
+    "question": "A Developer must repeatedly and consistently deploy a serverless RESTful API on AWS. Which techniques will work? (Choose TWO)",
+    "options": [
+      "Define a Swagger file. Use AWS Elastic Beanstalk to deploy the Swagger file.",
+      "Define a Swagger file. Use AWS CodeDeploy to deploy the Swagger file.",
+      "Deploy a SAM template with an inline Swagger definition.",
+      "Define a Swagger file. Deploy a SAM template that references the Swagger file.",
+      "Define an inline Swagger definition in a Lambda function. Invoke the Lambda function."
+    ],
+    "correct_answers": [
+      2,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "beanstalk",
+      "codedeploy",
+      "sam"
+    ]
+  },
+  {
+    "id": 381,
+    "question": "An existing serverless application processes uploaded image files. The process currently uses a single Lambda function that takes an image file, performs the processing, and stores the file in Amazon S3. Users of the application now require thumbnail generation of the images. Users want to avoid any impact to the time it takes to perform the image uploads. How can thumbnail generation be added to the application, meeting user requirements while minimizing changes to existing code?",
+    "options": [
+      "Change the existing Lambda function handling the uploads to create thumbnails at the time of upload. Have the function store both the image and thumbnail in Amazon S3.",
+      "Create a second Lambda function that handles thumbnail generation and storage. Change the existing Lambda function to invoke it asynchronously.",
+      "Create an S3 event notification with a Lambda function destination. Create a new Lambda function to generate and store thumbnails.",
+      "Create an S3 event notification to an SQS Queue. Create a scheduled Lambda function that processes the queue, and generates and stores thumbnails."
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "s3",
+      "sqs"
+    ]
+  },
+  {
+    "id": 382,
+    "question": "A company is using Amazon API Gateway to manage access to a set of microservices implemented as AWS Lambda functions. Following a bug report, the company makes a minor breaking change to one of the APIs. In order to avoid impacting existing clients when the new API is deployed, the company wants to allow clients six months to migrate from v1 to v2. Which approach should the Developer use to handle this change?",
+    "options": [
+      "Update the underlying Lambda function and provide clients with the new Lambda invocation URL.",
+      "Use API Gateway to automatically propagate the change to clients, specifying 180 days in the phased deployment parameter.",
+      "Use API Gateway to deploy a new stage named v2 to the API and provide users with its URL.",
+      "Update the underlying Lambda function, create an Amazon CloudFront distribution with the updated Lambda function as its origin."
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "api-gateway",
+      "cloudfront"
+    ]
+  },
+  {
+    "id": 383,
+    "question": "A company developed a set of APIs that are being served through the Amazon API Gateway. The API calls need to be authenticated based on OpenID identity providers such as Amazon or Facebook. The APIs should allow access based on a custom authorization model. Which is the simplest and MOST secure design to use to build an authentication and authorization model for the APIs?",
+    "options": [
+      "Use Amazon Cognito user pools and a custom authorizer to authenticate and authorize users based on JSON Web Tokens.",
+      "Build a OpenID token broker with Amazon and Facebook. Users will authenticate with these identify providers and pass the JSON Web Token to the API to authenticate each API call.",
+      "Store user credentials in Amazon DynamoDB and have the application retrieve temporary credentials from AWS STS. Make API calls by passing user credentials to the APIs for authentication and authorization.",
+      "Use Amazon RDS to store user credentials and pass them to the APIs for authentications and authorization."
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "api-gateway",
+      "dynamodb",
+      "rds",
+      "iam",
+      "cognito"
+    ]
+  },
+  {
+    "id": 384,
+    "question": "Where should an Elastic Beanstalk configuration file named `healthcheckur1.config` be placed in the application source bundle?",
+    "options": [
+      "In the `root` of the application.",
+      "In the `bin` folder.",
+      "In `healthcheckur1.config.ebextension` under `root`.",
+      "In the `.ebextensions` folder."
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "beanstalk"
+    ]
+  },
+  {
+    "id": 385,
+    "question": "A Developer has implemented a Lambda function that needs to add new customers to an RDS database that is expected to run hundreds of times per hour. The Lambda function is configured to use 512MB of RAM and is based on the following pseudo code. After testing the Lambda function, the Developer notices that the Lambda execution time is much longer than expected. What should the Developer do to improve performance?",
+    "options": [
+      "Increase the amount of RAM allocated to the Lambda function, which will increase the number of threads the Lambda can use.",
+      "Increase the size of the RDS database to allow for an increased number of database connections each hour.",
+      "Move the database connection and close statement out of the handler. Place the connection in the global space.",
+      "Replace RDS wit Amazon DynamoDB to implement control over the number of writes per second."
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "lambda",
+      "dynamodb",
+      "rds"
+    ]
+  },
+  {
+    "id": 386,
+    "question": "A static website is hosted in an Amazon S3 bucket. Several HTML pages on the site use JavaScript to download images from another Amazon S3 bucket. These images are not displayed when users browse the site. What is the possible cause for the issue?",
+    "options": [
+      "The referenced Amazon S3 bucket is in another region.",
+      "The images must be stored in the same Amazon S3 bucket.",
+      "Port 80 must be opened on the security group in which the Amazon S3 bucket is located.",
+      "Cross Origin Resource Sharing must be enabled on the Amazon S3 bucket."
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3",
+      "ec2",
+      "sam"
+    ]
+  },
+  {
+    "id": 387,
+    "question": "Amazon S3 has the following structure: `S3://BUCKET/FOLDERNAME/FILENAME.zip`. Which S3 best practice would optimize performance with thousands of PUT request each second to a single bucket?",
+    "options": [
+      "Prefix folder names with user id; for example, `s3://BUCKET/2013-FOLDERNAME/FILENAME.zip`.",
+      "Prefix file names with timestamps; for example, `s3://BUCKET/FOLDERNAME/2013-26-05-15-00-00-FILENAME.zip`.",
+      "Prefix file names with random hex hashes; for example, `s3://BUCKET/FOLDERNAME/23a6-FILENAME.zip`.",
+      "Prefix folder names with random hex hashes; for example, `s3://BUCKET/23a6-FOLDERNAME/FILENAME.zip`."
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [
+      "s3"
+    ]
   }
+
 ];

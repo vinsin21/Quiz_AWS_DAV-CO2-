@@ -1,12 +1,18 @@
 
 import React from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
-import { mockTests } from '../data/mockTests';
+// Fix for react-router-dom errors by using a type-casting import workaround
+import * as RouterDom from "react-router-dom";
+const { useParams, useNavigate, Link } = RouterDom as any;
+import { mockTests } from '../data/mockTests.ts';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Clock, HelpCircle, ShieldCheck, AlertCircle } from 'lucide-react';
 
+// Fix for framer-motion property errors
+const MotionDiv = motion.div as any;
+
 const TestDetails: React.FC = () => {
-  const { testId } = useParams<{ testId: string }>();
+  // Fix: Removed generic type argument from untyped useParams call to resolve TypeScript error
+  const { testId } = useParams() as { testId: string };
   const navigate = useNavigate();
   const test = mockTests.find(t => t.id === testId);
 
@@ -32,7 +38,7 @@ const TestDetails: React.FC = () => {
           Back to list
         </Link>
 
-        <motion.div
+        <MotionDiv
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-12 backdrop-blur-xl space-y-6 md:space-y-8"
@@ -88,7 +94,7 @@ const TestDetails: React.FC = () => {
               <span>Progress is not saved if you leave the browser tab.</span>
             </div>
           </div>
-        </motion.div>
+        </MotionDiv>
       </div>
     </div>
   );

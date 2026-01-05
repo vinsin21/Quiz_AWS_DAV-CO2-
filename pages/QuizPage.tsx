@@ -1,14 +1,22 @@
 
 import React, { useState, useMemo, useEffect, useCallback } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+// Fix for react-router-dom errors by using a type-casting import workaround
+import * as RouterDom from "react-router-dom";
+const { useParams, useNavigate } = RouterDom as any;
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ArrowRight, CheckCircle2, Circle, HelpCircle, XCircle, Trophy, Home, Play } from 'lucide-react';
-import { mockTests } from '../data/mockTests';
-import { Question } from '../types';
-import { questionsData } from '../data/questions';
+import { mockTests } from '../data/mockTests.ts';
+import { Question } from '../types.ts';
+import { questionsData } from '../data/questions.ts';
+
+// Fix for framer-motion property errors
+const MotionDiv = motion.div as any;
+const MotionButton = motion.button as any;
+const AnyAnimatePresence = AnimatePresence as any;
 
 const QuizPage: React.FC = () => {
-  const { testId } = useParams<{ testId: string }>();
+  // Fix: Removed generic type argument from untyped useParams call to resolve TypeScript error
+  const { testId } = useParams() as { testId: string };
   const navigate = useNavigate();
   
   const test = mockTests.find(t => t.id === testId);
@@ -129,7 +137,7 @@ const QuizPage: React.FC = () => {
 
     return (
       <div className="min-h-screen bg-black text-white flex items-center justify-center p-6">
-        <motion.div 
+        <MotionDiv 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="max-w-md w-full rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl text-center space-y-8"
@@ -163,7 +171,7 @@ const QuizPage: React.FC = () => {
 
           <div className="relative pt-4">
              <div className="h-3 w-full bg-white/5 rounded-full overflow-hidden">
-                <motion.div 
+                <MotionDiv 
                   initial={{ width: 0 }}
                   animate={{ width: `${score}%` }}
                   className="h-full bg-orange-500"
@@ -188,7 +196,7 @@ const QuizPage: React.FC = () => {
               Return Home
             </button>
           </div>
-        </motion.div>
+        </MotionDiv>
       </div>
     );
   }
@@ -226,7 +234,7 @@ const QuizPage: React.FC = () => {
           </div>
         </div>
         <div className="h-1 w-full bg-white/5">
-           <motion.div 
+           <MotionDiv 
              className="h-full bg-orange-500"
              animate={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
            />
@@ -234,8 +242,8 @@ const QuizPage: React.FC = () => {
       </div>
 
       <div className="mx-auto max-w-4xl px-4 py-8 md:py-12">
-        <AnimatePresence mode="wait">
-          <motion.div
+        <AnyAnimatePresence mode="wait">
+          <MotionDiv
             key={currentIndex}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -277,7 +285,7 @@ const QuizPage: React.FC = () => {
                   }
 
                   return (
-                    <motion.button
+                    <MotionButton
                       key={idx}
                       whileTap={{ scale: 0.99 }}
                       onClick={() => handleOptionToggle(idx)}
@@ -296,7 +304,7 @@ const QuizPage: React.FC = () => {
                         )}
                       </div>
                       <span className="text-sm md:text-base font-medium">{option}</span>
-                    </motion.button>
+                    </MotionButton>
                   );
                 })}
               </div>
@@ -333,8 +341,8 @@ const QuizPage: React.FC = () => {
                 </button>
               </div>
             </div>
-          </motion.div>
-        </AnimatePresence>
+          </MotionDiv>
+        </AnyAnimatePresence>
       </div>
     </div>
   );
