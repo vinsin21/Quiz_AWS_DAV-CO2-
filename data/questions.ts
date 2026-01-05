@@ -17,9 +17,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "elasticache",
-      "s3",
-      "codedeploy"
+      "elasticache"
     ]
   },
   {
@@ -39,7 +37,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "step-functions",
       "dynamodb",
       "elasticache"
     ]
@@ -59,9 +56,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "api-gateway",
-      "alb",
-      "sam"
+      "alb"
     ]
   },
   {
@@ -79,8 +74,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "elasticache",
-      "ec2",
-      "sam"
+      "ec2"
     ]
   },
   {
@@ -135,8 +129,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "s3",
       "iam"
     ]
   },
@@ -156,7 +148,6 @@ export const questionsData: Question[] = [
     "topics": [
       "s3",
       "ec2",
-      "codebuild",
       "codedeploy"
     ]
   },
@@ -174,7 +165,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
       "ec2"
     ]
   },
@@ -192,7 +182,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "elasticache",
       "s3",
       "iam",
       "ec2",
@@ -254,9 +243,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "lambda",
-      "sns",
-      "sam"
+      "lambda"
     ]
   },
   {
@@ -324,8 +311,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "rds",
-      "ec2"
+      "rds"
     ]
   },
   {
@@ -420,9 +406,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "dynamodb",
-      "s3",
       "cognito",
       "ec2"
     ]
@@ -460,8 +443,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "s3"
+      "lambda"
     ]
   },
   {
@@ -479,8 +461,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "dynamodb",
-      "iam",
-      "alb"
+      "iam"
     ]
   },
   {
@@ -498,7 +479,8 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "api-gateway"
+      "api-gateway",
+      "cloudformation"
     ]
   },
   {
@@ -516,7 +498,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "iam",
-      "cognito",
       "ec2"
     ]
   },
@@ -534,8 +515,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "dynamodb",
-      "sam"
+      "dynamodb"
     ]
   },
   {
@@ -680,12 +660,7 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "api-gateway",
-      "elasticache",
-      "s3",
-      "sqs",
-      "sns",
-      "ec2",
-      "cloudfront"
+      "ec2"
     ]
   },
   {
@@ -702,9 +677,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "s3",
-      "ec2"
+      "lambda"
     ]
   },
   {
@@ -721,10 +694,8 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "rds",
       "elasticache",
-      "ec2",
-      "sam"
+      "ec2"
     ]
   },
   {
@@ -741,7 +712,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
       "ec2",
       "beanstalk"
     ]
@@ -801,9 +771,7 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "dynamodb",
-      "cloudwatch",
-      "x-ray",
-      "alb"
+      "x-ray"
     ]
   },
   {
@@ -820,9 +788,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "dynamodb",
-      "rds",
-      "elasticache"
+      "rds"
     ]
   },
   {
@@ -839,9 +805,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "dynamodb",
-      "rds",
-      "sqs"
+      "dynamodb"
     ]
   },
   {
@@ -858,10 +822,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "s3",
-      "sns",
-      "kinesis",
       "iam",
       "cloudwatch",
       "ec2"
@@ -882,9 +842,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "s3",
-      "sqs",
-      "kinesis",
-      "ec2"
+      "sqs"
     ]
   },
   {
@@ -901,12 +859,8 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "kinesis",
       "cloudwatch",
-      "x-ray",
-      "ec2",
-      "cloudfront"
+      "ec2"
     ]
   },
   {
@@ -927,7 +881,6 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "api-gateway",
-      "dynamodb",
       "rds"
     ]
   },
@@ -963,7 +916,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "step-functions",
       "codepipeline"
     ]
   },
@@ -982,8 +934,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "rds",
-      "elasticache",
-      "ec2"
+      "elasticache"
     ]
   },
   {
@@ -1002,8 +953,7 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "s3",
-      "ec2",
-      "sam"
+      "ec2"
     ]
   },
   {
@@ -1020,7 +970,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
       "dynamodb",
       "kinesis"
     ]
@@ -1039,11 +988,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "iam",
-      "cognito",
-      "ec2",
-      "sam"
+      "cognito"
     ]
   },
   {
@@ -1060,9 +1005,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "sns",
-      "cloudwatch",
-      "cloudfront"
+      "cloudwatch"
     ]
   },
   {
@@ -1082,7 +1025,6 @@ export const questionsData: Question[] = [
       "lambda",
       "api-gateway",
       "dynamodb",
-      "sam",
       "cloudformation"
     ]
   },
@@ -1100,9 +1042,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "dynamodb",
-      "rds",
-      "sqs"
+      "dynamodb"
     ]
   },
   {
@@ -1119,9 +1059,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "iam",
-      "cognito",
-      "sam"
+      "cognito"
     ]
   },
   {
@@ -1176,8 +1114,7 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "api-gateway",
-      "dynamodb",
-      "sqs"
+      "dynamodb"
     ]
   },
   {
@@ -1247,9 +1184,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "step-functions",
-      "sqs",
-      "sns"
+      "step-functions"
     ]
   },
   {
@@ -1287,9 +1222,7 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "step-functions",
-      "sqs",
-      "iam",
-      "cloudwatch"
+      "iam"
     ]
   },
   {
@@ -1306,12 +1239,8 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
       "dynamodb",
-      "iam",
-      "cloudwatch",
-      "ec2",
-      "ecs"
+      "iam"
     ]
   },
   {
@@ -1347,8 +1276,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "dynamodb",
-      "sqs",
-      "sns",
       "kinesis"
     ]
   },
@@ -1366,9 +1293,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "codedeploy",
-      "sam"
+      "codedeploy"
     ]
   },
   {
@@ -1386,8 +1311,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "s3",
-      "sqs",
-      "sns",
       "kinesis"
     ]
   },
@@ -1405,8 +1328,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "s3"
+      "lambda"
     ]
   },
   {
@@ -1462,7 +1384,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "api-gateway",
-      "alb"
+      "cloudformation"
     ]
   },
   {
@@ -1479,8 +1401,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "dynamodb",
       "s3",
       "kms"
     ]
@@ -1535,9 +1455,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "s3",
-      "cloudwatch"
+      "s3"
     ]
   },
   {
@@ -1575,8 +1493,6 @@ export const questionsData: Question[] = [
       "api-gateway",
       "rds",
       "s3",
-      "kms",
-      "iam",
       "cognito"
     ]
   },
@@ -1611,8 +1527,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "iam",
-      "cognito"
+      "iam"
     ]
   },
   {
@@ -1629,7 +1544,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "cloudwatch",
       "x-ray",
       "ec2"
     ]
@@ -1650,8 +1564,7 @@ export const questionsData: Question[] = [
     "topics": [
       "sns",
       "iam",
-      "cloudwatch",
-      "ec2"
+      "cloudwatch"
     ]
   },
   {
@@ -1704,9 +1617,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "kms",
-      "iam"
+      "kms"
     ]
   },
   {
@@ -1747,7 +1658,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "sns",
-      "cloudwatch",
       "codepipeline"
     ]
   },
@@ -1782,9 +1692,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "dynamodb",
-      "sns",
-      "iam",
       "cognito"
     ]
   },
@@ -1820,8 +1727,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "s3",
-      "cloudwatch",
-      "sam"
+      "cloudwatch"
     ]
   },
   {
@@ -1858,7 +1764,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "cloudwatch",
-      "x-ray",
       "ec2",
       "codebuild"
     ]
@@ -1894,7 +1799,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "kms",
       "iam"
     ]
   },
@@ -1912,10 +1816,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "dynamodb",
       "rds",
-      "s3",
-      "kms",
       "iam",
       "ec2",
       "codedeploy"
@@ -1935,10 +1836,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "iam",
-      "cloudwatch",
-      "x-ray",
       "codedeploy"
     ]
   },
@@ -1993,7 +1890,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "dynamodb",
-      "s3",
       "iam"
     ]
   },
@@ -2050,8 +1946,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "dynamodb",
-      "iam",
       "cognito"
     ]
   },
@@ -2106,8 +2000,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "sam"
+      "s3"
     ]
   },
   {
@@ -2124,7 +2017,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
       "kms"
     ]
   },
@@ -2143,7 +2035,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "step-functions",
       "sqs"
     ]
   },
@@ -2161,11 +2052,8 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
       "api-gateway",
-      "dynamodb",
-      "iam",
-      "cloudwatch"
+      "iam"
     ]
   },
   {
@@ -2184,10 +2072,7 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "api-gateway",
-      "step-functions",
-      "sqs",
-      "sns",
-      "sam"
+      "step-functions"
     ]
   },
   {
@@ -2208,7 +2093,6 @@ export const questionsData: Question[] = [
     "topics": [
       "dynamodb",
       "rds",
-      "elasticache",
       "ec2"
     ]
   },
@@ -2226,9 +2110,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "s3",
-      "sam"
+      "lambda"
     ]
   },
   {
@@ -2287,8 +2169,7 @@ export const questionsData: Question[] = [
       "rds",
       "s3",
       "iam",
-      "cognito",
-      "sam"
+      "cognito"
     ]
   },
   {
@@ -2305,9 +2186,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "x-ray",
-      "sam"
+      "lambda"
     ]
   },
   {
@@ -2324,8 +2203,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "kms"
+      "s3"
     ]
   },
   {
@@ -2343,8 +2221,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "api-gateway",
-      "step-functions",
       "s3",
       "sqs",
       "sns"
@@ -2382,7 +2258,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
       "sns",
       "cloudwatch",
       "ec2"
@@ -2403,8 +2278,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "rds",
-      "s3",
-      "iam",
       "ec2"
     ]
   },
@@ -2439,8 +2312,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "kms"
+      "s3"
     ]
   },
   {
@@ -2548,9 +2420,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "lambda",
-      "s3",
-      "sam",
       "cloudformation"
     ]
   },
@@ -2570,8 +2439,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "sns",
-      "iam",
       "cognito"
     ]
   },
@@ -2612,7 +2479,6 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "dynamodb",
-      "cloudwatch",
       "x-ray"
     ]
   },
@@ -2631,7 +2497,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "sqs",
-      "sns",
       "iam",
       "cloudwatch",
       "ec2"
@@ -2655,7 +2520,6 @@ export const questionsData: Question[] = [
       "api-gateway",
       "dynamodb",
       "iam",
-      "cloudwatch",
       "x-ray"
     ]
   },
@@ -2727,9 +2591,7 @@ export const questionsData: Question[] = [
       1
     ],
     "multiple_correct": false,
-    "topics": [
-      "kms"
-    ]
+    "topics": []
   },
   {
     "id": 143,
@@ -2746,9 +2608,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "s3",
       "iam",
-      "cloudwatch",
       "x-ray"
     ]
   },
@@ -2768,8 +2628,7 @@ export const questionsData: Question[] = [
     "topics": [
       "dynamodb",
       "iam",
-      "ec2",
-      "sam"
+      "ec2"
     ]
   },
   {
@@ -2804,10 +2663,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "dynamodb",
-      "s3",
-      "iam",
-      "cognito",
-      "ec2"
+      "cognito"
     ]
   },
   {
@@ -2824,8 +2680,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "cloudwatch",
-      "beanstalk",
       "cloudformation"
     ]
   },
@@ -2899,9 +2753,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "s3",
-      "cloudwatch",
-      "ec2"
+      "s3"
     ]
   },
   {
@@ -2918,8 +2770,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "api-gateway",
-      "s3"
+      "api-gateway"
     ]
   },
   {
@@ -2936,10 +2787,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "api-gateway",
-      "dynamodb",
-      "ec2",
-      "sam"
+      "ec2"
     ]
   },
   {
@@ -2956,10 +2804,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "sqs",
-      "sns",
-      "cloudwatch"
+      "lambda"
     ]
   },
   {
@@ -2978,7 +2823,6 @@ export const questionsData: Question[] = [
     "topics": [
       "dynamodb",
       "rds",
-      "kinesis",
       "ec2"
     ]
   },
@@ -2998,9 +2842,7 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "dynamodb",
-      "rds",
-      "kinesis",
-      "ec2"
+      "kinesis"
     ]
   },
   {
@@ -3017,10 +2859,8 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "dynamodb",
       "rds",
-      "elasticache",
-      "ec2"
+      "elasticache"
     ]
   },
   {
@@ -3055,7 +2895,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "elasticache",
-      "s3",
       "ecs"
     ]
   },
@@ -3092,7 +2931,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "iam",
-      "cloudwatch",
       "x-ray"
     ]
   },
@@ -3111,10 +2949,8 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "iam",
-      "ec2",
       "codebuild",
-      "codepipeline",
-      "codedeploy"
+      "codepipeline"
     ]
   },
   {
@@ -3131,10 +2967,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "dynamodb",
-      "rds",
-      "elasticache",
-      "s3"
+      "dynamodb"
     ]
   },
   {
@@ -3168,10 +3001,7 @@ export const questionsData: Question[] = [
       2
     ],
     "multiple_correct": false,
-    "topics": [
-      "s3",
-      "codebuild"
-    ]
+    "topics": []
   },
   {
     "id": 166,
@@ -3222,11 +3052,7 @@ export const questionsData: Question[] = [
       1
     ],
     "multiple_correct": false,
-    "topics": [
-      "api-gateway",
-      "dynamodb",
-      "cognito"
-    ]
+    "topics": []
   },
   {
     "id": 169,
@@ -3260,10 +3086,8 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
       "dynamodb",
-      "cognito",
-      "sam"
+      "cognito"
     ]
   },
   {
@@ -3281,8 +3105,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "sns",
-      "cloudwatch",
-      "ec2"
+      "cloudwatch"
     ]
   },
   {
@@ -3299,7 +3122,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
       "sns",
       "cloudwatch",
       "ec2"
@@ -3319,7 +3141,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
       "sns",
       "codepipeline"
     ]
@@ -3358,10 +3179,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "rds",
-      "kms",
-      "iam"
+      "lambda"
     ]
   },
   {
@@ -3415,9 +3233,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "ec2",
-      "sam"
+      "s3"
     ]
   },
   {
@@ -3554,8 +3370,7 @@ export const questionsData: Question[] = [
       "lambda",
       "dynamodb",
       "rds",
-      "s3",
-      "cloudwatch"
+      "s3"
     ]
   },
   {
@@ -3572,11 +3387,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "rds",
-      "s3",
       "ec2",
-      "codepipeline",
       "codedeploy"
     ]
   },
@@ -3594,9 +3405,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
       "s3",
-      "iam",
       "ec2"
     ]
   },
@@ -3615,7 +3424,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "cloudwatch",
       "codepipeline"
     ]
   },
@@ -3635,8 +3443,7 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "s3",
-      "ec2",
-      "sam"
+      "cloudformation"
     ]
   },
   {
@@ -3654,7 +3461,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "s3",
-      "iam",
       "ec2"
     ]
   },
@@ -3675,7 +3481,6 @@ export const questionsData: Question[] = [
     "multiple_correct": true,
     "topics": [
       "s3",
-      "ec2",
       "codepipeline"
     ]
   },
@@ -3694,7 +3499,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "rds",
       "sqs",
       "iam",
       "ec2"
@@ -3734,9 +3538,7 @@ export const questionsData: Question[] = [
       "lambda",
       "api-gateway",
       "dynamodb",
-      "rds",
       "s3",
-      "ec2",
       "codedeploy",
       "cloudformation"
     ]
@@ -3759,8 +3561,6 @@ export const questionsData: Question[] = [
     "topics": [
       "dynamodb",
       "elasticache",
-      "sqs",
-      "cognito",
       "ec2"
     ]
   },
@@ -3778,10 +3578,8 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
       "iam",
-      "cloudwatch",
-      "ec2"
+      "cloudwatch"
     ]
   },
   {
@@ -3798,9 +3596,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
       "api-gateway",
-      "iam",
       "cognito"
     ]
   },
@@ -3838,8 +3634,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "cloudwatch",
-      "ec2",
-      "sam"
+      "ec2"
     ]
   },
   {
@@ -3875,7 +3670,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "api-gateway",
       "cognito"
     ]
   },
@@ -3895,7 +3689,6 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "dynamodb",
-      "rds",
       "iam"
     ]
   },
@@ -3933,7 +3726,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "lambda",
       "s3",
       "ec2",
       "cloudfront"
@@ -3989,9 +3781,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
       "rds",
-      "iam",
       "ec2"
     ]
   },
@@ -4029,7 +3819,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "iam",
       "cognito"
     ]
   },
@@ -4049,9 +3838,7 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "api-gateway",
-      "dynamodb",
-      "iam",
-      "cognito"
+      "dynamodb"
     ]
   },
   {
@@ -4068,8 +3855,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "iam",
-      "cognito"
+      "iam"
     ]
   },
   {
@@ -4109,10 +3895,8 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "dynamodb",
-      "sqs",
       "sns",
-      "kinesis",
-      "cloudwatch"
+      "kinesis"
     ]
   },
   {
@@ -4182,8 +3966,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "iam",
-      "ec2"
+      "iam"
     ]
   },
   {
@@ -4250,8 +4033,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "iam"
+      "s3"
     ]
   },
   {
@@ -4310,8 +4092,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "iam",
-      "ec2",
-      "sam"
+      "ec2"
     ]
   },
   {
@@ -4382,7 +4163,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "ec2",
       "beanstalk"
     ]
   },
@@ -4419,10 +4199,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "s3",
-      "iam",
-      "cognito",
-      "cloudfront"
+      "s3"
     ]
   },
   {
@@ -4477,7 +4254,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "cloudwatch",
       "ec2"
     ]
   },
@@ -4495,8 +4271,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "ec2",
-      "sam"
+      "ec2"
     ]
   },
   {
@@ -4572,8 +4347,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "iam",
       "ec2"
     ]
   },
@@ -4610,12 +4383,7 @@ export const questionsData: Question[] = [
       4
     ],
     "multiple_correct": true,
-    "topics": [
-      "step-functions",
-      "s3",
-      "sns",
-      "ec2"
-    ]
+    "topics": []
   },
   {
     "id": 241,
@@ -4655,7 +4423,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "dynamodb",
       "sns"
     ]
   },
@@ -4746,8 +4513,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "dynamodb",
-      "sam"
+      "dynamodb"
     ]
   },
   {
@@ -4801,7 +4567,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "step-functions",
       "cloudformation"
     ]
   },
@@ -4840,7 +4605,6 @@ export const questionsData: Question[] = [
     "multiple_correct": true,
     "topics": [
       "rds",
-      "sqs",
       "beanstalk"
     ]
   },
@@ -4895,8 +4659,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "dynamodb",
-      "sam"
+      "dynamodb"
     ]
   },
   {
@@ -4984,8 +4747,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "elasticache",
-      "ec2"
+      "elasticache"
     ]
   },
   {
@@ -5003,8 +4765,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "s3",
-      "ec2",
-      "cloudfront"
+      "ec2"
     ]
   },
   {
@@ -5188,8 +4949,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "beanstalk",
-      "alb",
-      "sam"
+      "alb"
     ]
   },
   {
@@ -5205,10 +4965,7 @@ export const questionsData: Question[] = [
       3
     ],
     "multiple_correct": false,
-    "topics": [
-      "s3",
-      "codepipeline"
-    ]
+    "topics": []
   },
   {
     "id": 273,
@@ -5225,9 +4982,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "ec2",
-      "beanstalk",
-      "codebuild",
-      "codepipeline",
       "codedeploy"
     ]
   },
@@ -5246,7 +5000,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "api-gateway",
       "iam"
     ]
   },
@@ -5264,11 +5017,8 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "dynamodb",
-      "rds",
       "elasticache",
-      "iam",
-      "ec2"
+      "iam"
     ]
   },
   {
@@ -5322,8 +5072,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "dynamodb",
-      "sns"
+      "dynamodb"
     ]
   },
   {
@@ -5361,10 +5110,7 @@ export const questionsData: Question[] = [
     "topics": [
       "dynamodb",
       "rds",
-      "s3",
-      "sqs",
-      "kinesis",
-      "ec2"
+      "kinesis"
     ]
   },
   {
@@ -5418,7 +5164,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "codebuild",
       "codedeploy"
     ]
   },
@@ -5475,8 +5220,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "api-gateway",
       "s3",
       "cloudfront"
     ]
@@ -5495,10 +5238,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "api-gateway",
-      "dynamodb",
-      "sqs",
-      "kinesis"
+      "dynamodb"
     ]
   },
   {
@@ -5515,9 +5255,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "elasticache",
-      "s3",
-      "cloudfront"
+      "elasticache"
     ]
   },
   {
@@ -5537,7 +5275,6 @@ export const questionsData: Question[] = [
       "lambda",
       "api-gateway",
       "dynamodb",
-      "sam",
       "cloudformation"
     ]
   },
@@ -5557,8 +5294,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "dynamodb",
-      "cloudfront"
+      "dynamodb"
     ]
   },
   {
@@ -5576,7 +5312,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "cloudwatch",
       "x-ray",
       "ec2"
     ]
@@ -5595,7 +5330,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
       "sns",
       "cloudwatch"
     ]
@@ -5614,7 +5348,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "sam",
       "cloudformation"
     ]
   },
@@ -5634,7 +5367,6 @@ export const questionsData: Question[] = [
     "topics": [
       "rds",
       "elasticache",
-      "sqs",
       "iam"
     ]
   },
@@ -5654,8 +5386,6 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "api-gateway",
-      "dynamodb",
-      "kinesis",
       "iam"
     ]
   },
@@ -5673,8 +5403,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "elasticache",
-      "ec2"
+      "elasticache"
     ]
   },
   {
@@ -5727,13 +5456,9 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "lambda",
-      "step-functions",
       "rds",
       "elasticache",
-      "iam",
-      "ec2",
-      "alb"
+      "ec2"
     ]
   },
   {
@@ -5785,9 +5510,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "s3",
-      "iam",
-      "cognito",
-      "sam"
+      "cognito"
     ]
   },
   {
@@ -5842,9 +5565,7 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "s3",
-      "cloudwatch",
-      "codedeploy",
-      "sam"
+      "cloudwatch"
     ]
   },
   {
@@ -5861,10 +5582,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "api-gateway",
-      "sqs",
-      "x-ray"
+      "api-gateway"
     ]
   },
   {
@@ -5881,12 +5599,8 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "api-gateway",
-      "elasticache",
       "s3",
       "ec2",
-      "ecs",
       "cloudfront"
     ]
   },
@@ -5923,8 +5637,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "rds",
-      "kms",
-      "iam",
       "cognito"
     ]
   },
@@ -5941,10 +5653,7 @@ export const questionsData: Question[] = [
       2
     ],
     "multiple_correct": false,
-    "topics": [
-      "codebuild",
-      "codedeploy"
-    ]
+    "topics": []
   },
   {
     "id": 311,
@@ -5978,10 +5687,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "rds",
-      "elasticache",
-      "s3",
-      "kinesis"
+      "elasticache"
     ]
   },
   {
@@ -6016,7 +5722,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "kms",
       "iam",
       "ec2"
     ]
@@ -6035,12 +5740,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "dynamodb",
-      "rds",
-      "kinesis",
-      "cloudwatch",
-      "x-ray"
+      "cloudwatch"
     ]
   },
   {
@@ -6076,10 +5776,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "rds",
-      "elasticache",
-      "s3",
-      "ec2",
-      "cloudfront"
+      "elasticache"
     ]
   },
   {
@@ -6132,8 +5829,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "iam",
       "ec2"
     ]
   },
@@ -6214,7 +5909,6 @@ export const questionsData: Question[] = [
     "topics": [
       "iam",
       "x-ray",
-      "ec2",
       "ecs"
     ]
   },
@@ -6232,7 +5926,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "rds",
       "s3"
     ]
   },
@@ -6325,8 +6018,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "s3"
+      "lambda"
     ]
   },
   {
@@ -6362,9 +6054,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "s3",
-      "codebuild"
+      "lambda"
     ]
   },
   {
@@ -6382,10 +6072,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "dynamodb",
-      "sqs",
-      "iam",
-      "ec2",
-      "alb"
+      "ec2"
     ]
   },
   {
@@ -6403,8 +6090,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "dynamodb",
-      "elasticache",
-      "kinesis",
       "iam"
     ]
   },
@@ -6421,9 +6106,7 @@ export const questionsData: Question[] = [
       2
     ],
     "multiple_correct": false,
-    "topics": [
-      "codebuild"
-    ]
+    "topics": []
   },
   {
     "id": 336,
@@ -6440,9 +6123,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "sns",
-      "cloudwatch",
-      "ec2"
+      "cloudwatch"
     ]
   },
   {
@@ -6476,8 +6157,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "kms",
       "iam",
       "cognito"
     ]
@@ -6535,8 +6214,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "ec2",
       "beanstalk"
     ]
   },
@@ -6555,9 +6232,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "dynamodb",
-      "sqs",
-      "iam",
-      "cloudfront"
+      "iam"
     ]
   },
   {
@@ -6574,11 +6249,9 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
       "rds",
       "s3",
-      "kms",
-      "cognito"
+      "kms"
     ]
   },
   {
@@ -6645,11 +6318,8 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
       "dynamodb",
-      "rds",
-      "s3",
-      "ec2"
+      "s3"
     ]
   },
   {
@@ -6684,7 +6354,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "rds",
       "kinesis",
       "iam"
     ]
@@ -6720,8 +6389,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "ec2"
+      "s3"
     ]
   },
   {
@@ -6738,9 +6406,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "dynamodb",
-      "rds",
-      "ec2"
+      "dynamodb"
     ]
   },
   {
@@ -6808,8 +6474,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "cognito",
-      "ec2"
+      "cognito"
     ]
   },
   {
@@ -6848,7 +6513,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "kms",
       "cloudfront"
     ]
   },
@@ -6904,9 +6568,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "s3",
-      "ec2"
+      "lambda"
     ]
   },
   {
@@ -6923,10 +6585,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "beanstalk",
-      "codepipeline",
-      "cloudformation"
+      "beanstalk"
     ]
   },
   {
@@ -6964,11 +6623,8 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "elasticache",
       "sqs",
-      "sns",
-      "kinesis",
-      "cognito"
+      "sns"
     ]
   },
   {
@@ -6987,8 +6643,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "iam",
-      "sam"
+      "iam"
     ]
   },
   {
@@ -7022,8 +6677,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "alb",
-      "sam"
+      "alb"
     ]
   },
   {
@@ -7061,7 +6715,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "ec2",
       "codebuild",
       "codepipeline",
       "codedeploy"
@@ -7100,14 +6753,8 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "api-gateway",
-      "dynamodb",
       "rds",
-      "s3",
-      "cognito",
-      "ec2",
-      "ecs"
+      "ec2"
     ]
   },
   {
@@ -7141,8 +6788,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "ec2"
+      "s3"
     ]
   },
   {
@@ -7160,8 +6806,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "dynamodb",
-      "sns"
+      "dynamodb"
     ]
   },
   {
@@ -7193,11 +6838,7 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "lambda",
-      "dynamodb",
-      "rds",
       "sqs",
-      "kinesis",
       "ec2"
     ]
   },
@@ -7215,8 +6856,6 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": false,
     "topics": [
-      "s3",
-      "cognito",
       "codebuild"
     ]
   },
@@ -7253,9 +6892,7 @@ export const questionsData: Question[] = [
     "topics": [
       "lambda",
       "dynamodb",
-      "s3",
-      "cloudwatch",
-      "ec2"
+      "s3"
     ]
   },
   {
@@ -7274,11 +6911,8 @@ export const questionsData: Question[] = [
     ],
     "multiple_correct": true,
     "topics": [
-      "lambda",
       "api-gateway",
-      "beanstalk",
-      "codedeploy",
-      "sam"
+      "cloudformation"
     ]
   },
   {
@@ -7296,8 +6930,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "s3",
-      "sqs"
+      "s3"
     ]
   },
   {
@@ -7315,8 +6948,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "api-gateway",
-      "cloudfront"
+      "api-gateway"
     ]
   },
   {
@@ -7334,9 +6966,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "api-gateway",
-      "dynamodb",
-      "rds",
-      "iam",
       "cognito"
     ]
   },
@@ -7372,7 +7001,6 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "lambda",
-      "dynamodb",
       "rds"
     ]
   },
@@ -7391,8 +7019,7 @@ export const questionsData: Question[] = [
     "multiple_correct": false,
     "topics": [
       "s3",
-      "ec2",
-      "sam"
+      "ec2"
     ]
   },
   {
@@ -7412,5 +7039,4 @@ export const questionsData: Question[] = [
       "s3"
     ]
   }
-
-];
+]

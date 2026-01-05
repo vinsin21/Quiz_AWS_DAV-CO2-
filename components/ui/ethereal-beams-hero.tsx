@@ -516,7 +516,7 @@ export default function EtherealBeamsHero() {
                 Solve Mock Test
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto font-semibold bg-transparent" onClick={() => navigate('/tests')}>
+              <Button variant="outline" size="lg" className="w-full sm:w-auto font-semibold bg-transparent" onClick={() => navigate('/curriculum')}>
                 View Curriculum
               </Button>
             </div>

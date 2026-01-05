@@ -7,6 +7,7 @@ import LandingPage from './pages/LandingPage.tsx';
 import MockTestList from './pages/MockTestList.tsx';
 import TestDetails from './pages/TestDetails.tsx';
 import QuizPage from './pages/QuizPage.tsx';
+import CurriculumPage from './pages/CurriculumPage.tsx';
 
 const Router = HashRouter;
 
@@ -19,6 +20,7 @@ const App: React.FC = () => {
           <Route path="/tests" element={<MockTestList />} />
           <Route path="/tests/:testId" element={<TestDetails />} />
           <Route path="/quiz/:testId" element={<QuizPage />} />
+          <Route path="/curriculum" element={<CurriculumPage />} />
         </Routes>
       </div>
     </Router>

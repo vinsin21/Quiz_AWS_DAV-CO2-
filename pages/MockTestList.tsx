@@ -5,13 +5,44 @@ import * as RouterDom from "react-router-dom";
 const { useNavigate } = RouterDom as any;
 import { Card } from '../components/ui/Card.tsx';
 import { mockTests } from '../data/mockTests.ts';
-import { Cloud, Shield, Database, LayoutPanelTop, Filter, ChevronDown, Check } from 'lucide-react';
+import { 
+  Cloud, 
+  Shield, 
+  Database, 
+  LayoutPanelTop, 
+  Filter, 
+  ChevronDown, 
+  Check, 
+  ArrowLeft, 
+  Code, 
+  Zap, 
+  Layers 
+} from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Fix for framer-motion property errors
 const MotionDiv = motion.div as any;
 const MotionP = motion.p as any;
 const AnyAnimatePresence = AnimatePresence as any;
+
+const FloatingIcon = ({ children, delay = 0, className = "" }: { children: React.ReactNode, delay?: number, className?: string }) => (
+  <MotionDiv
+    initial={{ y: 0, opacity: 0 }}
+    animate={{ 
+      y: [0, -15, 0],
+      opacity: [0.03, 0.1, 0.03],
+    }}
+    transition={{ 
+      duration: 5, 
+      repeat: Infinity, 
+      delay,
+      ease: "easeInOut" 
+    }}
+    className={`absolute pointer-events-none ${className}`}
+  >
+    {children}
+  </MotionDiv>
+);
 
 type FilterTopic = 'all' | 'lambda' | 'dynamodb' | 'iam' | 's3';
 
@@ -65,22 +96,43 @@ const MockTestList: React.FC = () => {
   const activeTopic = TOPICS.find(t => t.value === selectedTopic) || TOPICS[0];
 
   return (
-    <div className="min-h-screen bg-black py-16 px-6">
-      <div className="mx-auto max-w-7xl">
+    <div className="min-h-screen bg-black pb-16 selection:bg-orange-500/30">
+      {/* Navigation Header */}
+      <nav className="sticky top-0 z-50 bg-black/60 backdrop-blur-lg border-b border-white/5">
+        <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+          <button onClick={() => navigate('/')} className="flex items-center text-gray-400 hover:text-white transition-colors gap-2 font-medium">
+            <ArrowLeft size={18} />
+            Back to Home
+          </button>
+          <div className="text-xs font-bold text-orange-500 uppercase tracking-widest bg-orange-500/10 px-3 py-1.5 rounded-full border border-orange-500/20">
+            Practice Exams
+          </div>
+        </div>
+      </nav>
+
+      <div className="relative mx-auto max-w-7xl px-6 pt-20">
+        {/* Isolated Floating Icons Layer with its own overflow control */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+          <FloatingIcon delay={0.5} className="top-10 left-[5%] text-blue-500"><Zap size={60} /></FloatingIcon>
+          <FloatingIcon delay={1.5} className="top-40 right-[5%] text-orange-500"><Code size={80} /></FloatingIcon>
+          <FloatingIcon delay={2.5} className="bottom-0 left-[15%] text-zinc-600"><Layers size={50} /></FloatingIcon>
+        </div>
+
+        {/* Hero Section - Increased Z-index to z-30 */}
         <MotionDiv 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-12 space-y-6 text-center"
+          className="relative z-30 mb-12 space-y-6 text-center"
         >
           <div className="space-y-2">
-            <h1 className="text-4xl font-bold text-white sm:text-5xl">Practice Exams</h1>
+            <h1 className="text-4xl font-bold text-white sm:text-6xl tracking-tight">Select Your Test</h1>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto font-medium">
-              Select a general simulation or focus on specific AWS services to master individual domains.
+              Choose a general simulation or focus on specific AWS services to master individual domains.
             </p>
           </div>
 
           {/* Custom Animated Dropdown Filter */}
-          <div className="flex flex-col items-center gap-4 pt-4 relative z-50">
+          <div className="flex flex-col items-center gap-4 pt-4">
             <div className="relative w-full max-w-[280px]" ref={dropdownRef}>
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -106,7 +158,7 @@ const MockTestList: React.FC = () => {
                     animate={{ opacity: 1, y: 4, scale: 1 }}
                     exit={{ opacity: 0, y: 10, scale: 0.95 }}
                     transition={{ duration: 0.15, ease: "easeOut" }}
-                    className="absolute top-full left-0 w-full mt-2 bg-zinc-900/90 backdrop-blur-xl border border-white/10 rounded-2xl p-2 shadow-2xl overflow-hidden"
+                    className="absolute top-full left-0 w-full mt-2 bg-zinc-900/95 backdrop-blur-2xl border border-white/10 rounded-2xl p-2 shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-[60] overflow-hidden"
                   >
                     {TOPICS.map((topic) => (
                       <button
@@ -151,9 +203,10 @@ const MockTestList: React.FC = () => {
           </div>
         </MotionDiv>
 
+        {/* Cards Grid - Lower Z-index to z-10 */}
         <MotionDiv 
           layout
-          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 relative z-10"
         >
           <AnyAnimatePresence mode="popLayout">
             {filteredTests.map((test) => (
