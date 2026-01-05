@@ -65,9 +65,9 @@ const CurriculumPage: React.FC = () => {
     { day: "Day 7", title: "Final Polish", desc: "Review all failed questions and take the final 87-question comprehensive exam." },
   ];
 
-  // Clean URLs for better compatibility
-  const youtubeEmbedUrl = "https://www.youtube-nocookie.com/embed/Bf5Wcfh9cRM?start=648&rel=0";
-  const youtubeExternalUrl = "https://www.youtube.com/watch?v=Bf5Wcfh9cRM&t=648s";
+  // Clean URLs starting from 0:00
+  const youtubeEmbedUrl = "https://www.youtube-nocookie.com/embed/Bf5Wcfh9cRM?rel=0";
+  const youtubeExternalUrl = "https://www.youtube.com/watch?v=Bf5Wcfh9cRM";
 
   return (
     <div className="min-h-screen bg-black pb-24 selection:bg-orange-500/30">
