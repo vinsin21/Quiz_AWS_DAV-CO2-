@@ -19,7 +19,9 @@ import {
   Database,
   Terminal,
   Cpu,
-  Lock
+  Lock,
+  Play,
+  ExternalLink
 } from 'lucide-react';
 
 const MotionDiv = motion.div as any;
@@ -63,6 +65,10 @@ const CurriculumPage: React.FC = () => {
     { day: "Day 7", title: "Final Polish", desc: "Review all failed questions and take the final 87-question comprehensive exam." },
   ];
 
+  // Clean URLs for better compatibility
+  const youtubeEmbedUrl = "https://www.youtube-nocookie.com/embed/Bf5Wcfh9cRM?start=648&rel=0";
+  const youtubeExternalUrl = "https://www.youtube.com/watch?v=Bf5Wcfh9cRM&t=648s";
+
   return (
     <div className="min-h-screen bg-black pb-24 selection:bg-orange-500/30">
       {/* Navigation */}
@@ -78,8 +84,8 @@ const CurriculumPage: React.FC = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="relative px-6 py-20 md:py-32 overflow-hidden">
+      {/* Hero Section with Embedded Video */}
+      <section className="relative px-6 py-12 md:py-24 overflow-hidden">
         {/* Floating Background Icons */}
         <FloatingIcon delay={0} className="top-10 left-[10%] text-orange-500"><Cloud size={80} /></FloatingIcon>
         <FloatingIcon delay={1} className="bottom-20 right-[15%] text-yellow-500"><Database size={60} /></FloatingIcon>
@@ -87,21 +93,55 @@ const CurriculumPage: React.FC = () => {
         <FloatingIcon delay={1.5} className="bottom-10 left-[20%] text-blue-500"><Lock size={50} /></FloatingIcon>
         <FloatingIcon delay={2.5} className="top-20 left-[40%] text-orange-600"><Cpu size={40} /></FloatingIcon>
 
-        <div className="mx-auto max-w-4xl text-center space-y-6 relative z-10">
+        <div className="mx-auto max-w-5xl relative z-10">
           <MotionDiv 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="space-y-4"
+            className="space-y-8 flex flex-col items-center"
           >
-            <h1 className="text-4xl md:text-7xl font-black tracking-tight leading-tight">
-              AWS Developer Associate <br />
-              <span className="bg-gradient-to-r from-orange-400 to-yellow-200 bg-clip-text text-transparent">
-                Preparation Curriculum
-              </span>
-            </h1>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-              A simple, focused roadmap that shows what the exam tests, which topics matter most, and how to prepare efficiently — without wasting months.
-            </p>
+            {/* Context Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-bold text-orange-400 uppercase tracking-widest backdrop-blur-sm">
+              <Play size={12} className="fill-orange-400" />
+              Complete Certification Roadmap
+            </div>
+
+            {/* Video Container with Premium Styling */}
+            <div className="w-full relative group">
+              {/* Outer Glow Effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-orange-600/30 via-yellow-500/20 to-orange-600/30 rounded-[2.5rem] blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-1000" />
+              
+              <div className="relative aspect-video w-full rounded-[2rem] border border-white/10 bg-zinc-900 overflow-hidden shadow-2xl">
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src={youtubeEmbedUrl}
+                  title="AWS Certified Developer Associate Roadmap"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
+              {/* Subtle tech accents */}
+              <div className="absolute -top-3 -right-3 w-12 h-12 border-t-2 border-r-2 border-orange-500/40 rounded-tr-2xl pointer-events-none" />
+              <div className="absolute -bottom-3 -left-3 w-12 h-12 border-b-2 border-l-2 border-orange-500/40 rounded-bl-2xl pointer-events-none" />
+            </div>
+
+            <div className="text-center space-y-6">
+              <div className="space-y-2">
+                <h2 className="text-2xl font-bold text-white tracking-tight">Master the DVA-C02 Domain</h2>
+                <p className="text-sm text-gray-500 font-medium">Watch the expert breakdown of everything you need to pass first attempt.</p>
+              </div>
+              
+              <a 
+                href={youtubeExternalUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-red-600/10 border border-red-600/20 text-red-500 hover:bg-red-600/20 transition-all font-bold text-sm group"
+              >
+                <ExternalLink size={16} />
+                If video doesn't play, watch on YouTube
+              </a>
+            </div>
           </MotionDiv>
         </div>
       </section>
