@@ -251,8 +251,9 @@ const QuizPage: React.FC = () => {
             className="space-y-8"
           >
             <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="shrink-0 w-8 h-8 rounded-lg bg-orange-500/20 flex items-center justify-center text-orange-500">
+              <div className="flex items-start md:gap-4">
+                {/* Hidden on mobile to save horizontal space, shown from md screen up */}
+                <div className="hidden md:flex shrink-0 w-8 h-8 rounded-lg bg-orange-500/20 items-center justify-center text-orange-500">
                   <HelpCircle size={18} />
                 </div>
                 <h2 className="text-xl md:text-2xl font-medium leading-relaxed text-gray-100">
@@ -261,12 +262,12 @@ const QuizPage: React.FC = () => {
               </div>
 
               {currentQuestion.multiple_correct && (
-                <div className="ml-12 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-[10px] text-blue-400 font-bold uppercase tracking-widest">
+                <div className="md:ml-12 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-[10px] text-blue-400 font-bold uppercase tracking-widest">
                   Multiple Choices Required
                 </div>
               )}
 
-              <div className="grid gap-3 ml-0 sm:ml-12">
+              <div className="grid gap-3 ml-0 md:ml-12">
                 {currentQuestion.options.map((option, idx) => {
                   const isSelected = selectedIndices.includes(idx);
                   const isCorrect = currentQuestion.correct_answers.includes(idx);
@@ -310,7 +311,7 @@ const QuizPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="ml-0 sm:ml-12 pt-8 flex flex-col sm:flex-row items-center gap-4">
+            <div className="ml-0 md:ml-12 pt-8 flex flex-col sm:flex-row items-center gap-4">
               {!isAnswered && currentQuestion.multiple_correct && (
                 <button
                   onClick={() => submitAnswer()}
