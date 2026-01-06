@@ -14,18 +14,35 @@ const MotionDiv = motion.div as any;
 const MotionButton = motion.button as any;
 const AnyAnimatePresence = AnimatePresence as any;
 
+/**
+ * Fisher-Yates shuffle algorithm to randomize array elements
+ */
+const shuffleArray = <T,>(array: T[]): T[] => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 const QuizPage: React.FC = () => {
   // Fix: Removed generic type argument from untyped useParams call to resolve TypeScript error
   const { testId } = useParams() as { testId: string };
   const navigate = useNavigate();
   
   const test = mockTests.find(t => t.id === testId);
+  
+  // Randomize the order of questions for this specific test session
   const questions: Question[] = useMemo(() => {
     if (!test) return [];
     const all = questionsData;
-    return test.questionIds.map(id => {
+    
+    // 1. Get the questions belonging to this test
+    const testQuestions = test.questionIds.map(id => {
       const q = all.find(item => item.id === id);
       if (q) return q;
+      // Fallback for missing data
       return {
         id,
         question: `Placeholder question for AWS Domain ${id}?`,
@@ -34,6 +51,9 @@ const QuizPage: React.FC = () => {
         multiple_correct: false
       };
     });
+
+    // 2. Return shuffled questions to ensure different order every time the test is chosen
+    return shuffleArray(testQuestions);
   }, [test]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
