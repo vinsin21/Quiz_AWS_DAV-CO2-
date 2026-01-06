@@ -1,19 +1,15 @@
 
 import React, { forwardRef, useImperativeHandle, useEffect, useRef, useMemo, type FC, type ReactNode } from "react"
 import * as THREE from "three"
-import { Canvas, useFrame, type ThreeElements } from "@react-three/fiber"
+import { Canvas, useFrame } from "@react-three/fiber"
 import { PerspectiveCamera } from "@react-three/drei"
 import { ArrowRight, Github, Star } from "lucide-react"
-// Fix for react-router-dom useNavigate error by using a type-casting import workaround
 import * as RouterDom from "react-router-dom"
 const { useNavigate } = RouterDom as any
 
-// Standard Three.js elements are handled by @react-three/fiber's types.
-// Standard HTML elements are provided by @types/react.
-
 const { degToRad } = THREE.MathUtils;
 
-// Fix for JSX intrinsic elements errors by defining them as constants to avoid namespace augmentation.
+// Fix for JSX intrinsic elements errors by defining them as constants
 const TMesh = "mesh" as any;
 const TDirectionalLight = "directionalLight" as any;
 const TGroup = "group" as any;
@@ -47,7 +43,6 @@ function extendMaterial<T extends THREE.Material = THREE.Material>(
   const baseDefines = physical.defines ?? {}
 
   const uniforms: Record<string, THREE.IUniform> = THREE.UniformsUtils.clone(baseUniforms)
-
   const defaults = new BaseMaterial(cfg.material || {}) as any
 
   if (defaults.color) uniforms.diffuse.value = defaults.color
@@ -279,13 +274,12 @@ const MergedPlanes = forwardRef<
     [count, width, height],
   )
 
-  useFrame((_, delta) => {
+  useFrame((state) => {
     if (mesh.current) {
-      mesh.current.material.uniforms.time.value += 0.1 * delta
+      mesh.current.material.uniforms.time.value = state.clock.getElapsedTime() * 0.12
     }
   })
 
-  // Fixed JSX intrinsic element errors by using a typed constant TMesh
   return <TMesh ref={mesh} geometry={geometry} material={material} />
 })
 
@@ -319,7 +313,6 @@ const DirLight: FC<{ position: [number, number, number]; color: string }> = ({ p
     dir.current.shadow.bias = -0.004
   }, [])
 
-  // Fixed JSX intrinsic element errors by using a typed constant TDirectionalLight
   return <TDirectionalLight ref={dir} color={color} intensity={1} position={position} />
 }
 
@@ -394,7 +387,6 @@ const Beams: FC<BeamsProps> = ({
     [speed, noiseIntensity, scale],
   )
 
-  // Fixed JSX intrinsic element errors by using typed constants for group, ambientLight and color
   return (
     <CanvasWrapper>
       <TGroup rotation={[0, 0, degToRad(rotation)]}>
@@ -411,10 +403,13 @@ const Beams: FC<BeamsProps> = ({
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "default" | "outline" | "ghost"
   size?: "sm" | "lg"
+  className?: string
+  children?: React.ReactNode
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
+  autoAnimate?: boolean
 }
 
-// Fixed ButtonProps inheritance by removing redundant property definitions and ensuring standard HTML attributes like className and onClick are available.
-const Button = ({ variant = "default", size = "sm", className = "", children, ...props }: ButtonProps) => {
+const Button = ({ variant = "default", size = "sm", className = "", children, autoAnimate = false, ...props }: ButtonProps) => {
   const baseClasses = "inline-flex items-center justify-center font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20 disabled:pointer-events-none disabled:opacity-50"
 
   const variantClasses = variant === "outline" 
@@ -423,19 +418,18 @@ const Button = ({ variant = "default", size = "sm", className = "", children, ..
     ? "text-white/90 hover:text-white hover:bg-white/10"
     : "bg-white text-black hover:bg-gray-100"
 
-  // Updated sizeClasses to be responsive: smaller on mobile, larger on desktop
   const sizeClasses = size === "lg" 
     ? "px-6 py-4 text-base sm:px-8 sm:py-6 sm:text-lg" 
     : "h-9 px-4 py-2 text-sm"
 
-  // Fixed JSX errors by restoring standard React element typings
   return (
     <button
       className={`group relative overflow-hidden rounded-xl ${baseClasses} ${variantClasses} ${sizeClasses} ${className}`}
       {...props}
     >
       <span className="relative z-10 flex items-center">{children}</span>
-      <div className="absolute inset-0 -top-2 -bottom-2 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
+      {/* Glare effect: group-hover for large screens, sm:animate-glare-bounce for automatic ping-ponging on mobile if enabled */}
+      <div className={`absolute inset-0 -top-2 -bottom-2 bg-gradient-to-r from-transparent via-white/25 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out sm:group-hover:translate-x-full ${autoAnimate ? 'animate-[glare-bounce_6s_infinite_ease-in-out] sm:animate-none' : ''}`} />
     </button>
   )
 }
@@ -443,9 +437,16 @@ const Button = ({ variant = "default", size = "sm", className = "", children, ..
 export default function EtherealBeamsHero() {
   const navigate = useNavigate();
 
-  // Fixed JSX errors by restoring standard React element typings
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-black">
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes glare-bounce {
+          0% { transform: translateX(-150%) skewX(-12deg); }
+          50% { transform: translateX(150%) skewX(-12deg); }
+          100% { transform: translateX(-150%) skewX(-12deg); }
+        }
+      `}} />
+      
       <div className="absolute inset-0 z-0">
         <Beams
           beamWidth={2.5}
@@ -499,7 +500,7 @@ export default function EtherealBeamsHero() {
               {"Passed by thousands of developers"}
             </div>
 
-            <h1 className="mb-6 text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
+            <h1 className="mb-6 text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1]">
               Master the{" "}
               <span className="bg-gradient-to-r from-orange-400 via-yellow-200 to-white bg-clip-text text-transparent">
                 AWS Developer
@@ -507,32 +508,32 @@ export default function EtherealBeamsHero() {
               Associate Exam
             </h1>
 
-            <p className="mb-10 text-lg leading-8 text-white/80 sm:text-xl lg:text-2xl max-w-3xl mx-auto">
-              The ultimate practice platform with 380+ real-world MCQs, detailed explanations, and performance analytics tailored for DVA-C02 success.
+            <p className="mb-10 text-sm sm:text-xl lg:text-2xl leading-relaxed text-white/80 max-w-3xl mx-auto px-4 sm:px-0">
+              380+ real-world MCQs, detailed explanations, and performance analytics for DVA-C02 success.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 px-6 sm:px-0">
               <Button size="lg" className="w-full sm:w-auto shadow-2xl shadow-orange-500/25 font-semibold" onClick={() => navigate('/tests')}>
                 Solve Mock Test
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto font-semibold bg-transparent" onClick={() => navigate('/curriculum')}>
+              <Button variant="outline" size="lg" className="w-full sm:w-auto font-semibold bg-transparent" autoAnimate={true} onClick={() => navigate('/curriculum')}>
                 View Curriculum
               </Button>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
+            <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto px-4">
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-2">387</div>
-                <div className="text-white/60 text-sm">MCQ Questions</div>
+                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">387</div>
+                <div className="text-white/60 text-[10px] sm:text-sm uppercase font-black tracking-widest">MCQs</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-2">12+</div>
-                <div className="text-white/60 text-sm">Mock Tests</div>
+                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">12+</div>
+                <div className="text-white/60 text-[10px] sm:text-sm uppercase font-black tracking-widest">Tests</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-2">99%</div>
-                <div className="text-white/60 text-sm">Pass Rate</div>
+                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">99%</div>
+                <div className="text-white/60 text-[10px] sm:text-sm uppercase font-black tracking-widest">Pass Rate</div>
               </div>
             </div>
           </div>

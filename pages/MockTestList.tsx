@@ -25,7 +25,8 @@ const MotionDiv = motion.div as any;
 const MotionP = motion.p as any;
 const AnyAnimatePresence = AnimatePresence as any;
 
-const FloatingIcon = ({ children, delay = 0, className = "" }: { children: React.ReactNode, delay?: number, className?: string }) => (
+// Updated props to make children optional for better JSX child handling
+const FloatingIcon = ({ children, delay = 0, className = "" }: { children?: React.ReactNode, delay?: number, className?: string }) => (
   <MotionDiv
     initial={{ y: 0, opacity: 0 }}
     animate={{ 
