@@ -428,7 +428,7 @@ const Button = ({ variant = "default", size = "sm", className = "", children, au
       {...props}
     >
       <span className="relative z-10 flex items-center">{children}</span>
-      {/* Glare effect: group-hover for large screens, sm:animate-glare-bounce for automatic ping-ponging on mobile if enabled */}
+      {/* Glare effect */}
       <div className={`absolute inset-0 -top-2 -bottom-2 bg-gradient-to-r from-transparent via-white/25 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out sm:group-hover:translate-x-full ${autoAnimate ? 'animate-[glare-bounce_6s_infinite_ease-in-out] sm:animate-none' : ''}`} />
     </button>
   )
@@ -438,7 +438,7 @@ export default function EtherealBeamsHero() {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-black">
+    <div className="relative min-h-screen w-full overflow-hidden bg-black flex flex-col">
       <style dangerouslySetInnerHTML={{ __html: `
         @keyframes glare-bounce {
           0% { transform: translateX(-150%) skewX(-12deg); }
@@ -464,7 +464,7 @@ export default function EtherealBeamsHero() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
-              <span className="text-xl font-bold text-white">AWS Cloud Mastery</span>
+              <span className="text-xl font-bold text-white tracking-tight">AWS Cloud Mastery</span>
             </div>
 
             <div className="hidden md:flex items-center space-x-1 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 p-1 -mr-6">
@@ -492,54 +492,65 @@ export default function EtherealBeamsHero() {
         </div>
       </nav>
 
-      <div className="relative z-10 flex min-h-[calc(100vh-4rem)] items-center">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-center">
-            <div className="mb-8 inline-flex items-center rounded-full bg-white/5 backdrop-blur-xl border border-white/10 px-4 py-2 text-sm text-white/90">
-              <Star className="mr-2 h-4 w-4 text-white" />
-              {"Passed by thousands of developers"}
+      <div className="relative z-10 flex-1 flex items-center justify-center py-12">
+        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center flex flex-col items-center">
+            {/* Context Badge */}
+            <div className="mb-8 inline-flex items-center rounded-full bg-white/5 backdrop-blur-xl border border-white/10 px-4 py-2 text-[10px] sm:text-xs font-black uppercase tracking-widest text-white/90">
+              <Star className="mr-2 h-3 w-3 text-orange-400" />
+              {"DVA-C02 Certification Success 2025"}
             </div>
 
-            <h1 className="mb-6 text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter text-white leading-[1.1] text-balance">
-              Master the{" "}
-              <span className="bg-gradient-to-r from-orange-400 via-yellow-200 to-white bg-clip-text text-transparent">
-                AWS Developer
-              </span>{" "}
-              Associate Exam
-            </h1>
+            {/* Title - The Widest Element */}
+            <div className="w-full max-w-6xl mx-auto mb-8 px-2 sm:px-0">
+              <h1 className="text-[clamp(2.5rem,11.5vw,7.5rem)] font-extrabold tracking-[-0.05em] text-white leading-[0.9] text-balance">
+                Master the{" "}
+                <span className="bg-gradient-to-r from-orange-400 via-yellow-200 to-white bg-clip-text text-transparent italic">
+                  AWS Developer
+                </span>{" "}
+                Associate Exam
+              </h1>
+            </div>
 
-            <p className="mb-10 text-base sm:text-xl lg:text-2xl leading-relaxed text-white/80 max-w-3xl mx-auto px-4 sm:px-0 text-balance">
-              380+ real-world MCQs, detailed explanations, and performance analytics for DVA-C02 success.
-            </p>
+            {/* Description - Narrower than title for visual balance */}
+            <div className="w-full max-w-xl lg:max-w-2xl mx-auto mb-12">
+              <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/60 text-balance px-4">
+                380+ real-world MCQs, detailed explanations, and performance analytics tailored for the modern cloud architect.
+              </p>
+            </div>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 px-6 sm:px-0">
-              <Button size="lg" className="w-full sm:w-auto shadow-2xl shadow-orange-500/25 font-semibold" onClick={() => navigate('/tests')}>
+            {/* CTA Section - Even narrower for focused action */}
+            <div className="w-full max-w-md mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 px-6">
+              <Button size="lg" className="w-full sm:w-auto shadow-2xl shadow-orange-500/20 font-bold" onClick={() => navigate('/tests')}>
                 Solve Mock Test
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto font-semibold bg-transparent" autoAnimate={true} onClick={() => navigate('/curriculum')}>
-                View Curriculum
+              <Button variant="outline" size="lg" className="w-full sm:w-auto font-bold bg-transparent" autoAnimate={true} onClick={() => navigate('/curriculum')}>
+                Study Guide
               </Button>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto px-4">
-              <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">387</div>
-                <div className="text-white/60 text-[10px] sm:text-sm uppercase font-black tracking-widest">MCQs</div>
+            {/* Quick Stats */}
+            <div className="grid grid-cols-3 gap-6 sm:gap-16 max-w-3xl mx-auto border-t border-white/10 pt-10 px-4">
+              <div className="text-center group">
+                <div className="text-2xl sm:text-4xl font-black text-white mb-1 group-hover:text-orange-400 transition-colors">387</div>
+                <div className="text-white/40 text-[9px] sm:text-[10px] uppercase font-black tracking-widest">Questions</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">12+</div>
-                <div className="text-white/60 text-[10px] sm:text-sm uppercase font-black tracking-widest">Tests</div>
+              <div className="text-center group">
+                <div className="text-2xl sm:text-4xl font-black text-white mb-1 group-hover:text-orange-400 transition-colors">12+</div>
+                <div className="text-white/40 text-[9px] sm:text-[10px] uppercase font-black tracking-widest">Full Tests</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">99%</div>
-                <div className="text-white/60 text-[10px] sm:text-sm uppercase font-black tracking-widest">Pass Rate</div>
+              <div className="text-center group">
+                <div className="text-2xl sm:text-4xl font-black text-white mb-1 group-hover:text-orange-400 transition-colors">99%</div>
+                <div className="text-white/40 text-[9px] sm:text-[10px] uppercase font-black tracking-widest">Efficiency</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute inset-0 z-0 bg-gradient-to-t from-black/50 via-transparent to-black/30" />
+      
+      {/* Decorative gradient overlay */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none opacity-60" />
     </div>
   )
 }
