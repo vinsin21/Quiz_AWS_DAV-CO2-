@@ -500,7 +500,7 @@ export default function EtherealBeamsHero() {
               {"Passed by thousands of developers"}
             </div>
 
-            <h1 className="mb-6 text-3xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight sm:leading-[1.1]">
+            <h1 className="mb-6 text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tighter text-white leading-[1.1] text-balance">
               Master the{" "}
               <span className="bg-gradient-to-r from-orange-400 via-yellow-200 to-white bg-clip-text text-transparent">
                 AWS Developer
@@ -508,7 +508,7 @@ export default function EtherealBeamsHero() {
               Associate Exam
             </h1>
 
-            <p className="mb-10 text-sm sm:text-xl lg:text-2xl leading-relaxed text-white/80 max-w-3xl mx-auto px-4 sm:px-0">
+            <p className="mb-10 text-base sm:text-xl lg:text-2xl leading-relaxed text-white/80 max-w-3xl mx-auto px-4 sm:px-0 text-balance">
               380+ real-world MCQs, detailed explanations, and performance analytics for DVA-C02 success.
             </p>
 
