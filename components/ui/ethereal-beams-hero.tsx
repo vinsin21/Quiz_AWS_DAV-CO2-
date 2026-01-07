@@ -500,7 +500,7 @@ export default function EtherealBeamsHero() {
               {"Passed by thousands of developers"}
             </div>
 
-            <h1 className="mb-6 text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tighter text-white leading-[1.1] text-balance">
+            <h1 className="mb-6 text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter text-white leading-[1.1] text-balance">
               Master the{" "}
               <span className="bg-gradient-to-r from-orange-400 via-yellow-200 to-white bg-clip-text text-transparent">
                 AWS Developer
