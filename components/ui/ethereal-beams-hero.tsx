@@ -410,7 +410,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button = ({ variant = "default", size = "sm", className = "", children, autoAnimate = false, ...props }: ButtonProps) => {
-  const baseClasses = "inline-flex items-center justify-center font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20 disabled:pointer-events-none disabled:opacity-50"
+  const baseClasses = "inline-flex items-center justify-center font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20 disabled:pointer-events-none disabled:opacity-50"
 
   const variantClasses = variant === "outline" 
     ? "border border-white/20 bg-white/5 backdrop-blur-xl text-white hover:bg-white/10 hover:border-white/30"
@@ -419,12 +419,12 @@ const Button = ({ variant = "default", size = "sm", className = "", children, au
     : "bg-white text-black hover:bg-gray-100"
 
   const sizeClasses = size === "lg" 
-    ? "px-6 py-4 text-base sm:px-8 sm:py-6 sm:text-lg" 
+    ? "px-6 py-4 text-base sm:px-10 sm:py-5 sm:text-lg" 
     : "h-9 px-4 py-2 text-sm"
 
   return (
     <button
-      className={`group relative overflow-hidden rounded-xl ${baseClasses} ${variantClasses} ${sizeClasses} ${className}`}
+      className={`group relative overflow-hidden rounded-2xl ${baseClasses} ${variantClasses} ${sizeClasses} ${className}`}
       {...props}
     >
       <span className="relative z-10 flex items-center">{children}</span>
@@ -501,9 +501,9 @@ export default function EtherealBeamsHero() {
               {"DVA-C02 Certification Success 2025"}
             </div>
 
-            {/* Title - The Widest Element */}
-            <div className="w-full max-w-6xl mx-auto mb-8 px-2 sm:px-0">
-              <h1 className="text-[clamp(2.5rem,11.5vw,7.5rem)] font-extrabold tracking-[-0.05em] text-white leading-[0.9] text-balance">
+            {/* Title - Capped growth for desktop */}
+            <div className="w-full max-w-lg sm:max-w-3xl lg:max-w-5xl mx-auto mb-8 px-2 sm:px-0">
+              <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-[-0.04em] text-white leading-[0.95] sm:leading-[0.9] text-balance">
                 Master the{" "}
                 <span className="bg-gradient-to-r from-orange-400 via-yellow-200 to-white bg-clip-text text-transparent italic">
                   AWS Developer
@@ -512,26 +512,26 @@ export default function EtherealBeamsHero() {
               </h1>
             </div>
 
-            {/* Description - Narrower than title for visual balance */}
-            <div className="w-full max-w-xl lg:max-w-2xl mx-auto mb-12">
+            {/* Description - Stable reading width */}
+            <div className="w-full max-w-lg lg:max-w-2xl mx-auto mb-12">
               <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/60 text-balance px-4">
                 380+ real-world MCQs, detailed explanations, and performance analytics tailored for the modern cloud architect.
               </p>
             </div>
 
-            {/* CTA Section - Even narrower for focused action */}
-            <div className="w-full max-w-md mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 px-6">
-              <Button size="lg" className="w-full sm:w-auto shadow-2xl shadow-orange-500/20 font-bold" onClick={() => navigate('/tests')}>
+            {/* CTA Section - Balanced scaling */}
+            <div className="w-full max-w-md sm:max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 px-6">
+              <Button size="lg" className="w-full sm:w-auto shadow-2xl shadow-orange-500/20" onClick={() => navigate('/tests')}>
                 Solve Mock Test
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto font-bold bg-transparent" autoAnimate={true} onClick={() => navigate('/curriculum')}>
+              <Button variant="outline" size="lg" className="w-full sm:w-auto bg-transparent" autoAnimate={true} onClick={() => navigate('/curriculum')}>
                 Study Guide
               </Button>
             </div>
 
             {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-6 sm:gap-16 max-w-3xl mx-auto border-t border-white/10 pt-10 px-4">
+            <div className="grid grid-cols-3 gap-6 sm:gap-16 lg:gap-24 max-w-4xl mx-auto border-t border-white/10 pt-10 px-4">
               <div className="text-center group">
                 <div className="text-2xl sm:text-4xl font-black text-white mb-1 group-hover:text-orange-400 transition-colors">387</div>
                 <div className="text-white/40 text-[9px] sm:text-[10px] uppercase font-black tracking-widest">Questions</div>
