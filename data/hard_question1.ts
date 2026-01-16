@@ -1,0 +1,1292 @@
+import { Question } from '../types';
+
+export const questionsData: Question[] = [
+  {
+    "id": 0,
+    "question": "A multi-national company has just moved to AWS Cloud and it has configured forecast-based AWS Budgets alerts for cost management. However, no alerts have been received even though the account and the budgets have been created almost three weeks ago.\r\n    What could be the issue with the AWS Budgets configuration?",
+    "options": [
+      "AWS requires approximately 5 weeks of usage data to generate budget forecasts",
+      "Amazon CloudWatch could be down and hence alerts are not being sent",
+      "Budget forecast has been created from an account that does not have enough privileges",
+      "Account has to be part of AWS Organizations to receive AWS Budgets alerts"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 1,
+    "question": "Amazon Simple Queue Service (SQS) has a set of APIs for various actions supported by the service.\r\n    As a developer associate, which of the following would you identify as correct regarding the `CreateQueue` API? (Select two)",
+    "options": [
+      "The dead-letter queue of a FIFO queue must also be a FIFO queue. Whereas, the dead-letter queue of a standard queue can be a standard queue or a FIFO queue",
+      "The visibility timeout value for the queue is in seconds, which defaults to 30 seconds",
+      "You can't change the queue type after you create it",
+      "The length of time, in seconds, for which the delivery of all messages in the queue is delayed is configured using `MessageRetentionPeriod` attribute",
+      "Queue tags are case insensitive. A new tag with a key identical to that of an existing tag overwrites the existing tag"
+    ],
+    "correct_answers": [
+      0,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct options:\r\n\r\n    **You can't change the queue type after you create it** - You can't change the queue type after you create it and you can't convert an existing standard queue into a FIFO queue. You must either create a new FIFO queue for your application or delete your existing standard queue and recreate it as a FIFO queue.\r\n\r\n    **The visibility timeout value for the queue is in seconds, which defaults to 30 seconds** - The visibility timeout for the queue is in seconds. Valid values are: An integer from 0 to 43,200 (12 hours), the Default value is 30.\r\n\r\n    Incorrect options:\r\n\r\n    **The dead-letter queue of a FIFO queue must also be a FIFO queue. Whereas, the dead-letter queue of a standard queue can be a standard queue or a FIFO queue** - The dead-letter queue of a FIFO queue must also be a FIFO queue. Similarly, the dead-letter queue of a standard queue must also be a standard queue."
+  },
+  {
+    "id": 2,
+    "question": "A development team wants to build an application using serverless architecture. The team plans to use AWS Lambda functions extensively to achieve this goal. The developers of the team work on different programming languages like Python, .NET and Javascript. The team wants to model the cloud infrastructure using any of these programming languages.\r\n    Which AWS service/tool should the team use for the given use-case?",
+    "options": [
+      "AWS Serverless Application Model (SAM)",
+      "AWS CodeDeploy",
+      "AWS Cloud Development Kit (CDK)",
+      "AWS CloudFormation"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 3,
+    "question": "CodeCommit is a managed version control service that hosts private Git repositories in the AWS cloud.\r\n    Which of the following credential types is NOT supported by IAM for CodeCommit?",
+    "options": [
+      "AWS Access Keys",
+      "IAM username and password",
+      "Git credentials",
+      "SSH Keys"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 4,
+    "question": "You have deployed a Java application to an EC2 instance where it uses the X-Ray SDK. When testing from your personal computer, the application sends data to X-Ray but when the application runs from within EC2, the application fails to send data to X-Ray.\r\n    Which of the following does NOT help with debugging the issue?",
+    "options": [
+      "CloudTrail",
+      "EC2 Instance Role",
+      "X-Ray sampling",
+      "EC2 X-Ray Daemon"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n\r\n    **X-Ray sampling**\r\n\r\n    By customizing sampling rules, you can control the amount of data that you record, and modify sampling behavior on the fly without modifying or redeploying your code. Sampling rules tell the X-Ray SDK how many requests to record for a set of criteria. X-Ray SDK applies a sampling algorithm to determine which requests get traced however because our application is failing to send data to X-Ray it does not help in determining the cause of failure.\r\n\r\n    **CloudTrail** - You can check CloudTrail to see if any API call is being denied on X-Ray."
+  },
+  {
+    "id": 5,
+    "question": "After a test deployment in ElasticBeanstalk environment, a developer noticed that all accumulated Amazon EC2 burst balances were lost.\r\n    Which of the following options can lead to this behavior?",
+    "options": [
+      "The deployment was either run with immutable updates or in traffic splitting mode",
+      "When a canary deployment fails, it resets the EC2 burst balances to zero",
+      "The deployment was run as a Rolling deployment, resulting in the resetting of EC2 burst balances",
+      "The deployment was run as a All-at-once deployment, flushing all the accumulated EC2 burst balances"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 6,
+    "question": "An application is hosted by a 3rd party and exposed at yourapp.3rdparty.com. You would like to have your users access your application using www.mydomain.com, which you own and manage under Route 53.\r\n    What Route 53 record should you create?",
+    "options": [
+      "Create an Alias Record",
+      "Create a CNAME record",
+      "Create an A record",
+      "Create a PTR record"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 7,
+    "question": "The development team has just configured and attached the IAM policy needed to access AWS Billing and Cost Management for all users under the Finance department. But, the users are unable to see AWS Billing and Cost Management service in the AWS console.\r\n    What could be the reason for this issue?",
+    "options": [
+      "You need to activate IAM user access to the Billing and Cost Management console for all the users who need access",
+      "Only root user has access to AWS Billing and Cost Management console",
+      "The users might have another policy that restricts them from accessing the Billing information",
+      "IAM user should be created under AWS Billing and Cost Management and not under AWS account to have access to Billing console"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n\r\n    **You need to activate IAM user access to the Billing and Cost Management console for all the users who need access** - By default, IAM users do not have access to the AWS Billing and Cost Management console."
+  },
+  {
+    "id": 8,
+    "question": "Which of the following security credentials can only be created by the AWS Account root user?",
+    "options": [
+      "CloudFront Key Pairs",
+      "EC2 Instance Key Pairs",
+      "IAM User passwords",
+      "IAM User Access Keys"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    For Amazon CloudFront, you use key pairs to create signed URLs for private content, such as when you want to distribute restricted content that someone paid for.\r\n    \r\n    **CloudFront Key Pairs** - IAM users can't create CloudFront key pairs. You must log in using root credentials to create key pairs.\r\n    \r\n    To create signed URLs or signed cookies, you need a signer. A signer is either a trusted key group that you create in CloudFront, or an AWS account that contains a CloudFront key pair. AWS recommends that you use trusted key groups with signed URLs and signed cookies instead of using CloudFront key pairs."
+  },
+  {
+    "id": 9,
+    "question": "When running a Rolling deployment in Elastic Beanstalk environment, only two batches completed the deployment successfully, while rest of the batches failed to deploy the updated version. Following this, the development team terminated the instances from the failed deployment.\r\n    What will be the status of these failed instances post termination?",
+    "options": [
+      "Elastic Beanstalk will not replace the failed instances",
+      "Elastic Beanstalk will replace the failed instances after the application version to be installed is manually chosen from AWS Console",
+      "Elastic Beanstalk will replace the failed instances with instances running the application version from the oldest successful deployment",
+      "Elastic Beanstalk will replace the failed instances with instances running the application version from the most recent successful deployment"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Elastic Beanstalk will replace them with instances running the application version from the most recent successful deployment**\r\n    \r\n    When processing a batch, Elastic Beanstalk detaches all instances in the batch from the load balancer, deploys the new application version, and then reattaches the instances. If you enable connection draining, Elastic Beanstalk drains existing connections from the Amazon EC2 instances in each batch before beginning the deployment.\r\n    \r\n    If a deployment fails after one or more batches completed successfully, the completed batches run the new version of your application while any pending batches continue to run the old version. You can identify the version running on the instances in your environment on the health page in the console. This page displays the deployment ID of the most recent deployment that was executed on each instance in your environment. If you terminate instances from the failed deployment, Elastic Beanstalk replaces them with instances running the application version from the most recent successful deployment."
+  },
+  {
+    "id": 10,
+    "question": "Create the app from a template provided by AWS CloudFormation -> Add code to the app to create resources within stacks -> Build the app (optional) -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account(Incorrect)",
+    "options": [
+      "Create the app from a template provided by AWS CDK -> Add code to the app to create resources within stacks -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account -> Build the app",
+      "Create the app from a template provided by AWS CDK -> Add code to the app to create resources within stacks -> Build the app (optional) -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account",
+      "Create the app from a template provided by AWS CloudFormation -> Add code to the app to create resources within stacks -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account -> Build the app"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n\r\n    **Create the app from a template provided by AWS CDK -> Add code to the app to create resources within stacks -> Build the app (optional) -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account**\r\n\r\n    The standard AWS CDK development workflow is similar to the workflow you're already familiar as a developer. There are a few extra steps:\r\n\r\n    1. Create the app from a **template provided by AWS CDK** - Each AWS CDK app should be in its own directory, with its own local module dependencies. Create a new directory for your app. Now initialize the app using the `cdk init` command, specifying the desired template (\"app\") and programming language. The `cdk init` command creates a number of files and folders inside the created home directory to help you organize the source code for your AWS CDK app.\r\n    2. Add code to the app to create resources within stacks - Add custom code as is needed for your application.\r\n    3. Build the app (optional) - In most programming environments, after making changes to your code, you'd build (compile) it. This isn't strictly necessary with the AWS CDK—the Toolkit does it for you so you can't forget. But you can still build manually whenever you want to catch syntax and type errors.\r\n    4. Synthesize one or more stacks in the app to create an AWS CloudFormation template - Synthesize one or more stacks in the app to create an AWS CloudFormation template. The synthesis step catches logical errors in defining your AWS resources. If your app contains more than one stack, you'd need to specify which stack(s) to synthesize.\r\n    5. Deploy one or more stacks to your AWS account - It is optional (though good practice) to synthesize before deploying. The AWS CDK synthesizes your stack before each deployment. If your code has security implications, you'll see a summary of these and need to confirm them before deployment proceeds. `cdk deploy` is used to deploy the stack using CloudFormation templates. This command displays progress information as your stack is deployed. When it's done, the command prompt reappears."
+  },
+  {
+    "id": 11,
+    "question": "You are creating a Cloud Formation template to deploy your CMS application running on an EC2 instance within your AWS account. Since the application will be deployed across multiple regions, you need to create a map of all the possible values for the base AMI.\r\n    How will you invoke the `!FindInMap` function to fulfill this use case?",
+    "options": [
+      "`!FindInMap [ MapName, TopLevelKey ]`",
+      "`!FindInMap [ MapName ]`",
+      "`!FindInMap [ MapName, TopLevelKey, SecondLevelKey ]`",
+      "`!FindInMap [ MapName, TopLevelKey, SecondLevelKey, ThirdLevelKey ]`"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n\r\n    **`!FindInMap [ MapName, TopLevelKey, SecondLevelKey ]`** - The intrinsic function Fn::FindInMap returns the value corresponding to keys in a two-level map that is declared in the Mappings section. YAML Syntax for the full function name: Fn::FindInMap: [ MapName, TopLevelKey, SecondLevelKey ]"
+  },
+  {
+    "id": 12,
+    "question": "A startup with newly created AWS account is testing different EC2 instances. They have used Burstable performance instance - T2.micro - for 35 seconds and stopped the instance.\r\n    At the end of the month, what is the instance usage duration that the company is charged for?",
+    "options": [
+      "60 seconds",
+      "30 seconds",
+      "35 seconds",
+      "0 seconds"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n\r\n    Burstable performance instances, which are T3, T3a, and T2 instances, are designed to provide a baseline level of CPU performance with the ability to burst to a higher level when required by your workload. Burstable performance instances are the only instance types that use credits for CPU usage.\r\n\r\n    **0 seconds** - AWS states that, if your AWS account is less than 12 months old, you can use a t2.micro instance for free within certain usage limits."
+  },
+  {
+    "id": 13,
+    "question": "A cybersecurity firm wants to run their applications on single-tenant hardware to meet security guidelines.\r\n    Which of the following is the MOST cost-effective way of isolating their Amazon EC2 instances to a single tenant?",
+    "options": [
+      "Dedicated Instances",
+      "Dedicated Hosts",
+      "Spot Instances",
+      "On-Demand Instances"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Dedicated Instances** - Dedicated Instances are Amazon EC2 instances that run in a virtual private cloud (VPC) on hardware that's dedicated to a single customer. Dedicated Instances that belong to different AWS accounts are physically isolated at a hardware level, even if those accounts are linked to a single-payer account. However, Dedicated Instances may share hardware with other instances from the same AWS account that are not Dedicated Instances.\r\n    \r\n    **Dedicated Hosts** - An Amazon EC2 Dedicated Host is a physical server with EC2 instance capacity fully dedicated to your use. Dedicated Hosts allow you to use your existing software licenses on EC2 instances. With a Dedicated Host, you have visibility and control over how instances are placed on the server. This option is costlier than the Dedicated Instance and hence is not the right choice for the current requirement."
+  },
+  {
+    "id": 14,
+    "question": "A development team lead is configuring policies for his team at an IT company.\r\n    Which of the following policy types only limit permissions but cannot grant permissions (Select two)?",
+    "options": [
+      "Identity-based policy",
+      "Permissions boundary",
+      "Access control list (ACL)",
+      "Resource-based policy",
+      "AWS Organizations Service Control Policy (SCP)"
+    ],
+    "correct_answers": [
+      1,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct options:\r\n    \r\n    **AWS Organizations Service Control Policy (SCP)** – Use an AWS Organizations Service Control Policy (SCP) to define the maximum permissions for account members of an organization or organizational unit (OU). SCPs limit permissions that identity-based policies or resource-based policies grant to entities (users or roles) within the account, but do not grant permissions.\r\n    \r\n    **Permissions boundary** - Permissions boundary is a managed policy that is used for an IAM entity (user or role). The policy defines the maximum permissions that the identity-based policies can grant to an entity, but does not grant permissions."
+  },
+  {
+    "id": 15,
+    "question": "An e-commerce company has developed an API that is hosted on Amazon ECS. Variable traffic spikes on the application are causing order processing to take too long. The application processes orders using Amazon SQS queues. The `ApproximateNumberOfMessagesVisible` metric spikes at very high values throughout the day which triggers the CloudWatch alarm. Other ECS metrics for the API containers are well within limits.\r\n    As a Developer Associate, which of the following will you recommend for improving performance while keeping costs low?",
+    "options": [
+      "Use ECS service scheduler",
+      "Use backlog per instance metric with target tracking scaling policy",
+      "Use Docker swarm",
+      "Use ECS step scaling policy"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n\r\n    **Use backlog per instance metric with target tracking scaling policy** - If you use a target tracking scaling policy based on a custom Amazon SQS queue metric, dynamic scaling can adjust to the demand curve of your application more effectively.\r\n\r\n    **Use ECS step scaling policy** - Although Amazon ECS Service Auto Scaling supports using Application Auto Scaling step scaling policies, AWS recommends using target tracking scaling policies instead. For example, if you want to scale your service when CPU utilization falls below or rises above a certain level, create a target tracking scaling policy based on the CPU utilization metric provided by Amazon ECS.\r\n\r\n    With step scaling policies, you create and manage the CloudWatch alarms that trigger the scaling process. If the target tracking alarms don't work for your use case, you can use step scaling. You can also use target tracking scaling with step scaling for an advanced scaling policy configuration. For example, you can configure a more aggressive response when utilization reaches a certain level.\r\n\r\n    Step Scaling scales your cluster on various lengths of steps based on different ranges of thresholds. Target tracking on the other hand intelligently picks the smart lengths needed for the given configuration."
+  },
+  {
+    "id": 16,
+    "question": "A development team lead is responsible for managing access for her IAM principals. At the start of the cycle, she has granted excess privileges to users to keep them motivated for trying new things. She now wants to ensure that the team has only the minimum permissions required to finish their work.\r\n    Which of the following will help her identify unused IAM roles and remove them without disrupting any service?",
+    "options": [
+      "Amazon Inspector",
+      "AWS Trusted Advisor",
+      "Access Advisor feature on IAM console",
+      "IAM Access Analyzer"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 17,
+    "question": "In addition to regular sign-in credentials, AWS supports Multi-Factor Authentication (MFA) for accounts with privileged access.\r\n    Which of the following MFA mechanisms is NOT for root user authentication?",
+    "options": [
+      "SMS text message-based MFA",
+      "Hardware MFA device",
+      "Virtual MFA devices",
+      "U2F security key"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 18,
+    "question": "An organization has offices across multiple locations and the technology team has configured an Application Load Balancer across targets in multiple Availability Zones. The team wants to analyze the incoming requests for latencies and the client's IP address patterns.\r\n    Which feature of the Load Balancer will help collect the required information?",
+    "options": [
+      "ALB access logs",
+      "CloudWatch metrics",
+      "CloudTrail logs",
+      "ALB request tracing"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **ALB access logs** - Elastic Load Balancing provides access logs that capture detailed information about requests sent to your load balancer. Each log contains information such as the time the request was received, the client's IP address, latencies, request paths, and server responses. You can use these access logs to analyze traffic patterns and troubleshoot issues. Access logging is an optional feature of Elastic Load Balancing that is disabled by default."
+  },
+  {
+    "id": 19,
+    "question": "A multi-national company has multiple business units with each unit having its own AWS account. The development team at the company would like to debug and trace data across accounts and visualize it in a centralized account.\r\n    As a Developer Associate, which of the following solutions would you suggest for the given use-case?",
+    "options": [
+      "CloudWatch Events",
+      "X-Ray",
+      "CloudTrail",
+      "VPC Flow Logs"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n\r\n    **X-Ray**\r\n\r\n    **You can use X-Ray to collect data across AWS Accounts**. The X-Ray agent can assume a role to publish data into an account different from the one in which it is running. This enables you to publish data from various components of your application into a central account.\r\n\r\n    **CloudWatch Events**: Amazon CloudWatch Events delivers a near real-time stream of system events that describe changes in Amazon Web Services (AWS) resources. These help to trigger notifications based on changes happening in AWS services. You cannot use CloudWatch **Events** to debug and trace data across accounts."
+  },
+  {
+    "id": 20,
+    "question": "The development team at an e-commerce company completed the last deployment for their application at a reduced capacity because of the deployment policy. The application took a performance hit because of the traffic spike due to an on-going sale.\r\n    Which of the following represents the BEST deployment option for the upcoming application version such that it maintains at least the FULL capacity of the application and MINIMAL impact of failed deployment?",
+    "options": [
+      "Deploy the new application version using 'All at once' deployment policy",
+      "Deploy the new application version using 'Immutable' deployment policy",
+      "Deploy the new application version using 'Rolling with additional batch' deployment policy",
+      "Deploy the new application version using 'Rolling' deployment policy"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 21,
+    "question": "A development team is working on an AWS Lambda function that accesses DynamoDB. The Lambda function must do an upsert, that is, it must retrieve an item and update some of its attributes or create the item if it does not exist.\r\n    Which of the following represents the solution with MINIMUM IAM permissions that can be used for the Lambda function to achieve this functionality?",
+    "options": [
+      "dynamodb:AddItem, dynamodb:GetItem",
+      "dynamodb:GetRecords, dynamodb:PutItem, dynamodb:UpdateTable",
+      "dynamodb:UpdateItem, dynamodb:GetItem, dynamodb:PutItem",
+      "dynamodb:UpdateItem, dynamodb:GetItem"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "`UpdateItem` action of DynamoDB APIs, edits an existing item's attributes or adds a new item to the table if it does not already exist. You can put, delete, or add attribute values. You can also perform a conditional update on an existing item (insert a new attribute name-value pair if it doesn't exist, or replace an existing name-value pair if it has certain expected attribute values).\r\n    \r\n    There is no need to inlcude the `dynamodb:PutItem` action for the given use-case."
+  },
+  {
+    "id": 22,
+    "question": "While troubleshooting, a developer realized that the Amazon EC2 instance is unable to connect to the Internet using the Internet Gateway.\r\n    Which conditions should be met for Internet connectivity to be established? (Select two)",
+    "options": [
+      "The instance's subnet is associated with multiple route tables with conflicting configurations",
+      "The route table in the instance’s subnet should have a route to an Internet Gateway",
+      "The subnet has been configured to be Public and has no access to the internet",
+      "The network ACLs associated with the subnet must have rules to allow inbound and outbound traffic",
+      "The instance's subnet is not associated with any route table"
+    ],
+    "correct_answers": [
+      1,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct options:\r\n    \r\n    **The network ACLs associated with the subnet must have rules to allow inbound and outbound traffic** - The network access control lists (ACLs) that are associated with the subnet must have rules to allow inbound and outbound traffic on port 80 (for HTTP traffic) and port 443 (for HTTPs traffic). This is a necessary condition for Internet Gateway connectivity\r\n    \r\n    **The route table in the instance’s subnet should have a route to an Internet Gateway** - A route table contains a set of rules, called routes, that are used to determine where network traffic from your subnet or gateway is directed. The route table in the instance’s subnet should have a route defined to the Internet Gateway.\r\n    \r\n    Incorrect options:\r\n    \r\n    **The instance's subnet is not associated with any route table** - This is an incorrect statement. A subnet is implicitly associated with the main route table if it is not explicitly associated with a particular route table. So, a subnet is always associated with some route table.\r\n    \r\n    **The instance's subnet is associated with multiple route tables with conflicting configurations** - This is an incorrect statement. A subnet can only be associated with one route table at a time.\r\n    \r\n    **The subnet has been configured to be Public and has no access to internet** - This is an incorrect statement. Public subnets have access to the internet via Internet Gateway."
+  },
+  {
+    "id": 23,
+    "question": "A Developer is configuring Amazon EC2 Auto Scaling group to scale dynamically.\r\n    Which metric below is NOT part of Target Tracking Scaling Policy?",
+    "options": [
+      "ALBRequestCountPerTarget",
+      "ApproximateNumberOfMessagesVisible",
+      "ASGAverageNetworkOut",
+      "ASGAverageCPUUtilization"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **ApproximateNumberOfMessagesVisible** - This is a CloudWatch Amazon SQS queue metric. The number of messages in a queue might not change proportionally to the size of the Auto Scaling group that processes messages from the queue. Hence, this metric does not work for target tracking."
+  },
+  {
+    "id": 24,
+    "question": "A diagnostic lab stores its data on DynamoDB. The lab wants to backup a particular DynamoDB table data on Amazon S3, so it can download the S3 backup locally for some operational use.\r\n    Which of the following options is NOT feasible?",
+    "options": [
+      "Use AWS Glue to copy your table to Amazon S3 and download locally",
+      "Use AWS Data Pipeline to export your table to an S3 bucket in the account of your choice and download locally",
+      "Use Hive with Amazon EMR to export your data to an S3 bucket and download locally",
+      "Use the DynamoDB on-demand backup capability to write to Amazon S3 and download locally"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Use the DynamoDB on-demand backup capability to write to Amazon S3 and download locally** - This option is not feasible for the given use-case. DynamoDB has two built-in backup methods (On-demand, Point-in-time recovery) that write to Amazon S3, **but you will not have access to the S3 buckets that are used for these backups.**"
+  },
+  {
+    "id": 25,
+    "question": "As a Team Lead, you are expected to generate a report of the code builds for every week to report internally and to the client. This report consists of the number of code builds performed for a week, the percentage success and failure, and overall time spent on these builds by the team members. You also need to retrieve the CodeBuild logs for failed builds and analyze them in Athena.\r\n    Which of the following options will help achieve this?",
+    "options": [
+      "Use CloudWatch Events",
+      "Use AWS CloudTrail and deliver logs to S3",
+      "Enable S3 and CloudWatch Logs integration",
+      "Use AWS Lambda integration"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 26,
+    "question": "A development team has configured their Amazon EC2 instances for Auto Scaling. A Developer during routine checks has realized that only basic monitoring is active, as opposed to detailed monitoring.\r\n    Which of the following represents the best root-cause behind the issue?",
+    "options": [
+      "AWS CLI was used to create the launch configuration",
+      "The default configuration for Auto Scaling was not set",
+      "SDK was used to create the launch configuration",
+      "AWS Management Console might have been used to create the launch configuration"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 27,
+    "question": "A developer wants to package the code and dependencies for the application-specific Lambda functions as container images to be hosted on Amazon Elastic Container Registry (ECR).\r\n    Which of the following options are correct for the given requirement? (Select two)",
+    "options": [
+      "Lambda supports both Windows and Linux-based container images",
+      "You can deploy Lambda function as a container image, with a maximum size of 15 GB",
+      "To deploy a container image to Lambda, the container image must implement the Lambda Runtime API",
+      "You must create the Lambda function from the same account as the container registry in Amazon ECR",
+      "You can test the containers locally using the Lambda Runtime API"
+    ],
+    "correct_answers": [
+      2,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct options:\r\n    \r\n    **To deploy a container image to Lambda, the container image must implement the Lambda Runtime API** - To deploy a container image to Lambda, the container image must implement the Lambda Runtime API. The AWS open-source runtime interface clients implement the API. You can add a runtime interface client to your preferred base image to make it compatible with Lambda.\r\n    \r\n    **You must create the Lambda function from the same account as the container registry in Amazon ECR** - You can package your Lambda function code and dependencies as a container image, using tools such as the Docker CLI. You can then upload the image to your container registry hosted on Amazon Elastic Container Registry (Amazon ECR). **Note that you must create the Lambda function from the same account as the container registry in Amazon ECR.**\r\n    \r\n    **You can test the containers locally using the Lambda Runtime API** - You can test the containers locally using the **Lambda Runtime Interface Emulator.**"
+  },
+  {
+    "id": 28,
+    "question": "Signing AWS API requests helps AWS identify an authentic user from a potential threat.\r\n    As a developer associate, which of the following would you identify as the use-case where you need to sign the API requests?",
+    "options": [
+      "When you send HTTP requests to an AWS service",
+      "When you use the AWS Command Line Interface (AWS CLI) to run commands on an AWS resource",
+      "When you use one of the AWS SDKs to make requests to AWS resources/services",
+      "When you send anonymous requests to Amazon Simple Storage Service (Amazon S3)"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 29,
+    "question": "Your team lead has asked you to learn AWS CloudFormation to create a collection of related AWS resources and provision them in an orderly fashion. You decide to provide AWS-specific parameter types to catch invalid values.\r\n    When specifying parameters which of the following is not a valid Parameter type?",
+    "options": [
+      "CommaDelimitedList",
+      "AWS::EC2::KeyPair::KeyName",
+      "DependentParameter",
+      "String"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "CloudFormation currently supports the following parameter types:\r\n    \r\n    ```\r\n    String – A literal string\r\n    Number – An integer or float\r\n    List<Number> – An array of integers or floats\r\n    CommaDelimitedList – An array of literal strings that are separated by commas\r\n    AWS::EC2::KeyPair::KeyName – An Amazon EC2 key pair name\r\n    AWS::EC2::SecurityGroup::Id – A security group ID\r\n    AWS::EC2::Subnet::Id – A subnet ID\r\n    AWS::EC2::VPC::Id – A VPC ID\r\n    List<AWS::EC2::VPC::Id> – An array of VPC IDs\r\n    List<AWS::EC2::SecurityGroup::Id> – An array of security group IDs\r\n    List<AWS::EC2::Subnet::Id> – An array of subnet IDs\r\n    \r\n    ```\r\n    \r\n    **DependentParameter**\r\n    \r\n    In CloudFormation, parameters are all independent and cannot depend on each other. Therefore, this is an invalid parameter type."
+  },
+  {
+    "id": 30,
+    "question": "The development team at a HealthCare company has deployed EC2 instances in AWS Account A. These instances need to access patient data with Personally Identifiable Information (PII) on multiple S3 buckets in another AWS Account B.\r\n    As a Developer Associate, which of the following solutions would you recommend for the given use-case?",
+    "options": [
+      "Create an IAM role with S3 access in Account B and set Account A as a trusted entity. Create another role (instance profile) in Account A and attach it to the EC2 instances in Account A and add an inline policy to this role to assume the role from Account B",
+      "Copy the underlying AMI for the EC2 instances from Account A into Account B. Launch EC2 instances in Account B using this AMI and then access the PII data on Amazon S3 in Account B",
+      "Add a bucket policy to all the Amazon S3 buckets in Account B to allow access from EC2 instances in Account A",
+      "Create an IAM role (instance profile) in Account A and set Account B as a trusted entity. Attach this role to the EC2 instances in Account A and add an inline policy to this role to access S3 data from Account B"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Create an IAM role with S3 access in Account B and set Account A as a trusted entity. Create another role (instance profile) in Account A and attach it to the EC2 instances in Account A and add an inline policy to this role to assume the role from Account B**\r\n    \r\n    You can give EC2 instances in one account (\"account A\") permissions to assume a role from another account (\"account B\") to access resources such as S3 buckets. You need to create an IAM role in Account B and set Account A as a trusted entity. Then attach a policy to this IAM role such that it delegates access to Amazon S3 like so -\r\n    \r\n    ```\r\n    {\r\n        \"Version\": \"2012-10-17\",\r\n        \"Statement\": [\r\n            {\r\n                \"Effect\": \"Allow\",\r\n                \"Action\": \"s3:*\",\r\n                \"Resource\": [\r\n                    \"arn:aws:s3:::awsexamplebucket1\",\r\n                    \"arn:aws:s3:::awsexamplebucket1/*\",\r\n                    \"arn:aws:s3:::awsexamplebucket2\",\r\n                    \"arn:aws:s3:::awsexamplebucket2/*\"\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n    \r\n    ```\r\n    \r\n    Then you can create another role (instance profile) in Account A and attach it to the EC2 instances in Account A and add an inline policy to this role to assume the role from Account B like so -\r\n    \r\n    ```\r\n    {\r\n        \"Version\": \"2012-10-17\",\r\n        \"Statement\": [\r\n            {\r\n                \"Effect\": \"Allow\",\r\n                \"Action\": \"sts:AssumeRole\",\r\n                \"Resource\": \"arn:aws:iam::AccountB_ID:role/ROLENAME\"\r\n            }\r\n        ]\r\n    }\r\n    \r\n    ```\r\n    \r\n    Incorrect options:\r\n    \r\n    **Add a bucket policy to all the Amazon S3 buckets in Account B to allow access from EC2 instances in Account A** - Just adding a bucket policy in Account B is not enough, as you also need to create an IAM policy in Account A to access S3 objects in Account B."
+  },
+  {
+    "id": 31,
+    "question": "A media publishing company is using Amazon EC2 instances for running their business-critical applications. Their IT team is looking at reserving capacity apart from savings plans for the critical instances.\r\n    As a Developer Associate, which of the following reserved instance types you would select to provide capacity reservations?",
+    "options": [
+      "Regional Reserved Instances",
+      "Both Regional Reserved Instances and Zonal Reserved Instances",
+      "Zonal Reserved Instances",
+      "Neither Regional Reserved Instances nor Zonal Reserved Instances"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    When you purchase a Reserved Instance for a specific Availability Zone, it's referred to as a Zonal Reserved Instance. Zonal Reserved Instances provide capacity reservations as well as discounts.\r\n    \r\n    **Zonal Reserved Instances** - A zonal Reserved Instance provides a capacity reservation in the specified Availability Zone. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the ability to create and manage Capacity Reservations independently from the billing discounts offered by Savings Plans or regional Reserved Instances.\r\n    \r\n    Regional and Zonal Reserved Instances:\r\n    \r\n    ![](https://assets-pt.media.datacumulus.com/aws-dva-pt/assets/pt2-q31-i1.jpg)\r\n    \r\n    Incorrect options:\r\n    \r\n    **Regional Reserved Instances** - When you purchase a Reserved Instance for a Region, it's referred to as a regional Reserved Instance. A regional Reserved Instance does not provide a capacity reservation."
+  },
+  {
+    "id": 32,
+    "question": "A developer is defining the signers that can create signed URLs for their Amazon CloudFront distributions.\r\n    Which of the following statements should the developer consider while defining the signers? (Select two)",
+    "options": [
+      "Both the signers (trusted key groups and CloudFront key pairs) can be managed using the CloudFront APIs",
+      "When you use the root user to manage CloudFront key pairs, you can only have up to two active CloudFront key pairs per AWS account",
+      "You can also use AWS Identity and Access Management (IAM) permissions policies to restrict what the root user can do with CloudFront key pairs",
+      "When you create a signer, the public key is with CloudFront and private key is used to sign a portion of URL",
+      "CloudFront key pairs can be created with any account that has administrative permissions and full access to CloudFront resources"
+    ],
+    "correct_answers": [
+      1,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct options:\r\n    \r\n    **When you create a signer, the public key is with CloudFront and private key is used to sign a portion of URL** - Each signer that you use to create CloudFront signed URLs or signed cookies must have a public–private key pair. The signer uses its private key to sign the URL or cookies, and CloudFront uses the public key to verify the signature.\r\n    \r\n    When you create signed URLs or signed cookies, you use the private key from the signer’s key pair to sign a portion of the URL or the cookie. When someone requests a restricted file, CloudFront compares the signature in the URL or cookie with the unsigned URL or cookie, to verify that it hasn’t been tampered with. CloudFront also verifies that the URL or cookie is valid, meaning, for example, that the expiration date and time haven’t passed.\r\n    \r\n    **When you use the root user to manage CloudFront key pairs, you can only have up to two active CloudFront key pairs per AWS account** - When you use the root user to manage CloudFront key pairs, you can only have up to two active CloudFront key pairs per AWS account.\r\n    \r\n    Whereas, with CloudFront key groups, you can associate a higher number of public keys with your CloudFront distribution, giving you more flexibility in how you use and manage the public keys. By default, you can associate up to four key groups with a single distribution, and you can have up to five public keys in a key group.\r\n    \r\n    Incorrect options:\r\n    \r\n    **CloudFront key pairs can be created with any account that has administrative permissions and full access to CloudFront resources** - CloudFront key pairs can only be created using the root user account and hence is not a best practice to create CloudFront key pairs as signers."
+  },
+  {
+    "id": 33,
+    "question": "A new recruit is trying to configure what an Amazon EC2 should do when it interrupts a Spot Instance.\r\n    Which of the below CANNOT be configured as an interruption behavior?",
+    "options": [
+      "Terminate the Spot Instance",
+      "Reboot the Spot Instance",
+      "Hibernate the Spot Instance",
+      "Stop the Spot Instance"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    A Spot Instance is an unused EC2 instance that is available for less than the On-Demand price. Your Spot Instance runs whenever capacity is available and the maximum price per hour for your request exceeds the Spot price. Any instance present with unused capacity will be allocated.\r\n    \r\n    You can specify that Amazon EC2 should do one of the following when it interrupts a Spot Instance:\r\n    \r\n    Stop the Spot Instance\r\n    \r\n    Hibernate the Spot Instance\r\n    \r\n    Terminate the Spot Instance"
+  },
+  {
+    "id": 34,
+    "question": "You have created a continuous delivery service model with automated steps using AWS CodePipeline. Your pipeline uses your code, maintained in a CodeCommit repository, AWS CodeBuild, and AWS Elastic Beanstalk to automatically deploy your code every time there is a code change. However, the deployment to Elastic Beanstalk is taking a very long time due to resolving dependencies on all of your 100 target EC2 instances.\r\n    Which of the following actions should you take to improve performance with limited code changes?",
+    "options": [
+      "Bundle the dependencies in the source code during the build stage of CodeBuild",
+      "Bundle the dependencies in the source code in CodeCommit",
+      "Create a custom platform for Elastic Beanstalk",
+      "Store the dependencies in S3, to be used while deploying to Beanstalk"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Bundle the dependencies in the source code during the build stage of CodeBuild**\r\n    \r\n    AWS CodeBuild is a fully managed build service. There are no servers to provision and scale, or software to install, configure, and operate.\r\n    \r\n    A typical application build process includes phases like preparing the environment, updating the configuration, downloading dependencies, running unit tests, and finally, packaging the built artifact.\r\n    \r\n    Downloading dependencies is a critical phase in the build process. These dependent files can range in size from a few KBs to multiple MBs. Because most of the dependent files do not change frequently between builds, you can noticeably reduce your build time by caching dependencies.\r\n    \r\n    This will allow the code bundle to be deployed to Elastic Beanstalk to have both the dependencies and the code, hence **speeding up the deployment time to Elastic Beanstalk**"
+  },
+  {
+    "id": 35,
+    "question": "A company runs its flagship application on a fleet of Amazon EC2 instances. After misplacing a couple of private keys from the SSH key pairs, they have decided to re-use their SSH key pairs for the different instances across AWS Regions.\r\n    As a Developer Associate, which of the following would you recommend to address this use-case?",
+    "options": [
+      "It is not possible to reuse SSH key pairs across AWS Regions",
+      "Encrypt the private SSH key and store it in the S3 bucket to be accessed from any AWS Region",
+      "Store the public and private SSH key pair in AWS Trusted Advisor and access it across AWS Regions",
+      "Generate a public SSH key from a private SSH key. Then, import the key into each of your AWS Regions"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Generate a public SSH key from a private SSH key. Then, import the key into each of your AWS Regions**\r\n    \r\n    Here is the correct way of reusing SSH keys in your AWS Regions:\r\n    \r\n    1. Generate a public SSH key (.pub) file from the private SSH key (.pem) file.\r\n    2. Set the AWS Region you wish to import to.\r\n    3. Import the public SSH key into the new Region.\r\n    \r\n    Incorrect options:\r\n    \r\n    **Encrypt the private SSH key and store it in the S3 bucket to be accessed from any AWS Region** - Storing private key to Amazon S3 is possible. But, this will not make the key accessible for all AWS Regions, as is the need in the current use case."
+  },
+  {
+    "id": 36,
+    "question": "A development team uses shared Amazon S3 buckets to upload files. Due to this shared access, objects in S3 buckets have different owners making it difficult to manage the objects.\r\n    As a developer associate, which of the following would you suggest to automatically make the S3 bucket owner, also the owner of all objects in the bucket, irrespective of the AWS account used for uploading the objects?",
+    "options": [
+      "Use S3 CORS to make the S3 bucket owner, the owner of all objects in the bucket",
+      "Use Bucket Access Control Lists (ACLs) to control access on S3 bucket and then define its owner",
+      "Use S3 Access Analyzer to identify the owners of all objects and change the ownership to the bucket owner",
+      "Use S3 Object Ownership to default bucket owner to be the owner of all objects in the bucket"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Use S3 Object Ownership to default bucket owner to be the owner of all objects in the bucket**\r\n    \r\n    S3 Object Ownership is an Amazon S3 bucket setting that you can use to control ownership of new objects that are uploaded to your buckets. By default, when other AWS accounts upload objects to your bucket, the objects remain owned by the uploading account. With S3 Object Ownership, any new objects that are written by other accounts with the bucket-owner-full-control canned access control list (ACL) automatically become owned by the bucket owner, who then has full control of the objects."
+  },
+  {
+    "id": 37,
+    "question": "A telecommunications company that provides internet service for mobile device users maintains over 100 c4.large instances in the us-east-1 region. The EC2 instances run complex algorithms. The manager would like to track CPU utilization of the EC2 instances as frequently as every 10 seconds.\r\n    Which of the following represents the BEST solution for the given use-case?",
+    "options": [
+      "Open a support ticket with AWS",
+      "Create a high-resolution custom metric and push the data using a script triggered every 10 seconds",
+      "Enable EC2 detailed monitoring",
+      "Simply get it from the CloudWatch Metrics"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 38,
+    "question": "As a Senior Developer, you manage 10 Amazon EC2 instances that make read-heavy database requests to the Amazon RDS for PostgreSQL. You need to make this architecture resilient for disaster recovery.\r\n    Which of the following features will help you prepare for database disaster recovery? (Select two)",
+    "options": [
+      "Use cross-Region Read Replicas",
+      "Use database cloning feature of the RDS DB cluster",
+      "Enable the automated backup feature of Amazon RDS in a multi-AZ deployment that creates backups in a single AWS Region",
+      "Use RDS Provisioned IOPS (SSD) Storage in place of General Purpose (SSD) Storage",
+      "Enable the automated backup feature of Amazon RDS in a multi-AZ deployment that creates backups across multiple Regions"
+    ],
+    "correct_answers": [
+      0,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Use cross-Region Read Replicas**\r\n    \r\n    In addition to using Read Replicas to reduce the load on your source DB instance, you can also use Read Replicas to implement a DR solution for your production DB environment. If the source DB instance fails, you can promote your Read Replica to a standalone source server. Read Replicas can also be created in a different Region than the source database. Using a cross-Region Read Replica can help ensure that you get back up and running if you experience a regional availability issue.\r\n    \r\n    **Enable the automated backup feature of Amazon RDS in a multi-AZ deployment that creates backups in a single AWS Region**\r\n    \r\n    Amazon RDS provides high availability and failover support for DB instances using Multi-AZ deployments. Amazon RDS uses several different technologies to provide failover support. Multi-AZ deployments for MariaDB, MySQL, Oracle, and PostgreSQL DB instances use Amazon's failover technology.\r\n    \r\n    The automated backup feature of Amazon RDS enables point-in-time recovery for your database instance. Amazon RDS will backup your database and transaction logs and store both for a user-specified retention period. If it’s a Multi-AZ configuration, backups occur on the standby to reduce I/O impact on the primary. Automated backups are limited to a single AWS Region while manual snapshots and Read Replicas are supported across multiple Regions."
+  },
+  {
+    "id": 39,
+    "question": "You are a developer working with the AWS CLI to create Lambda functions that contain environment variables. Your functions will require over 50 environment variables consisting of sensitive information of database table names.\r\n    What is the total set size/number of environment variables you can create for AWS Lambda?",
+    "options": [
+      "The total size of all environment variables shouldn't exceed 8 KB. There is no limit on the number of variables",
+      "The total size of all environment variables shouldn't exceed 8 KB. The maximum number of variables that can be created is 50",
+      "The total size of all environment variables shouldn't exceed 4 KB. The maximum number of variables that can be created is 35",
+      "The total size of all environment variables shouldn't exceed 4 KB. There is no limit on the number of variables"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 40,
+    "question": "To meet compliance guidelines, a company needs to ensure replication of any data stored in its S3 buckets.\r\n    Which of the following characteristics are correct while configuring an S3 bucket for replication? (Select two)",
+    "options": [
+      "Replicated objects do not retain metadata",
+      "Once replication is enabled on a bucket, all old and new objects will be replicated",
+      "S3 lifecycle actions are not replicated with S3 replication",
+      "Same-Region Replication (SRR) and Cross-Region Replication (CRR) can be configured at the S3 bucket level, a shared prefix level, or an object level using S3 object tags",
+      "Object tags cannot be replicated across AWS Regions using Cross-Region Replication"
+    ],
+    "correct_answers": [
+      2,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": []
+  },
+  {
+    "id": 41,
+    "question": "As part of employee skills upgrade, the developers of your team have been delegated few responsibilities of DevOps engineers. Developers now have full control over modeling the entire software delivery process, from coding to deployment. As the team lead, you are now responsible for any manual approvals needed in the process.\r\n    Which of the following approaches supports the given workflow?",
+    "options": [
+      "Create deeply integrated AWS CodePipelines for each environment",
+      "Use CodePipeline with Amazon Virtual Private Cloud",
+      "Create one CodePipeline for your entire flow and add a manual approval step",
+      "Create multiple CodePipelines for each environment and link them using AWS Lambda"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 42,
+    "question": "An organization is moving its on-premises resources to the cloud. Source code will be moved to AWS CodeCommit and AWS CodeBuild will be used for compiling the source code using Apache Maven as a build tool. The organization wants the build environment should allow for scaling and running builds in parallel.\r\n    Which of the following options should the organization choose for their requirement?",
+    "options": [
+      "Run CodeBuild in an Auto Scaling group",
+      "CodeBuild scales automatically, the organization does not have to do anything for scaling or for parallel builds",
+      "Choose a high-performance instance type for your CodeBuild instances",
+      "Enable CodeBuild Auto Scaling"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 43,
+    "question": "Your web application architecture consists of multiple Amazon EC2 instances running behind an Elastic Load Balancer with an Auto Scaling group having the desired capacity of 5 EC2 instances. You would like to integrate AWS CodeDeploy for automating application deployment. The deployment should re-route traffic from your application's original environment to the new environment.\r\n    Which of the following options will meet your deployment criteria?",
+    "options": [
+      "Opt for Immutable deployment",
+      "Opt for Rolling deployment",
+      "Opt for Blue/Green deployment",
+      "Opt for In-place deployment"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Opt for Blue/Green deployment** - A Blue/Green deployment is used to update your applications while minimizing interruptions caused by the changes of a new application version. CodeDeploy provisions your new application version alongside the old version before rerouting your production traffic. \r\n    \r\n    Incorrect options:\r\n    \r\n    **Opt for Immutable deployment** - This deployment type is present for AWS Elastic Beanstalk and not for EC2 instances directly."
+  },
+  {
+    "id": 44,
+    "question": "A development team has deployed a REST API in Amazon API Gateway to two different stages - a test stage and a prod stage. The test stage is used as a test build and the prod stage as a stable build. After the updates have passed the test, the team wishes to promote the test stage to the prod stage.\r\n    Which of the following represents the optimal solution for this use-case?",
+    "options": [
+      "API performance is optimized in a different way for prod environments. Hence, promoting test to prod is not correct. The promotion should be done by redeploying the API to the prod stage",
+      "Deploy the API without choosing a stage. This way, the working deployment will be updated in all stages",
+      "Delete the existing prod stage. Create a new stage with the same name (prod) and deploy the tested version on this stage",
+      "Update stage variable value from the stage name of test to that of prod"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Update stage variable value from the stage name of test to that of prod**\r\n    \r\n    After creating your API, you must deploy it to make it callable by your users. To deploy an API, you create an API deployment and associate it with a stage. A stage is a logical reference to a lifecycle state of your API (for example, dev, prod, beta, v2). API stages are identified by the API ID and stage name. They're included in the URL that you use to invoke the API. Each stage is a named reference to a deployment of the API and is made available for client applications to call.\r\n    \r\n    Stages enable robust version control of your API. In our current use-case, after the updates pass the test, you can promote the test stage to the prod stage. The promotion can be done by redeploying the API to the prod stage or updating a stage variable value from the stage name of test to that of prod.\r\n    \r\n    Incorrect options:\r\n    \r\n    **Deploy the API without choosing a stage. This way, the working deployment will be updated in all stages** - An API can only be deployed to a stage. Hence, it is not possible to deploy an API without choosing a stage.\r\n    \r\n    *Delete the existing prod stage. Create a new stage with the same name (prod) and deploy the tested version on this stage** - This is possible, but not an optimal way of deploying a change. Also, as prod refers to real production system, this option will result in downtime.\r\n    \r\n    **API performance is optimized in a different way for prod environments. Hence, promoting test to prod is not correct. The promotion should be done by redeploying the API to the prod stage** - For each stage, you can optimize API performance by adjusting the default account-level request throttling limits and enabling API caching. And these settings can be changed/updated at any time."
+  },
+  {
+    "id": 45,
+    "question": "The development team at a social media company is considering using Amazon ElastiCache to boost the performance of their existing databases.\r\n    As a Developer Associate, which of the following use-cases would you recommend as the BEST fit for ElastiCache? (Select two)",
+    "options": [
+      "Use ElastiCache to improve performance of Extract-Transform-Load (ETL) workloads",
+      "Use ElastiCache to improve performance of compute-intensive workloads",
+      "Use ElastiCache to improve latency and throughput for read-heavy application workloads",
+      "Use ElastiCache to run highly complex JOIN queries",
+      "Use ElastiCache to improve latency and throughput for write-heavy application workloads"
+    ],
+    "correct_answers": [
+      0,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Use ElastiCache to improve latency and throughput for read-heavy application workloads**\r\n    \r\n    **Use ElastiCache to improve performance of compute-intensive workloads**\r\n    \r\n    Amazon ElastiCache can be used to significantly improve latency and throughput for many read-heavy application workloads (such as social networking, gaming, media sharing, and Q&A portals) or compute-intensive workloads (such as a recommendation engine) by allowing you to store the objects that are often read in the cache.\r\n    \r\n    Incorrect options:\r\n    \r\n    **Use ElastiCache to improve latency and throughput for write-heavy application workloads** - As mentioned earlier in the explanation, Amazon ElastiCache can be used to significantly improve latency and throughput for many read-heavy application workloads. Caching is not a good fit for write-heavy applications as the cache goes stale at a very fast rate.\r\n    \r\n    **Use ElastiCache to improve performance of Extract-Transform-Load (ETL) workloads** - ETL workloads involve reading and transforming high volume data which is not a good fit for caching. You should use AWS Glue or Amazon EMR to facilitate ETL workloads.\r\n    \r\n    **Use ElastiCache to run highly complex JOIN queries** - Complex JSON queries can be run on relational databases such as RDS or Aurora. ElastiCache is not a good fit for this use-case."
+  },
+  {
+    "id": 46,
+    "question": "You have been asked by your Team Lead to enable detailed monitoring of the Amazon EC2 instances your team uses. As a Developer working on AWS CLI, which of the below command will you run?",
+    "options": [
+      "aws ec2 run-instances --image-id ami-09092360 --monitoring Enabled=true",
+      "aws ec2 monitor-instances --instance-id i-1234567890abcdef0",
+      "aws ec2 run-instances --image-id ami-09092360 --monitoring State=enabled",
+      "aws ec2 monitor-instances --instance-ids i-1234567890abcdef0"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **`aws ec2 monitor-instances --instance-ids i-1234567890abcdef0`** - This enables detailed monitoring for a running instance."
+  },
+  {
+    "id": 47,
+    "question": "A large firm stores its static data assets on Amazon S3 buckets. Each service line of the firm has its own AWS account. For a business use case, the Finance department needs to give access to their S3 bucket's data to the Human Resources department.\r\n    Which of the below options is NOT feasible for cross-account access of S3 bucket objects?",
+    "options": [
+      "Use Resource-based policies and AWS Identity and Access Management (IAM) policies for programmatic-only access to S3 bucket objects",
+      "Use IAM roles and resource-based policies delegate access across accounts within different partitions via programmatic access only",
+      "Use Cross-account IAM roles for programmatic and console access to S3 bucket objects",
+      "Use Access Control List (ACL) and IAM policies for programmatic-only access to S3 bucket objects"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Use IAM roles and resource-based policies delegate access across accounts within different partitions via programmatic access only** - This statement is incorrect and hence the right choice for this question. IAM roles and resource-based policies delegate access across accounts only within a single partition. For example, assume that you have an account in US West (N. California) in the standard `aws` partition. You also have an account in China (Beijing) in the `aws-cn` partition. You can't use an Amazon S3 resource-based policy in your account in China (Beijing) to allow access for users in your standard AWS account.\r\n    \r\n    Incorrect options:\r\n    \r\n    **Use Resource-based policies and AWS Identity and Access Management (IAM) policies for programmatic-only access to S3 bucket objects** - Use bucket policies to manage cross-account control and audit the S3 object's permissions. If you apply a bucket policy at the bucket level, you can define who can access (Principal element), which objects they can access (Resource element), and how they can access (Action element). Applying a bucket policy at the bucket level allows you to define granular access to different objects inside the bucket by using multiple policies to control access. You can also review the bucket policy to see who can access objects in an S3 bucket.\r\n    \r\n    **Use Access Control List (ACL) and IAM policies for programmatic-only access to S3 bucket objects** - Use object ACLs to manage permissions only for specific scenarios and only if ACLs meet your needs better than IAM and S3 bucket policies. Amazon S3 ACLs allow users to define only the following permissions sets: READ, WRITE, READ_ACP, WRITE_ACP, and FULL_CONTROL. You can use only an AWS account or one of the predefined Amazon S3 groups as a grantee for the Amazon S3 ACL.\r\n    \r\n    **Use Cross-account IAM roles for programmatic and console access to S3 bucket objects** - Not all AWS services support resource-based policies. This means that you can use cross-account IAM roles to centralize permission management when providing cross-account access to multiple services. Using cross-account IAM roles simplifies provisioning cross-account access to S3 objects that are stored in multiple S3 buckets, removing the need to manage multiple policies for S3 buckets. This method allows cross-account access to objects that are owned or uploaded by another AWS account or AWS services. If you don't use cross-account IAM roles, the object ACL must be modified."
+  },
+  {
+    "id": 48,
+    "question": "A mobile gaming company is experiencing heavy read traffic to its Amazon Relational Database Service (RDS) database that retrieves player’s scores and stats. The company is using RDS database instance type db.m5.12xlarge, which is not cost-effective for their budget. They would like to implement a strategy to deal with the high volume of read traffic, reduce latency, and also downsize the instance size to cut costs.\r\n    As a Developer, which of the following solutions do you recommend?",
+    "options": [
+      "Setup ElastiCache in front of RDS",
+      "Move to Amazon Redshift",
+      "Switch application code to AWS Lambda for better performance",
+      "Setup RDS Read Replicas"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Setup ElastiCache in front of RDS**\r\n    \r\n    Amazon ElastiCache is an ideal front-end for data stores such as Amazon RDS, providing a high-performance middle tier for applications with extremely high request rates and/or low latency requirements. The best part of caching is that it’s minimally invasive to implement and by doing so, your application performance regarding both scale and speed is dramatically improved.\r\n    \r\n    Incorrect options:\r\n    \r\n    **Setup RDS Read Replicas** - Adding read replicas would further add to the database costs and will not help in reducing latency when compared to a caching solution. So this option is ruled out."
+  },
+  {
+    "id": 49,
+    "question": "A multi-national enterprise uses AWS Organizations to manage its users across different divisions. Even though CloudTrail is enabled on the member accounts, managers have noticed that access issues to CloudTrail logs across different divisions and AWS Regions is becoming a bottleneck in troubleshooting issues. They have decided to use the organization trail to keep things simple.\r\n    What are the important points to remember when configuring an organization trail? (Select two)",
+    "options": [
+      "Member accounts will be able to see the Organization trail, but cannot modify or delete it",
+      "By default, CloudTrail event log files are not encrypted",
+      "There is nothing called Organization Trail. The master account can, however, enable CloudTrail logging, to keep track of all activities across AWS accounts",
+      "By default, CloudTrail tracks only bucket-level actions. To track object-level actions, you need to enable Amazon S3 data events",
+      "Member accounts do not have access to organization trail, neither do they have access to the Amazon S3 bucket that logs the files"
+    ],
+    "correct_answers": [
+      0,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    If you have created an organization in AWS Organizations, you can also create a trail that will log all events for all AWS accounts in that organization. This is referred to as an organization trail.\r\n    \r\n    **By default, CloudTrail tracks only bucket-level actions. To track object-level actions, you need to enable Amazon S3 data events** - This is a correct statement. AWS CloudTrail supports Amazon S3 Data Events, apart from bucket Events. You can record all API actions on S3 Objects and receive detailed information such as the AWS account of the caller, IAM user role of the caller, time of the API call, IP address of the API, and other details. All events are delivered to an S3 bucket and CloudWatch Events, allowing you to take programmatic actions on the events.\r\n    \r\n    **Member accounts will be able to see the organization trail, but cannot modify or delete it** - Organization trails must be created in the master account, and when specified as applying to an organization, are automatically applied to all member accounts in the organization. Member accounts will be able to see the organization trail, but cannot modify or delete it. By default, member accounts will not have access to the log files for the organization trail in the Amazon S3 bucket."
+  },
+  {
+    "id": 50,
+    "question": "A developer is configuring an Amazon API Gateway as a front door to expose backend business logic. To keep the solution cost-effective, the developer has opted for HTTP APIs.\r\n    Which of the following services are not available as an HTTP API via Amazon API Gateway?",
+    "options": [
+      "Amazon Cognito",
+      "AWS Lambda",
+      "AWS Web Application Firewall (AWS WAF)",
+      "AWS Identity and Access Management (IAM)"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 51,
+    "question": "A development team has created a new IAM user that has `s3:putObject` permission to write to an S3 bucket. This S3 bucket uses server-side encryption with AWS KMS managed keys (SSE-KMS) as the default encryption. Using the access key ID and the secret access key of the IAM user, the application received an access denied error when calling the `PutObject` API.\r\n    As a Developer Associate, how would you resolve this issue?",
+    "options": [
+      "Correct the ACL of the S3 bucket to allow the IAM user to upload encrypted objects",
+      "Correct the bucket policy of the S3 bucket to allow the IAM user to upload encrypted objects",
+      "Correct the policy of the IAM user to allow the `kms:GenerateDataKey` action",
+      "Correct the policy of the IAM user to allow the `s3:Encrypt` action"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 52,
+    "question": "A telecom service provider stores its critical customer data on Amazon Simple Storage Service (Amazon S3).\r\n    Which of the following options can be used to control access to data stored on Amazon S3? (Select two)",
+    "options": [
+      "Query String Authentication, Permissions boundaries",
+      "Permissions boundaries, Identity and Access Management (IAM) policies",
+      "Bucket policies, Identity and Access Management (IAM) policies",
+      "Query String Authentication, Access Control Lists (ACLs)",
+      "IAM database authentication, Bucket policies"
+    ],
+    "correct_answers": [
+      1,
+      2
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct options:\r\n    \r\n    **Bucket policies, Identity and Access Management (IAM) policies**\r\n    \r\n    **Query String Authentication, Access Control Lists (ACLs)**\r\n    \r\n    Customers may use four mechanisms for controlling access to Amazon S3 resources: Identity and Access Management (IAM) policies, bucket policies, Access Control Lists (ACLs), and Query String Authentication.\r\n    \r\n    IAM enables organizations with multiple employees to create and manage multiple users under a single AWS account. With IAM policies, customers can grant IAM users fine-grained control to their Amazon S3 bucket or objects while also retaining full control over everything the users do.\r\n    \r\n    With bucket policies, customers can define rules which apply broadly across all requests to their Amazon S3 resources, such as granting write privileges to a subset of Amazon S3 resources. Customers can also restrict access based on an aspect of the request, such as HTTP referrer and IP address.\r\n    \r\n    With ACLs, customers can grant specific permissions (i.e. READ, WRITE, FULL_CONTROL) to specific users for an individual bucket or object.\r\n    \r\n    With Query String Authentication, customers can create a URL to an Amazon S3 object which is only valid for a limited time. Using query parameters to authenticate requests is useful when you want to express a request entirely in a URL. This method is also referred as presigning a URL."
+  },
+  {
+    "id": 53,
+    "question": "You have configured a Network ACL and a Security Group for the load balancer and Amazon EC2 instances to allow inbound traffic on port 80. However, users are still unable to connect to your website after launch.\r\n    Which additional configuration is required to make the website accessible to all users over the internet?",
+    "options": [
+      "Add a rule to the Network ACLs to allow outbound traffic on ports 32768 - 61000",
+      "Add a rule to the Network ACLs to allow outbound traffic on ports 1024 - 65535",
+      "Add a rule to the Network ACLs to allow outbound traffic on ports 1025 - 5000",
+      "Add a rule to the Security Group allowing outbound traffic on port 80"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Add a rule to the Network ACLs to allow outbound traffic on ports 1024 - 65535**\r\n    \r\n    A Network Access Control List (ACL) is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. You might set up network ACLs with rules similar to your security groups in order to add an additional layer of security to your VPC.\r\n    \r\n    When you create a custom Network ACL and associate it with a subnet, by default, this custom Network ACL denies all inbound and outbound traffic until you add rules. A network ACL has separate inbound and outbound rules, and each rule can either allow or deny traffic. Network ACLs are stateless, which means that responses to allowed inbound traffic are subject to the rules for outbound traffic (and vice versa).\r\n    \r\n    The client that initiates the request chooses the ephemeral port range. The range varies depending on the client's operating system. Requests originating from Elastic Load Balancing use ports 1024-65535. List of ephemeral port ranges:\r\n    \r\n    1. Many Linux kernels (including the Amazon Linux kernel) use ports 32768-61000.\r\n    2. Requests originating from Elastic Load Balancing use ports 1024-65535.\r\n    3. Windows operating systems through Windows Server 2003 use ports 1025-5000.\r\n    4. Windows Server 2008 and later versions use ports 49152-65535.\r\n    5. A NAT gateway uses ports 1024-65535.\r\n    \r\n    AWS Lambda functions use ports 1024-65535."
+  },
+  {
+    "id": 54,
+    "question": "An Amazon Simple Queue Service (SQS) has to be configured between two AWS accounts for shared access to the queue. AWS account A has the SQS queue in its account and AWS account B has to be given access to this queue.\r\n    Which of the following options need to be combined to allow this cross-account access? (Select three)",
+    "options": [
+      "The account A administrator attaches a trust policy to the role that identifies account B as the principal who can assume the role",
+      "The account A administrator delegates the permission to assume the role to any users in account A",
+      "The account B administrator delegates the permission to assume the role to any users in account B",
+      "The account A administrator creates an IAM role and attaches a permissions policy",
+      "The account A administrator attaches a trust policy to the role that identifies account B as the AWS service principal who can assume the role",
+      "The account B administrator creates an IAM role and attaches a trust policy to the role with account B as the principal"
+    ],
+    "correct_answers": [
+      0,
+      2,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct options:\r\n    \r\n    **The account A administrator creates an IAM role and attaches a permissions policy**\r\n    \r\n    **The account A administrator attaches a trust policy to the role that identifies account B as the principal who can assume the role**\r\n    \r\n    **The account B administrator delegates the permission to assume the role to any users in account B**\r\n    \r\n    To grant cross-account permissions, you need to attach an identity-based permissions policy to an IAM role. For example, the AWS account A administrator can create a role to grant cross-account permissions to AWS account B as follows:\r\n    \r\n    1. The account A administrator creates an IAM role and attaches a permissions policy—that grants permissions on resources in account A—to the role.\r\n    2. The account A administrator attaches a trust policy to the role that identifies account B as the principal who can assume the role.\r\n    3. The account B administrator delegates the permission to assume the role to any users in account B. This allows users in account B to create or access queues in account A."
+  },
+  {
+    "id": 55,
+    "question": "A development team had enabled and configured CloudTrail for all the Amazon S3 buckets used in a project. The project manager owns all the S3 buckets used in the project. However, the manager noticed that he did not receive any object-level API access logs when the data was read by another AWS account.\r\n    What could be the reason for this behavior/error?",
+    "options": [
+      "CloudTrail needs to be configured on both the AWS accounts for receiving the access logs in cross-account access",
+      "The meta-data of the bucket is in an invalid state and needs to be corrected by the bucket owner from AWS console to fix the issue",
+      "The bucket owner also needs to be object owner to get the object access logs",
+      "CloudTrail always delivers object-level API access logs to the requester and not to object owner"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **The bucket owner also needs to be object owner to get the object access logs**\r\n    \r\n    If the bucket owner is also the object owner, the bucket owner gets the object access logs. Otherwise, the bucket owner must get permissions, through the object ACL, for the same object API to get the same object-access API logs."
+  },
+  {
+    "id": 56,
+    "question": "A development team is considering Amazon ElastiCache for Redis as its in-memory caching solution for its relational database.\r\n    Which of the following options are correct while configuring ElastiCache? (Select two)",
+    "options": [
+      "While using Redis with cluster mode enabled, asynchronous replication mechanisms are used to keep the read replicas synchronized with the primary. If cluster mode is disabled, the replication mechanism is done synchronously",
+      "All the nodes in a Redis cluster must reside in the same region",
+      "You can scale write capacity for Redis by adding replica nodes",
+      "If you have no replicas and a node fails, you experience no loss of data when using Redis with cluster mode enabled",
+      "While using Redis with cluster mode enabled, you cannot manually promote any of the replica nodes to primary"
+    ],
+    "correct_answers": [
+      1,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct options:\r\n    \r\n    **All the nodes in a Redis cluster must reside in the same region**\r\n    \r\n    All the nodes in a Redis cluster (cluster mode enabled or cluster mode disabled) must reside in the same region.\r\n    \r\n    **While using Redis with cluster mode enabled, you cannot manually promote any of the replica nodes to primary**\r\n    \r\n    While using Redis with cluster mode enabled, there are some limitations:\r\n    \r\n    1. You cannot manually promote any of the replica nodes to primary.\r\n    2. Multi-AZ is required.\r\n    3. You can only change the structure of a cluster, the node type, and the number of nodes by restoring from a backup."
+  },
+  {
+    "id": 57,
+    "question": "You have a popular three-tier web application that is used by users throughout the globe receiving thousands of incoming requests daily. You have AWS Route 53 policies to automatically distribute weighted traffic to the API resources located at URL api.global.com.\r\n    What is an alternative way of distributing traffic to a web application?",
+    "options": [
+      "Auto Scaling",
+      "S3",
+      "ELB",
+      "CloudFront"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **ELB**\r\n    \r\n    Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and Lambda functions. Route 53 failover policy is similar to an ELB in that when using failover routing, it lets you route traffic to a resource when the resource is healthy or to a different resource when the first resource is unhealthy.\r\n    \r\n    Incorrect options:\r\n    \r\n    **CloudFront** - Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds."
+  },
+  {
+    "id": 58,
+    "question": "A company has several Linux-based EC2 instances that generate various log files which need to be analyzed for security and compliance purposes. The company wants to use Kinesis Data Streams (KDS) to analyze this log data.\r\n    Which of the following is the most optimal way of sending log data from the EC2 instances to KDS?",
+    "options": [
+      "Install and configure Kinesis Agent on each of the instances",
+      "Use Kinesis Producer Library (KPL) to collect and ingest data from each EC2 instance",
+      "Run cron job on each of the instances to collect log data and send it to Kinesis Data Streams",
+      "Install AWS SDK on each of the instances and configure it to send the necessary files to Kinesis Data Streams"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Install and configure Kinesis Agent on each of the instances**\r\n    \r\n    Kinesis Agent is a stand-alone Java software application that offers an easy way to collect and send data to Kinesis Data Streams. The agent continuously monitors a set of files and sends new data to your stream. The agent handles file rotation, checkpointing, and retry upon failures. It delivers all of your data in a reliable, timely, and simple manner. It also emits Amazon CloudWatch metrics to help you better monitor and troubleshoot the streaming process."
+  },
+  {
+    "id": 59,
+    "question": "You have uploaded a zip file to AWS Lambda that contains code files written in Node.Js. When your function is executed you receive the following output, 'Error: Memory Size: 10,240 MB Max Memory Used'.\r\n    Which of the following explains the problem?",
+    "options": [
+      "Your Lambda function ran out of RAM",
+      "You have uploaded a zip file larger than 50 MB to AWS Lambda",
+      "The uncompressed zip file exceeds AWS Lambda limits",
+      "Your zip file is corrupt"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 60,
+    "question": "A developer is configuring an Application Load Balancer (ALB) to direct traffic to the application's EC2 instances and Lambda functions.\r\n    Which of the following characteristics of the ALB can be identified as correct? (Select two)",
+    "options": [
+      "If you specify targets using IP addresses, traffic is routed to instances using the primary private IP address",
+      "An ALB has three possible target types: Instance, IP and Lambda",
+      "If you specify targets using an instance ID, traffic is routed to instances using any private IP address from one or more network interfaces",
+      "You can not specify publicly routable IP addresses to an ALB",
+      "An ALB has three possible target types: Hostname, IP and Lambda"
+    ],
+    "correct_answers": [
+      1,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct options:\r\n    \r\n    **An ALB has three possible target types: Instance, IP and Lambda**\r\n    \r\n    **You can not specify publicly routable IP addresses to an ALB**\r\n    \r\n    When the target type is IP, you can specify IP addresses from specific CIDR blocks only. You can't specify publicly routable IP addresses.\r\n    \r\n    If you specify targets using an instance ID, traffic is routed to instances using the primary private IP address specified in the primary network interface for the instance.\r\n    \r\n    If you specify targets using IP addresses, you can route traffic to an instance using any private IP address from one or more network interfaces. This enables multiple applications on an instance to use the same port."
+  },
+  {
+    "id": 61,
+    "question": "An order management system uses a cron job to poll for any new orders. Every time a new order is created, the cron job sends this order data as a message to the message queues to facilitate downstream order processing in a reliable way. To reduce costs and improve performance, the company wants to move this functionality to AWS cloud.\r\n    Which of the following is the most optimal solution to meet this requirement?",
+    "options": [
+      "Use Amazon Simple Notification Service (SNS) to push notifications to Kinesis Data Firehose delivery streams for processing the data for downstream applications",
+      "Configure different Amazon Simple Queue Service (SQS) queues to poll for new orders",
+      "Use Amazon Simple Notification Service (SNS) to push notifications when an order is created. Configure different Amazon Simple Queue Service (SQS) queues to receive these messages for downstream processing",
+      "Use Amazon Simple Notification Service (SNS) to push notifications and use AWS Lambda functions to process the information received from SNS"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 62,
+    "question": "You are a manager for a tech company that has just hired a team of developers to work on the company's AWS infrastructure. All the developers are reporting to you that when using the AWS CLI to execute commands it fails with the following exception: You are not authorized to perform this operation. Encoded authorization failure message: 6h34GtpmGjJJUm946eDVBfzWQJk6z5GePbbGDs9Z2T8xZj9EZtEduSnTbmrR7pMqpJrVYJCew2m8YBZQf4HRWEtrpncANrZMsnzk.\r\n    Which of the following actions will help developers decode the message?",
+    "options": [
+      "AWS STS decode-authorization-message",
+      "Use KMS decode-authorization-message",
+      "AWS Cognito Decoder",
+      "AWS IAM decode-authorization-message"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 63,
+    "question": "A company would like to migrate the existing application code from a GitHub repository to AWS CodeCommit.\r\n    As an AWS Certified Developer Associate, which of the following would you recommend for migrating the cloned repository to CodeCommit over HTTPS?",
+    "options": [
+      "Use Git credentials generated from IAM",
+      "Use IAM Multi-Factor authentication",
+      "Use authentication offered by GitHub secure tokens",
+      "Use IAM user secret access key and access key ID"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Use Git credentials generated from IAM** - CodeCommit repositories are Git-based and support the basic functionalities of Git such as Git credentials. AWS recommends that you use an IAM user when working with CodeCommit. You can access CodeCommit with other identity types, but the other identity types are subject to limitations.\r\n    \r\n    The simplest way to set up connections to AWS CodeCommit repositories is to configure Git credentials for CodeCommit in the IAM console, and then use those credentials for HTTPS connections. You can also use these same credentials with any third-party tool or individual development environment (IDE) that supports HTTPS authentication using a static user name and password."
+  },
+  {
+    "id": 64,
+    "question": "ur mobile application needs to perform API calls to DynamoDB. You do not want to store AWS secret and access keys onto the mobile devices and need all the calls to DynamoDB made with a different identity per mobile device.\r\n    Which of the following services allows you to achieve this?",
+    "options": [
+      "Cognito Sync",
+      "Cognito User Pools",
+      "Cognito Identity Pools",
+      "IAM"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 65,
+    "question": "An organization recently began using AWS CodeCommit for its source control service. A compliance security team visiting the organization was auditing the software development process and noticed developers making many git push commands within their development machines. The compliance team requires that encryption be used for this activity.\r\n    How can the organization ensure source code is encrypted in transit and at rest?",
+    "options": [
+      "Enable KMS encryption",
+      "Use AWS Lambda as a hook to encrypt the pushed code",
+      "Repositories are automatically encrypted at rest",
+      "Use a git command line hook to encrypt the code client side"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Repositories are automatically encrypted at rest**\r\n    \r\n    Data in AWS CodeCommit repositories is encrypted in transit and at rest. When data is pushed into an AWS CodeCommit repository (for example, by calling git push), AWS CodeCommit encrypts the received data as it is stored in the repository."
+  },
+  {
+    "id": 66,
+    "question": "An IT company leverages CodePipeline to automate its release pipelines. The development team wants to write a Lambda function that will send notifications for state changes within the pipeline.\r\n    As a Developer Associate, which steps would you suggest to associate the Lambda function with the event source?",
+    "options": [
+      "Set up an Amazon CloudWatch alarm that monitors status changes in Code Pipeline and triggers the Lambda function",
+      "Set up an Amazon CloudWatch Events rule that uses CodePipeline as an event source with the target as the Lambda function",
+      "Use the Lambda console to configure a trigger that invokes the Lambda function with CodePipeline as the event source",
+      "Use the CodePipeline console to set up a trigger for the Lambda function"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    Amazon CloudWatch Events delivers a near real-time stream of system events that describe changes in Amazon Web Services (AWS) resources. Using simple rules that you can quickly set up, you can match events and route them to one or more target functions or streams."
+  },
+  {
+    "id": 67,
+    "question": "You are running a public DNS service on an EC2 instance where the DNS name is pointing to the IP address of the instance. You wish to upgrade your DNS service but would like to do it without any downtime.\r\n    Which of the following options will help you accomplish this?",
+    "options": [
+      "Use Route 53",
+      "Create a Load Balancer and an auto scaling group",
+      "Elastic IP",
+      "Provide a static private IP"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    Route 53 is a DNS managed by AWS, but nothing prevents you from running your own DNS (it's just a software) on an EC2 instance. The trick of this question is that it's about EC2, running some software that needs a fixed IP, and not about Route 53 at all.\r\n    \r\n    **Elastic IP**\r\n    \r\n    DNS services are identified by a public IP, so you need to use Elastic IP."
+  },
+  {
+    "id": 68,
+    "question": "You are responsible for an application that runs on multiple Amazon EC2 instances. In front of the instances is an Internet-facing load balancer that takes requests from clients over the internet and distributes them to the EC2 instances. A health check is configured to ping the index.html page found in the root directory for the health status. When accessing the website via the internet visitors of the website receive timeout errors.\r\n    What should be checked first to resolve the issue?",
+    "options": [
+      "IAM Roles",
+      "Security Groups",
+      "The ALB is warming up",
+      "The application is down"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Security Groups**\r\n    \r\n    A security group acts as a virtual firewall for your EC2 instances to control incoming and outgoing traffic. Inbound rules control the incoming traffic to your instance, and outbound rules control the outgoing traffic from your instance.\r\n    \r\n    Check the security group rules of your EC2 instance. You need a security group rule that allows inbound traffic from your public IPv4 address on the proper port.\r\n    \r\n    Incorrect options:\r\n    \r\n    **The application is down** - Although you can set a health check for application ping or HTTP, timeouts are usually caused by blocked firewall access."
+  },
+  {
+    "id": 69,
+    "question": "An e-commerce company has multiple EC2 instances operating in a private subnet which is part of a custom VPC. These instances are running an image processing application that needs to access images stored on S3. Once each image is processed, the status of the corresponding record needs to be marked as completed in a DynamoDB table.\r\n    How would you go about providing private access to these AWS resources which are not part of this custom VPC?",
+    "options": [
+      "Create a separate gateway endpoint for S3 and DynamoDB each. Add two new target entries for these two gateway endpoints in the route table of the custom VPC",
+      "Create a gateway endpoint for S3 and add it as a target in the route table of the custom VPC. Create an interface endpoint for DynamoDB and then connect to the DynamoDB service using the private IP address",
+      "Create a gateway endpoint for DynamoDB and add it as a target in the route table of the custom VPC. Create an API endpoint for S3 and then connect to the S3 service using the private IP address",
+      "Create a separate interface endpoint for S3 and DynamoDB each. Then connect to these services using the private IP address"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 70,
+    "question": "The development team at an e-commerce company is preparing for the upcoming Thanksgiving sale. The product manager wants the development team to implement appropriate caching strategy on Amazon ElastiCache to withstand traffic spikes on the website during the sale. A key requirement is to facilitate consistent updates to the product prices and product description, so that the cache never goes out of sync with the backend.\r\n    As a Developer Associate, which of the following solutions would you recommend for the given use-case?",
+    "options": [
+      "Use a caching strategy to write to the cache directly and sync the backend at a later time",
+      "Use a caching strategy to write to the backend first and wait for the cache to expire via TTL",
+      "Use a caching strategy to write to the backend first and then invalidate the cache",
+      "Use a caching strategy to update the cache and the backend at the same time"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "**Use a caching strategy to write to the backend first and then invalidate the cache**\r\n    \r\n    This option is similar to the write-through strategy wherein the application writes to the backend first and then invalidate the cache. As the cache gets invalidated, the caching engine would then fetch the latest value from the backend, thereby making sure that the product prices and product description stay consistent with the backend.\r\n    \r\n    Incorrect options:\r\n    \r\n    **Use a caching strategy to update the cache and the backend at the same time** - The cache and the backend cannot be updated at the same time via a single atomic operation as these are two separate systems. Therefore this option is incorrect."
+  },
+  {
+    "id": 71,
+    "question": "Your company likes to operate multiple AWS accounts so that teams have their environments. Services deployed across these accounts interact with one another, and now there's a requirement to implement X-Ray traces across all your applications deployed on EC2 instances and AWS accounts.\r\n    As such, you would like to have a unified account to view all the traces. What should you in your X-Ray daemon set up to make this work? (Select two)",
+    "options": [
+      "Configure the X-Ray daemon to use an IAM instance role",
+      "Create a role in the target unified account and allow roles in each sub-account to assume the role.",
+      "Create a user in the target unified account and generate access and secret keys",
+      "Configure the X-Ray daemon to use access and secret keys",
+      "Enable Cross Account collection in the X-Ray console"
+    ],
+    "correct_answers": [
+      0,
+      1
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "**The X-Ray agent can assume a role to publish data into an account different from the one in which it is running.** This enables you to publish data from various components of your application into a central account."
+  },
+  {
+    "id": 72,
+    "question": "An EC2 instance has an IAM instance role attached to it, providing it read and write access to the S3 bucket 'my_bucket'. You have tested the IAM instance role and both reads and writes are working. You then remove the IAM role from the EC2 instance and test both read and write again. Writes stopped working but reads are still working.\r\n    What is the likely cause of this behavior?",
+    "options": [
+      "The S3 bucket policy authorizes reads",
+      "When a read is done on a bucket, there's a grace period of 5 minutes to do the same read again",
+      "Removing an instance role from an EC2 instance can take a few minutes before being active",
+      "The EC2 instance is using cached temporary IAM credentials"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 73,
+    "question": "A video streaming application uses Amazon CloudFront for its data distribution. The development team has decided to use CloudFront with origin failover for high availability.\r\n    Which of the following options are correct while configuring CloudFront with Origin Groups? (Select two)",
+    "options": [
+      "CloudFront fails over to the secondary origin only when the HTTP method of the viewer request is GET, HEAD or OPTIONS",
+      "CloudFront routes all incoming requests to the primary origin, even when a previous request failed over to the secondary origin",
+      "When there’s a cache hit, CloudFront routes the request to the primary origin in the origin group",
+      "In the Origin Group of your distribution, all the origins are defined as primary for automatic failover in case an origin fails",
+      "To set up origin failover, you must have a distribution with at least three origins"
+    ],
+    "correct_answers": [
+      1,
+      3
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct options:\r\n    \r\n    **CloudFront routes all incoming requests to the primary origin, even when a previous request failed over to the secondary origin**\r\n    \r\n    CloudFront routes all incoming requests to the primary origin, even when a previous request failed over to the secondary origin. CloudFront only sends requests to the secondary origin after a request to the primary origin fails.\r\n    \r\n    **CloudFront fails over to the secondary origin only when the HTTP method of the viewer request is GET, HEAD or OPTIONS**\r\n    \r\n    CloudFront fails over to the secondary origin only when the HTTP method of the viewer request is GET, HEAD, or OPTIONS. CloudFront does not failover when the viewer sends a different HTTP method (for example POST, PUT, and so on)."
+  },
+  {
+    "id": 74,
+    "question": "An investment firm wants to continuously generate time-series analytics of the stocks being purchased by its customers. The firm wants to build a live leaderboard with near-real-time analytics for these in-demand stocks.\r\n    Which of the following represents a fully managed solution with the least cost to address this use-case?",
+    "options": [
+      "Use Kinesis Data Streams to ingest data and Kinesis Data Analytics to generate leaderboard scores and time-series analytics",
+      "Use Kinesis Data Streams to ingest data and Amazon Kinesis Client Library to the application logic to generate leaderboard scores and time-series analytics",
+      "Use Kinesis Firehose to ingest data and Kinesis Data Analytics to generate leaderboard scores and time-series analytics",
+      "Use Kinesis Firehose to ingest data and Amazon Athena to generate leaderboard scores and time-series analytics"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Although Kinesis Data Streams supports on-demand provisioning of shards, however, the data ingestion cost along with the per hour shards cost would be more than the corresponding cost incurred while using Firehose. The use-case clearly states that the company wants a fully managed solution with the least cost, so Kinesis Firehose is a better solution."
+  },
+  {
+    "id": 75,
+    "question": "A developer is creating a RESTful API service using an Amazon API Gateway with AWS Lambda integration. The service must support different API versions for testing purposes.\r\n    As a Developer Associate, which of the following would you suggest as the best way to accomplish this?",
+    "options": [
+      "Use an X-Version header to identify which version is being called and pass that header to the Lambda function",
+      "Deploy the API versions as unique stages with unique endpoints and use stage variables to provide the context to identify the API versions",
+      "Use an API Gateway Lambda authorizer to route API clients to the correct API version",
+      "Set up an API Gateway resource policy to identify the API versions and provide context to the Lambda function"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "multiple_correct": false,
+    "topics": []
+  },
+  {
+    "id": 76,
+    "question": "A photo-sharing application manages its EC2 server fleet running behind an Application Load Balancer and the traffic is fronted by a CloudFront distribution. The development team wants to decouple the user authentication process for the application so that the application servers can just focus on the business logic.\r\n    As a Developer Associate, which of the following solutions would you recommend to address this use-case with minimal development effort?",
+    "options": [
+      "Use Cognito Authentication via Cognito Identity Pools for your CloudFront distribution",
+      "Use Cognito Authentication via Cognito Identity Pools for your Application Load Balancer",
+      "Use Cognito Authentication via Cognito User Pools for your Application Load Balancer",
+      "Use Cognito Authentication via Cognito User Pools for your CloudFront distribution"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "You cannot directly integrate Cognito User Pools with CloudFront distribution as you have to create a separate Lambda@Edge function to accomplish the authentication via Cognito User Pools. This involves additional development effort, so this option is not the best fit for the given use-case."
+  },
+  {
+    "id": 77,
+    "question": "The development team at a retail organization wants to allow a Lambda function in its AWS Account A to access a DynamoDB table in another AWS Account B.\r\n    As a Developer Associate, which of the following solutions would you recommend for the given use-case?",
+    "options": [
+      "Create an IAM role in Account B with access to DynamoDB. Modify the trust policy of the role in Account B to allow the execution role of Lambda to assume this role. Update the Lambda function code to add the AssumeRole API call",
+      "Create a clone of the Lambda function in AWS Account B so that it can access the DynamoDB table in the same account",
+      "Create an IAM role in Account B with access to DynamoDB. Modify the trust policy of the execution role in Account A to allow the execution role of Lambda to assume the IAM role in Account B. Update the Lambda function code to add the AssumeRole API call",
+      "Add a resource policy to the DynamoDB table in AWS Account B to give access to the Lambda function in Account A"
+    ],
+    "correct_answers": [
+      0
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    **Create an IAM role in account B with access to DynamoDB. Modify the trust policy of the role in Account B to allow the execution role of Lambda to assume this role. Update the Lambda function code to add the AssumeRole API call**\r\n    \r\n    You can give a Lambda function created in one account (\"account A\") permissions to assume a role from another account (\"account B\") to access resources such as DynamoDB or S3 bucket. You need to create an execution role in Account A that gives the Lambda function permission to do its work. Then you need to create a role in account B that the Lambda function in account A assumes to gain access to the cross-account DynamoDB table. Make sure that you modify the trust policy of the role in Account B to allow the execution role of Lambda to assume this role. Finally, update the Lambda function code to add the AssumeRole API call."
+  },
+  {
+    "id": 78,
+    "question": "A development team has noticed that one of the EC2 instances has been wrongly configured with the 'DeleteOnTermination' attribute set to True for its root EBS volume.\r\n    As a developer associate, can you suggest a way to disable this flag while the instance is still running?",
+    "options": [
+      "Update the attribute using AWS management console. Select the EC2 instance and then uncheck the Delete On Termination check box for the root EBS volume",
+      "Set the `DisableApiTermination` attribute of the instance using the API",
+      "The attribute cannot be updated when the instance is running. Stop the instance from Amazon EC2 console and then update the flag",
+      "Set the `DeleteOnTermination` attribute to False using the command line"
+    ],
+    "correct_answers": [
+      3
+    ],
+    "multiple_correct": false,
+    "topics": [],
+    "explanation": "Correct option:\r\n    \r\n    When an instance terminates, the value of the DeleteOnTermination attribute for each attached EBS volume determines whether to preserve or delete the volume. By default, the DeleteOnTermination attribute is set to True for the root volume and is set to False for all other volume types.\r\n    \r\n    **Set the `DeleteOnTermination` attribute to False using the command line** - If the instance is already running, you can set `DeleteOnTermination` to False using the command line.\r\n    \r\n    Incorrect options:\r\n    \r\n    **Update the attribute using AWS management console. Select the EC2 instance and then uncheck the Delete On Termination check box for the root EBS volume** - You can set the `DeleteOnTermination` attribute to False when you launch a new instance. It is not possible to update this attribute of a running instance from the AWS console."
+  },
+  {
+    "id": 79,
+    "question": "A development team has been using Amazon S3 service as an object store. With Amazon S3 turning strongly consistent, the team wants to understand the impact of this change on its data storage practices.\r\n    As a developer associate, can you identify the key characteristics of the strongly consistent data model followed by S3? (Select two)",
+    "options": [
+      "A process deletes an existing object and immediately lists keys within its bucket. The object could still be visible for few more minutes till the change propagates",
+      "If you delete a bucket and immediately list all buckets, the deleted bucket might still appear in the list",
+      "A process deletes an existing object and immediately tries to read it. Amazon S3 can return data as the object deletion has not yet propagated completely",
+      "A process replaces an existing object and immediately tries to read it. Amazon S3 might return the old data",
+      "A process deletes an existing object and immediately tries to read it. Amazon S3 will not return any data as the object has been deleted"
+    ],
+    "correct_answers": [
+      1,
+      4
+    ],
+    "multiple_correct": true,
+    "topics": [],
+    "explanation": "Correct options:\r\n    \r\n    **If you delete a bucket and immediately list all buckets, the deleted bucket might still appear in the list** - Bucket configurations have an eventual consistency model. If you delete a bucket and immediately list all buckets, the deleted bucket might still appear in the list.\r\n    \r\n    **A process deletes an existing object and immediately tries to read it. Amazon S3 will not return any data as the object has been deleted** - Amazon S3 provides strong read-after-write consistency for PUTs and DELETEs of objects in your Amazon S3 bucket in all AWS Regions. This applies to both writes to new objects as well as PUTs that overwrite existing objects and DELETEs."
+  }
+]

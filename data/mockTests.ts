@@ -1,6 +1,7 @@
 
 import { MockTest } from '../types.ts';
 import { questionsData } from './questions.ts';
+import { questionsData as hardQuestions1Data } from './hard_question1.ts';
 
 const generateRange = (start: number, end: number) => 
   Array.from({ length: end - start + 1 }, (_, i) => start + i);
@@ -19,6 +20,7 @@ export const mockTests: MockTest[] = [
     description: '50 Mock Questions for AWS Associate Developer Certification Exam. (Questions 1-50)',
     questionIds: generateRange(1, 50),
     durationMinutes: 100,
+    questionPool: 'standard'
   },
   {
     id: 'exam-2',
@@ -26,6 +28,7 @@ export const mockTests: MockTest[] = [
     description: '50 Mock Questions for AWS Associate Developer Certification Exam. (Questions 51-100)',
     questionIds: generateRange(51, 100),
     durationMinutes: 100,
+    questionPool: 'standard'
   },
   {
     id: 'exam-3',
@@ -33,6 +36,7 @@ export const mockTests: MockTest[] = [
     description: '50 Mock Questions for AWS Associate Developer Certification Exam. (Questions 101-150)',
     questionIds: generateRange(101, 150),
     durationMinutes: 100,
+    questionPool: 'standard'
   },
   {
     id: 'exam-4',
@@ -40,6 +44,7 @@ export const mockTests: MockTest[] = [
     description: '50 Mock Questions for AWS Associate Developer Certification Exam. (Questions 151-200)',
     questionIds: generateRange(151, 200),
     durationMinutes: 100,
+    questionPool: 'standard'
   },
   {
     id: 'exam-5',
@@ -47,6 +52,7 @@ export const mockTests: MockTest[] = [
     description: '50 Mock Questions for AWS Associate Developer Certification Exam. (Questions 201-250)',
     questionIds: generateRange(201, 250),
     durationMinutes: 100,
+    questionPool: 'standard'
   },
   {
     id: 'exam-6',
@@ -54,6 +60,7 @@ export const mockTests: MockTest[] = [
     description: '50 Mock Questions for AWS Associate Developer Certification Exam. (Questions 251-300)',
     questionIds: generateRange(251, 300),
     durationMinutes: 100,
+    questionPool: 'standard'
   },
   {
     id: 'exam-7',
@@ -61,6 +68,17 @@ export const mockTests: MockTest[] = [
     description: '87 Mock Questions for AWS Associate Developer Certification Exam.(Questions 301-387)',
     questionIds: generateRange(301, 387),
     durationMinutes: 175,
+    questionPool: 'standard'
+  },
+  // Hard Questions Section
+  {
+    id: 'hard-1',
+    title: 'Hard Questions Set 1',
+    description: 'Advanced-level scenario questions and tricky AWS architecture edge cases. Highly recommended for final review.',
+    questionIds: generateRange(0, 79),
+    durationMinutes: 160,
+    topic: 'hard1',
+    questionPool: 'hard1'
   },
   // Specialized Topic Exams
   {
@@ -69,7 +87,8 @@ export const mockTests: MockTest[] = [
     description: 'Focused practice containing all available questions related to AWS Lambda functions and serverless compute.',
     questionIds: getIdsByTopic('lambda'),
     durationMinutes: Math.ceil(getIdsByTopic('lambda').length * 2),
-    topic: 'lambda'
+    topic: 'lambda',
+    questionPool: 'standard'
   },
   {
     id: 'topic-dynamodb',
@@ -77,7 +96,8 @@ export const mockTests: MockTest[] = [
     description: 'Deep dive into NoSQL modeling, throughput, and performance questions specifically for Amazon DynamoDB.',
     questionIds: getIdsByTopic('dynamodb'),
     durationMinutes: Math.ceil(getIdsByTopic('dynamodb').length * 2),
-    topic: 'dynamodb'
+    topic: 'dynamodb',
+    questionPool: 'standard'
   },
   {
     id: 'topic-iam',
@@ -85,7 +105,8 @@ export const mockTests: MockTest[] = [
     description: 'Master AWS Identity and Access Management with a comprehensive set of security, roles, and policy questions.',
     questionIds: getIdsByTopic('iam'),
     durationMinutes: Math.ceil(getIdsByTopic('iam').length * 2),
-    topic: 'iam'
+    topic: 'iam',
+    questionPool: 'standard'
   },
   {
     id: 'topic-s3',
@@ -93,6 +114,7 @@ export const mockTests: MockTest[] = [
     description: 'Complete coverage of Amazon Simple Storage Service (S3), including bucket policies, encryption, and lifecycle rules.',
     questionIds: getIdsByTopic('s3'),
     durationMinutes: Math.ceil(getIdsByTopic('s3').length * 2),
-    topic: 's3'
+    topic: 's3',
+    questionPool: 'standard'
   }
 ];

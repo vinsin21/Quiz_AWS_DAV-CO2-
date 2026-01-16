@@ -16,7 +16,8 @@ import {
   ArrowLeft, 
   Code, 
   Zap, 
-  Layers 
+  Layers,
+  Flame
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -45,7 +46,7 @@ const FloatingIcon = ({ children, delay = 0, className = "" }: { children?: Reac
   </MotionDiv>
 );
 
-type FilterTopic = 'all' | 'lambda' | 'dynamodb' | 'iam' | 's3';
+type FilterTopic = 'all' | 'lambda' | 'dynamodb' | 'iam' | 's3' | 'hard1';
 
 interface TopicOption {
   value: FilterTopic;
@@ -56,6 +57,7 @@ interface TopicOption {
 
 const TOPICS: TopicOption[] = [
   { value: 'all', label: 'All General Exams', icon: <Filter size={16} />, color: 'text-gray-400' },
+  { value: 'hard1', label: 'Hard Questions 1', icon: <Flame size={16} />, color: 'text-red-500' },
   { value: 'lambda', label: 'AWS Lambda', icon: <LayoutPanelTop size={16} />, color: 'text-orange-500' },
   { value: 'dynamodb', label: 'DynamoDB', icon: <Database size={16} />, color: 'text-blue-400' },
   { value: 'iam', label: 'IAM Security', icon: <Shield size={16} />, color: 'text-red-400' },
@@ -80,6 +82,7 @@ const MockTestList: React.FC = () => {
   }, []);
 
   const getIcon = (id: string) => {
+    if (id.includes('hard')) return <Flame size={32} className="text-red-500" />;
     if (id.includes('lambda')) return <LayoutPanelTop size={32} className="text-orange-500" />;
     if (id.includes('dynamodb') || id.includes('database')) return <Database size={32} className="text-blue-400" />;
     if (id.includes('iam') || id.includes('security')) return <Shield size={32} className="text-red-400" />;
@@ -89,7 +92,7 @@ const MockTestList: React.FC = () => {
 
   const filteredTests = useMemo(() => {
     if (selectedTopic === 'all') {
-      return mockTests.filter(t => !t.topic);
+      return mockTests.filter(t => !t.topic || t.topic === 'all');
     }
     return mockTests.filter(t => t.topic === selectedTopic);
   }, [selectedTopic]);
@@ -198,7 +201,7 @@ const MockTestList: React.FC = () => {
                 exit={{ opacity: 0, y: -5 }}
                 className="text-[10px] font-black uppercase tracking-[0.2em] text-orange-500/80"
               >
-                {selectedTopic === 'all' ? 'Core Curriculum' : `${selectedTopic} Domain Mastery`}
+                {selectedTopic === 'all' ? 'Core Curriculum' : `${selectedTopic === 'hard1' ? 'Elite' : selectedTopic} Domain Mastery`}
               </MotionP>
             </AnyAnimatePresence>
           </div>
@@ -227,7 +230,7 @@ const MockTestList: React.FC = () => {
                   footer={
                     <div className="flex items-center justify-between text-xs text-gray-500 font-bold uppercase tracking-wider">
                       <span className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-orange-500" />
+                        <div className={`w-1.5 h-1.5 rounded-full ${test.id.includes('hard') ? 'bg-red-500 animate-pulse' : 'bg-orange-500'}`} />
                         {test.questionIds.length} MCQs
                       </span>
                       <span className="bg-white/5 px-2 py-1 rounded-md">{test.durationMinutes}m</span>

@@ -7,7 +7,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ArrowRight, CheckCircle2, Circle, HelpCircle, XCircle, Trophy, Home, Play } from 'lucide-react';
 import { mockTests } from '../data/mockTests.ts';
 import { Question } from '../types.ts';
-import { questionsData } from '../data/questions.ts';
+import { questionsData as standardQuestions } from '../data/questions.ts';
+import { questionsData as hardQuestions1 } from '../data/hard_question1.ts';
 
 // Fix for framer-motion property errors
 const MotionDiv = motion.div as any;
@@ -36,11 +37,16 @@ const QuizPage: React.FC = () => {
   // Randomize the order of questions for this specific test session
   const questions: Question[] = useMemo(() => {
     if (!test) return [];
-    const all = questionsData;
+    
+    // Select the correct question pool based on the test configuration
+    let pool: Question[] = standardQuestions;
+    if (test.questionPool === 'hard1') {
+      pool = hardQuestions1;
+    }
     
     // 1. Get the questions belonging to this test
     const testQuestions = test.questionIds.map(id => {
-      const q = all.find(item => item.id === id);
+      const q = pool.find(item => item.id === id);
       if (q) return q;
       // Fallback for missing data
       return {

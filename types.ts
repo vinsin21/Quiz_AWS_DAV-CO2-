@@ -6,6 +6,7 @@ export interface Question {
   correct_answers: number[]; // Indices of correct options (0-based)
   multiple_correct: boolean;
   topics?: string[];
+  explanation?: string;
 }
 
 export interface MockTest {
@@ -15,6 +16,7 @@ export interface MockTest {
   questionIds: number[];
   durationMinutes: number;
   topic?: string; // Optional field to categorize the test by AWS service
+  questionPool?: 'standard' | 'hard1'; // Identifier for which dataset to use
 }
 
 export interface UserQuizSession {
